@@ -1,0 +1,763 @@
+;; Object dbmTransManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dbmTransManager/"
+  :tables (list 
+   (semanticdb-table "dbmTransManager.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("dbmHeader.h" include nil nil [436 458])
+            ("dbmTransManager.h" include nil nil [459 487])
+            ("dbmGetIndexKeyColumnInfo" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aParseIndex" variable
+                       (:pointer 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [628 657])
+                    ("aDicTableInfo" variable
+                       (:pointer 1
+                        :type ("dbmTableInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 687])
+                    ("aKeySize" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [688 703]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [588 704])
+            ("dbmGetIndexMgrByObjID" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [864 889])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [890 908])
+                    ("aIndexID" variable (:type "int") (reparse-symbol arg-sub-list) [909 923])
+                    ("aIndexMgr" variable
+                       (:pointer 2
+                        :type ("dbmIndexManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [924 953]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [827 954])
+            ("dbmGetTableSegMgr" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [988 1013])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1014 1032])
+                    ("aIndexMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1033 1064]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [955 1065])
+            ("dbmGetQueueSegMgr" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1099 1124])
+                    ("aQueueName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1125 1143])
+                    ("aIndexMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1144 1175]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [1066 1176])
+            ("dbmGetListSegMgr" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1210 1235])
+                    ("aListName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1236 1253])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1283]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [1177 1284])
+            ("dbmGetIndexSegMgrByObjID" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1325 1350])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1351 1369])
+                    ("aIndexID" variable (:type "int") (reparse-symbol arg-sub-list) [1370 1384])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1385 1414]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [1285 1415])
+            ("dbmIsFirstEnqueLog" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aUndoSegMgr" variable
+                       (:pointer 1
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1450 1482])
+                    ("aTxH" variable
+                       (:pointer 1
+                        :type ("dbmTransHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1483 1505])
+                    ("aEndPos" variable (:type "long long") (reparse-symbol arg-sub-list) [1506 1525])
+                    ("aObjectID" variable (:type "int") (reparse-symbol arg-sub-list) [1526 1541]))                  
+                :type ("_BOOL" type (:type "class") nil nil))
+                nil [1416 1542])
+            ("dbmGetColumnType" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aDicTableInfo" variable
+                       (:pointer 1
+                        :type ("dbmTableInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1575 1604])
+                    ("aColumnName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1605 1624])
+                    ("aColumnType" variable
+                       (:pointer 1
+                        :type ("dbmColumnType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1625 1653]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [1543 1654])
+            ("dbmDicTableName" variable
+               (:dereference 2
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1656 1700])
+            ("dbmDicIndexName" variable
+               (:dereference 2
+                :typemodifiers ("extern")
+                :type "char")
+                nil [1701 1745])
+            ("mClearTransMgr" function
+               (:parent "dbmTransManager"
+                :type "void")
+                nil [2003 2566])
+            ("mFreeTransMgr" function
+               (:parent "dbmTransManager"
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [2849 3665])
+            ("dbmInitLogSlot" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("aSlot" variable
+                       (:pointer 1
+                        :type ("dbmLogSlotHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3911 3936])
+                    ("aSlotID" variable (:type "long long") (reparse-symbol arg-sub-list) [3937 3956]))                  
+                :type "void")
+                nil [3875 4038])
+            ("dbmTransManager" function
+               (:constructor-flag t
+                :parent "dbmTransManager"
+                :type ("dbmTransManager" type (:type "class") nil nil))
+                nil [4275 4469])
+            ("dbmTransManager" function
+               (:destructor-flag t
+                :parent "dbmTransManager"
+                :type "void")
+                nil [4698 4817])
+            ("mGetTransID" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5570 5576]))                  
+                :type "int")
+                nil [5536 5601])
+            ("mInitTransItem" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTransID" variable (:type "int") (reparse-symbol arg-sub-list) [6156 6183])
+                    ("aHeader" variable
+                       (:pointer 1
+                        :type ("dbmTransHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6222 6246])
+                    ("aSessionID" variable (:type "long long") (reparse-symbol arg-sub-list) [6285 6314])
+                    ("aUserID" variable (:type "int") (reparse-symbol arg-sub-list) [6353 6379])
+                    ("aPID" variable (:type "int") (reparse-symbol arg-sub-list) [6418 6441])
+                    ("aStatus" variable (:type ("dbmTxStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6480 6506])
+                    ("aSlotSize" variable (:type "int") (reparse-symbol arg-sub-list) [6545 6573]))                  
+                :type "void")
+                nil [6118 7981])
+            ("mInitTran" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8260 8277])
+                    ("aSessInfo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8278 8295])
+                    ("aConfigObj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8296 8313])
+                    ("aConType" variable (:type ("dbmConnType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8314 8336]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [8225 27076])
+            ("mPrepareTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27495 27513]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [27457 39309])
+            ("mFinalTran" function
+               (:parent "dbmTransManager"
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [39729 40713])
+            ("mAct" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aHandle" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [41032 41047]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [41003 61351])
+            ("mActSetIndex" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [61692 61705]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [61655 64525])
+            ("mActGetIndex" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aData" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [64874 64887]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [64837 68415])
+            ("mActDDL" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [68757 68771]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [68725 71062])
+            ("mActCreateTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [71619 71633]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [71579 91409])
+            ("mActCreateIndex" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [91930 91944]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [91890 111130])
+            ("g_sEnqTranObjList_mActCommit" variable
+               (:pointer 2
+                :type ("dbmQueueManager" type (:type "class") nil nil))
+                nil [111633 111687])
+            ("mActCommitLib" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aDeferF" variable (:type "int") (reparse-symbol arg-sub-list) [111727 111740]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [111688 134632])
+            ("mActCommit" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [134689 134695]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [134654 134730])
+            ("mDeferCommit" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [134769 134775]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [134732 134810])
+            ("mDeferSync" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [135106 135112]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [135071 135935])
+            ("mActNormalRollback" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [136318 136324]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [136275 136360])
+            ("mActPartialRollback" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aBackupLogPos" variable (:type "long long") (reparse-symbol arg-sub-list) [136974 136999])
+                    ("aBackupImagePos" variable (:type "long long") (reparse-symbol arg-sub-list) [137000 137027]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [136929 137516])
+            ("mDoRollback" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aBackupLogPos" variable (:type "long long") (reparse-symbol arg-sub-list) [137939 137964])
+                    ("aBackupImagePos" variable (:type "long long") (reparse-symbol arg-sub-list) [137965 137992]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [137902 179795])
+            ("mFindTableInTx" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [180182 180199])
+                    ("aTableIdx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [180200 180216]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [180143 181316])
+            ("mFindListInTx" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aListName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [181682 181698])
+                    ("aListIdx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [181699 181714]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [181644 182038])
+            ("mFindQueueInTx" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aQueueName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [182406 182423])
+                    ("aQueueIdx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [182424 182440]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [182367 182745])
+            ("mFindIndexInTbl" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTable" variable
+                       (:pointer 1
+                        :type ("dbmTableManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183102 183127])
+                    ("aIndexName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [183128 183146])
+                    ("aIdx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [183147 183158]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [183061 183723])
+            ("mDumpTxTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTransTable" variable
+                       (:pointer 1
+                        :type ("dbmTransTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [184036 184064]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [183999 184312])
+            ("mDumpTxTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [184604 184621])
+                    ("aStartIdx" variable (:type "int") (reparse-symbol arg-sub-list) [184622 184637])
+                    ("aEndIdx" variable (:type "int") (reparse-symbol arg-sub-list) [184638 184651]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [184566 185471])
+            ("mActCreateTrig" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [185512 185525]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [185474 193882])
+            ("mActDropTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [193945 193959]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [193906 203788])
+            ("mActAlterTableDiskLog" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [203858 203872]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [203811 207430])
+            ("mActAlterTableMemLog" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [207507 207521]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [207461 210726])
+            ("mActTruncate" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [211271 211285]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [211233 220709])
+            ("mActDropIndex" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [220770 220784]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [220731 226684])
+            ("mGetSessID" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aUndoHeader" variable
+                       (:pointer 1
+                        :type ("dbmUndoHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227022 227050])
+                    ("aSessID" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [227051 227071]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [226986 227155])
+            ("mActDropTrig" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aParse" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [227194 227207]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [227158 233224])
+            ("mGetConfig" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aConfigMgr" variable
+                       (:pointer 1
+                        :type ("dbmConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [233279 233305])
+                    ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233339 233364])
+                    ("aItemName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233398 233424]))                  
+                :type "int")
+                nil [233246 234252])
+            ("mDumpTxLog" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [234290 234307])
+                    ("aTxID" variable (:type "int") (reparse-symbol arg-sub-list) [234308 234319]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [234254 236365])
+            ("mDumpAllSlotList" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236426 236445])
+                    ("aTxID" variable (:type "int") (reparse-symbol arg-sub-list) [236487 236503]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [236385 238028])
+            ("mDumpSlotList" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [238092 238115])
+                    ("aSegMgr" variable
+                       (:pointer 1
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238152 238180])
+                    ("aStartSlot" variable (:type "long long") (reparse-symbol arg-sub-list) [238217 238248])
+                    ("aLastSlot" variable (:type "long long") (reparse-symbol arg-sub-list) [238285 238316]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [238054 239380])
+            ("mGetTableConfig" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aConfigMgr" variable
+                       (:pointer 1
+                        :type ("dbmConfig" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [239443 239465])
+                    ("aUndoName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [239504 239527])
+                    ("aUserInitSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239566 239593])
+                    ("aUserExtendSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239632 239661])
+                    ("aUserMaxSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239700 239726])
+                    ("aInitSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239765 239788])
+                    ("aExtendSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239827 239852])
+                    ("aMaxSize" variable
+                       (:pointer 1
+                        :type "long long")
+                        (reparse-symbol arg-sub-list) [239891 239914]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [239403 241381])
+            ("dbmGetIndexKeyColumnInfo" function
+               (:arguments 
+                  ( ("aParseIndex" variable
+                       (:pointer 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241437 241466])
+                    ("aDicTableInfo" variable
+                       (:pointer 1
+                        :type ("dbmTableInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241467 241496])
+                    ("aKeySize" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [241497 241512]))                  
+                :type "int")
+                nil [241406 242308])
+            ("dbmGetColumnType" function
+               (:arguments 
+                  ( ("aDicTableInfo" variable
+                       (:pointer 1
+                        :type ("dbmTableInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242335 242364])
+                    ("aColumnName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [242365 242384])
+                    ("aColumnType" variable
+                       (:pointer 1
+                        :type ("dbmColumnType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242385 242413]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [242310 242848])
+            ("dbmGetIndexMgrByObjID" function
+               (:arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [243445 243470])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [243471 243489])
+                    ("aIndexID" variable (:type "int") (reparse-symbol arg-sub-list) [243490 243504])
+                    ("aIndexMgr" variable
+                       (:pointer 2
+                        :type ("dbmIndexManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [243505 243534]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [243415 243822])
+            ("dbmGetTableSegMgr" function
+               (:arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [243851 243876])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [243877 243895])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [243896 243925]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [243825 244352])
+            ("dbmGetQueueSegMgr" function
+               (:arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244381 244406])
+                    ("aQueueName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [244407 244425])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244426 244455]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [244355 244717])
+            ("dbmGetListSegMgr" function
+               (:arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244744 244769])
+                    ("aListName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [244770 244787])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244788 244817]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [244719 245076])
+            ("dbmGetIndexSegMgrByObjID" function
+               (:arguments 
+                  ( ("aTxMgr" variable
+                       (:pointer 1
+                        :type ("dbmTransManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [245112 245137])
+                    ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [245138 245156])
+                    ("aIndexID" variable (:type "int") (reparse-symbol arg-sub-list) [245157 245171])
+                    ("aSegMgr" variable
+                       (:pointer 2
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [245172 245201]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [245079 245598])
+            ("dbmIsFirstEnqueLog" function
+               (:arguments 
+                  ( ("aUndoSegMgr" variable
+                       (:pointer 1
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [245628 245660])
+                    ("aTxH" variable
+                       (:pointer 1
+                        :type ("dbmTransHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [245661 245683])
+                    ("aEndPos" variable (:type "long long") (reparse-symbol arg-sub-list) [245684 245703])
+                    ("aObjectID" variable (:type "int") (reparse-symbol arg-sub-list) [245704 245719]))                  
+                :type ("_BOOL" type (:type "class") nil nil))
+                nil [245601 247045])
+            ("mUnprepareTable" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aTableName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [247114 247132])
+                    ("aTableType" variable (:type "int") (reparse-symbol arg-sub-list) [247133 247149]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [247073 250596])
+            ("mActSessionOption" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aData" variable
+                       (:pointer 1
+                        :type ("dbmDataObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [250838 250860])
+                    ("aValue" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [250861 250874]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [250795 251812])
+            ("mHandleTransLog" function
+               (:parent "dbmTransManager"
+                :arguments 
+                  ( ("aLog" variable
+                       (:pointer 1
+                        :type ("dbmLogHeader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [252036 252056])
+                    ("aObjectSeg" variable
+                       (:pointer 1
+                        :type ("dbmSegmentManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [252057 252088]))                  
+                :type ("_VOID" type (:type "class") nil nil))
+                nil [251995 259992]))          
+    :file "dbmTransManager.cpp"
+    :pointmax 260016
+    :fsize 274297
+    :lastmodtime '(21951 24922 111456 133000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!dplee!work!3rd_iter_trunk!src!goldilocks!src!dbm!dbmTransManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

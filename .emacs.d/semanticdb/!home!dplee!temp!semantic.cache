@@ -1,0 +1,59 @@
+;; Object temp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "temp/"
+  :tables (list 
+   (semanticdb-table "temp.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("aa.h" include nil nil [1 16])
+            ("iostream" include (:system-flag t) nil [17 36])
+            ("string.h" include (:system-flag t) nil [37 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [58 78])
+            ("main" function (:type "int") nil [80 159]))          
+    :file "temp.cpp"
+    :pointmax 158
+    :fsize 155
+    :lastmodtime '(21951 25763 803229 965000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "aa.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("xx" type
+               (:members 
+                  ( ("aaa" variable (:type "int") (reparse-symbol classsubparts) [15 25])
+                    ("bbb" variable (:type "int") (reparse-symbol classsubparts) [28 38])
+                    ("ccc" variable (:type "int") (reparse-symbol classsubparts) [41 51]))                  
+                :type "struct")
+                nil [1 54]))          
+    :file "aa.h"
+    :pointmax 55
+    :fsize 54
+    :lastmodtime '(21951 23008 533162 866000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "temp.cpp~"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("aa.h" include nil nil [1 16])
+            ("iostream" include (:system-flag t) nil [17 36])
+            ("string.h" include (:system-flag t) nil [37 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [58 78])
+            ("main" function (:type "int") nil [80 147]))          
+    :file "temp.cpp~"
+    :pointmax 149
+    :fsize 148
+    :lastmodtime '(21951 23656 122356 326000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!dplee!temp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
