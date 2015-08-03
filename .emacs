@@ -1,3 +1,5 @@
+(load-theme 'misterioso)
+
 ; start package.el with emacs
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
