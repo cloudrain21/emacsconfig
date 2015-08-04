@@ -1,0 +1,32 @@
+;; Object dplee/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dplee/"
+  :tables (list 
+   (semanticdb-table ".emacs"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("theme" function
+               (:arguments 
+                  ( ("" variable (:type ("load" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15 20])
+                    ("" variable (:type ("theme" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20 80])
+                    ("" variable (:type ("package" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80 88]))                  
+                :type ("load" type (:type "class") nil nil))
+                nil [3 382])
+            ("complete" function
+               (:arguments 
+                  ( ("" variable (:type ("require" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [598 689])
+                    ("" variable (:type ("yasnippet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [689 699]))                  
+                :type "int")
+                nil [588 719])
+            ("complete" variable (:type ("auto" type (:type "class") nil nil)) nil [1222 1237]))          
+    :file ".emacs"
+    :pointmax 1870
+    :fsize 1869
+    :lastmodtime '(21952 17219 405833 842000)
+    :unmatched-syntax '((close-paren 1868 . 1869) (string 1830 . 1868) (string 1818 . 1829) (symbol 1813 . 1817) (punctuation 1812 . 1813) (symbol 1810 . 1812) (punctuation 1809 . 1810) (symbol 1806 . 1809) (open-paren 1805 . 1806) (close-paren 1803 . 1804) (symbol 1801 . 1803) (string 1648 . 1801) (symbol 1643 . 1647) (punctuation 1642 . 1643) (symbol 1635 . 1642) (punctuation 1634 . 1635) (string 1554 . 1625) (symbol 1549 . 1553) (punctuation 1548 . 1549) (string 1535 . 1547) (symbol 1527 . 1534) (punctuation 1526 . 1527) (symbol 1522 . 1526) (punctuation 1521 . 1522) (symbol 1518 . 1521) (punctuation 1517 . 1518) (symbol 1514 . 1517) (open-paren 1513 . 1514) (symbol 1505 . 1512) (symbol 1501 . 1504) (FOR 1497 . 1500) (symbol 1489 . 1496) (symbol 1487 . 1488) (symbol 1480 . 1486) (punctuation 1478 . 1479) (close-paren 1476 . 1477) (number 1475 . 1476) (symbol 1470 . 1474) (punctuation 1469 . 1470) (symbol 1466 . 1469) (punctuation 1465 . 1466) (symbol 1459 . 1465) (open-paren 1458 . 1459) (symbol 1453 . 1457) (symbol 1449 . 1452) (symbol 1446 . 1448) (symbol 1441 . 1445) (punctuation 1439 . 1440) (close-paren 1436 . 1437) (symbol 1424 . 1436) (punctuation 1423 . 1424) (symbol 1421 . 1423) (punctuation 1420 . 1421) (symbol 1412 . 1420) (punctuation 1411 . 1412) (symbol 1408 . 1411) (punctuation 1407 . 1408) (symbol 1405 . 1407) (string 1384 . 1405) (symbol 1379 . 1383) (punctuation 1378 . 1379) (symbol 1375 . 1378) (open-paren 1374 . 1375) (close-paren 1372 . 1373) (close-paren 1370 . 1371) (symbol 1362 . 1370) (punctuation 1361 . 1362) (symbol 1355 . 1361) (punctuation 1354 . 1355) (symbol 1352 . 1354) (string 1339 . 1352) (symbol 1334 . 1338) (punctuation 1333 . 1334) (symbol 1331 . 1333) (punctuation 1330 . 1331) (symbol 1327 . 1330) (open-paren 1326 . 1327) (close-paren 1322 . 1323) (open-paren 1321 . 1322) (symbol 1309 . 1321) (punctuation 1308 . 1309) (symbol 1306 . 1308) (punctuation 1305 . 1306) (symbol 1297 . 1305) (punctuation 1296 . 1297) (symbol 1293 . 1296) (punctuation 1292 . 1293) (symbol 1290 . 1292) (symbol 1284 . 1289) (open-paren 1283 . 1284) (symbol 1278 . 1282) (punctuation 1277 . 1278) (symbol 1271 . 1277) (punctuation 1270 . 1271) (symbol 1266 . 1270) (punctuation 1265 . 1266) (symbol 1264 . 1265) (symbol 1261 . 1263) (symbol 1252 . 1260) (symbol 1247 . 1251) (symbol 1242 . 1246) (symbol 1238 . 1241) (symbol 1219 . 1221) (symbol 1211 . 1218) (symbol 1200 . 1210) (symbol 1198 . 1199) (symbol 1195 . 1197) (symbol 1186 . 1194) (symbol 1181 . 1185) (symbol 1175 . 1180) (symbol 1166 . 1174) (symbol 1164 . 1165) (symbol 1157 . 1163) (symbol 1155 . 1156) (string 1058 . 1155) (symbol 1053 . 1057) (punctuation 1052 . 1053) (symbol 1048 . 1052) (punctuation 1047 . 1048) (symbol 1046 . 1047) (string 1013 . 1046) (symbol 1008 . 1012) (punctuation 1007 . 1008) (symbol 1003 . 1007) (punctuation 1002 . 1003) (punctuation 1001 . 1002) (punctuation 1000 . 1001) (symbol 999 . 1000) (string 949 . 999) (symbol 946 . 949) (symbol 942 . 945) (punctuation 940 . 941) (close-paren 938 . 939) (close-paren 937 . 938) (symbol 930 . 937) (punctuation 929 . 930) (symbol 928 . 929) (punctuation 927 . 928) (symbol 921 . 927) (punctuation 920 . 921) (symbol 918 . 920) (string 905 . 918) (symbol 900 . 904) (punctuation 899 . 900) (symbol 897 . 899) (punctuation 896 . 897) (symbol 893 . 896) (open-paren 892 . 893) (close-paren 888 . 889) (symbol 881 . 888) (punctuation 880 . 881) (symbol 879 . 880) (punctuation 878 . 879) (symbol 870 . 878) (punctuation 869 . 870) (symbol 865 . 869) (string 726 . 865) (symbol 723 . 726) (punctuation 721 . 722) (string 606 . 689) (punctuation 587 . 588) (symbol 583 . 587) (FOR 579 . 582) (symbol 572 . 578) (DEFAULT 564 . 571) (DO 561 . 563) (punctuation 559 . 560) (semantic-list 459 . 558) (semantic-list 383 . 458) (string 26 . 80) (punctuation 19 . 20) (punctuation 1 . 2))
+    )
+   )
+  :file "!home!dplee!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

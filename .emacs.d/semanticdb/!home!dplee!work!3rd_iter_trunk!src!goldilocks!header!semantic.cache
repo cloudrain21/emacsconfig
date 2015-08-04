@@ -1,0 +1,652 @@
+;; Object header/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "header/"
+  :tables (list 
+   (semanticdb-table "dbmStruct.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__O_DBM_STRUCT_H__" variable (:constant-flag t) nil [503 521])
+            ("dbmObject.h" include nil nil [523 545])
+            ("dbmExtentHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmExtentHeader"
+                :typedef ("dbmExtentHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [917 1029])
+            ("dbmExtentHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mAllocInd" variable (:type "long long") (reparse-symbol classsubparts) [954 980])
+                    ("mFreeInd" variable (:type "long long") (reparse-symbol classsubparts) [985 1010]))                  )
+                (reparse-symbol extern-c-contents) [917 1029])
+            ("dbmIndexSlotHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmIndexSlotHeader"
+                :typedef ("dbmIndexSlotHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [1181 1660])
+            ("dbmIndexSlotHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mRootFlag" variable (:type "int") (reparse-symbol classsubparts) [1221 1247])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1291 1313])
+                    ("mRootSlotID" variable
+                       (:typemodifiers ("volatile")
+                        :type "long long")
+                        (reparse-symbol classsubparts) [1354 1385])
+                    ("mLeafNextID" variable (:type "long long") (reparse-symbol classsubparts) [1412 1440])
+                    ("mLeafPrevID" variable (:type "long long") (reparse-symbol classsubparts) [1469 1497])
+                    ("mNodeCount" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1526 1553])
+                    ("mLeafcheck" variable (:type "int") (reparse-symbol classsubparts) [1583 1610]))                  )
+                (reparse-symbol extern-c-contents) [1181 1660])
+            ("dbmIndexNode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmIndexNode"
+                :typedef ("dbmIndexNode" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [1818 2188])
+            ("dbmIndexNode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mIndexSlotHeader" variable (:type ("dbmIndexSlotHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1852 1889])
+                    ("mRoot" variable (:type "int") (reparse-symbol classsubparts) [1894 1920])
+                    ("mRID" variable
+                       (:dereference 1
+                        :type "long long")
+                        (reparse-symbol classsubparts) [1925 1968])
+                    ("mChild" variable
+                       (:dereference 1
+                        :type "long long")
+                        (reparse-symbol classsubparts) [1995 2042])
+                    ("mCurrSlot" variable (:type "long long") (reparse-symbol classsubparts) [2061 2091])
+                    ("mBtreeCheck" variable (:type "long long") (reparse-symbol classsubparts) [2140 2172]))                  )
+                (reparse-symbol extern-c-contents) [1818 2188])
+            ("dbmIndexHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmIndexHeader"
+                :typedef ("dbmIndexHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [2425 3006])
+            ("dbmIndexHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mIndex" variable (:type ("dbmIndexObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2461 2484])
+                    ("mInitCompleteF" variable (:type "int") (reparse-symbol classsubparts) [2511 2542])
+                    ("mRootPid" variable (:type "long long") (reparse-symbol classsubparts) [2577 2602])
+                    ("mRootAllocCk" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2607 2636])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2678 2700])
+                    ("mFutex" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2735 2758])
+                    ("mCurrStep" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2763 2789])
+                    ("mPID" variable (:type "int") (reparse-symbol classsubparts) [2818 2839])
+                    ("mDepthNo" variable (:type "int") (reparse-symbol classsubparts) [2844 2869])
+                    ("mExtra" variable (:type "long long") (reparse-symbol classsubparts) [2904 2927])
+                    ("mTreeCheck" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2961 2988]))                  )
+                (reparse-symbol extern-c-contents) [2425 3006])
+            ("dbmSpaceStat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmSpaceStat"
+                :typedef ("dbmSpaceStat" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3166 3333])
+            ("dbmSpaceStat" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mSegmentCount" variable (:type "int") (reparse-symbol classsubparts) [3200 3228])
+                    ("mTotalSlot" variable (:type "long long") (reparse-symbol classsubparts) [3233 3258])
+                    ("mAllocSlot" variable (:type "long long") (reparse-symbol classsubparts) [3263 3288])
+                    ("mFreeSlot" variable (:type "long long") (reparse-symbol classsubparts) [3293 3317]))                  )
+                (reparse-symbol extern-c-contents) [3166 3333])
+            ("dbmTmpIndex" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmTmpIndex"
+                :typedef ("dbmTmpIndex" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3450 3581])
+            ("dbmTmpIndex" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mIndexCount" variable (:type "unsigned long long") (reparse-symbol classsubparts) [3483 3514])
+                    ("mIndex" variable
+                       (:dereference 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3519 3567]))                  )
+                (reparse-symbol extern-c-contents) [3450 3581])
+            ("dbmTableHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmTableHeader"
+                :typedef ("dbmTableHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [3944 4739])
+            ("dbmTableHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mTableObj" variable (:type ("dbmTableObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3980 4010])
+                    ("mIndexCount" variable (:type "unsigned long long") (reparse-symbol classsubparts) [4328 4360])
+                    ("mIndex" variable
+                       (:dereference 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4365 4417])
+                    ("mCols" variable (:type ("dbmColumnSetObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4423 4449])
+                    ("mInitCompleteF" variable (:type "int") (reparse-symbol classsubparts) [4455 4490])
+                    ("mUseIndex" variable (:type "int") (reparse-symbol classsubparts) [4534 4564])
+                    ("mLock" variable (:type "int") (reparse-symbol classsubparts) [4570 4596])
+                    ("mRecordCount" variable (:type "long long") (reparse-symbol classsubparts) [4601 4634])
+                    ("mEventQueue" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4639 4685])
+                    ("mDDLCount" variable (:type "int") (reparse-symbol classsubparts) [4690 4721]))                  )
+                (reparse-symbol extern-c-contents) [3944 4739])
+            ("dbmQueueHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmQueueHeader"
+                :typedef ("dbmQueueHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [5004 6034])
+            ("dbmQueueHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mTableObj" variable (:type ("dbmTableObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5040 5066])
+                    ("mIndexCount" variable (:type "unsigned long long") (reparse-symbol classsubparts) [5072 5103])
+                    ("mIndex" variable
+                       (:dereference 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5108 5156])
+                    ("mInitCompleteF" variable (:type "int") (reparse-symbol classsubparts) [5162 5193])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5241 5263])
+                    ("mLockEnq" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5316 5341])
+                    ("mRFutex" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5404 5427])
+                    ("mWFutex" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5474 5497])
+                    ("mEnq" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5551 5572])
+                    ("mDeq" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5630 5651])
+                    ("mOldEnq" variable (:type "int") (reparse-symbol classsubparts) [5709 5733])
+                    ("mOldDeq" variable (:type "int") (reparse-symbol classsubparts) [5786 5810])
+                    ("mRecoveryProcessF" variable (:type "int") (reparse-symbol classsubparts) [5864 5898])
+                    ("mTriggerQueue" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5940 5984])
+                    ("mDDLCount" variable (:type "int") (reparse-symbol classsubparts) [5989 6016]))                  )
+                (reparse-symbol extern-c-contents) [5004 6034])
+            ("dbmListHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmListHeader"
+                :typedef ("dbmListHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6037 6783])
+            ("dbmListHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mTableObj" variable (:type ("dbmTableObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6072 6098])
+                    ("mIndexCount" variable (:type "unsigned long long") (reparse-symbol classsubparts) [6104 6135])
+                    ("mIndex" variable
+                       (:dereference 1
+                        :type ("dbmIndexObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6140 6188])
+                    ("mInitCompleteF" variable (:type "int") (reparse-symbol classsubparts) [6194 6225])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [6273 6295])
+                    ("mRecoveryProcessF" variable (:type "int") (reparse-symbol classsubparts) [6349 6383])
+                    ("mDDLCount" variable (:type "int") (reparse-symbol classsubparts) [6424 6451])
+                    ("mListTotalCount" variable (:type "int") (reparse-symbol classsubparts) [6457 6489])
+                    ("mListLeftLast" variable (:type "long long") (reparse-symbol classsubparts) [6534 6564])
+                    ("mListRightLast" variable (:type "long long") (reparse-symbol classsubparts) [6611 6642])
+                    ("mSegmentAllocCk" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [6689 6740]))                  )
+                (reparse-symbol extern-c-contents) [6037 6783])
+            ("dbmRowHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmRowHeader"
+                :typedef ("dbmRowHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [6930 7892])
+            ("dbmRowHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mSCN" variable
+                       (:typemodifiers ("volatile")
+                        :type "long long")
+                        (reparse-symbol classsubparts) [6964 6988])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [7018 7040])
+                    ("mRowSize" variable (:type "int") (reparse-symbol classsubparts) [7806 7831]))                  )
+                (reparse-symbol extern-c-contents) [6930 7892])
+            ("dbmTransLog" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmTransLog"
+                :typedef ("dbmTransLog" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8058 8502])
+            ("dbmTransLog" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mLogType" variable (:type ("dbmLogType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8091 8116])
+                    ("mObjectID" variable (:type "int") (reparse-symbol classsubparts) [8137 8163])
+                    ("mSlot" variable (:type "long long") (reparse-symbol classsubparts) [8187 8211])
+                    ("mSCN" variable (:type "long long") (reparse-symbol classsubparts) [8236 8258])
+                    ("mObjectName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8284 8327])
+                    ("mImagePtr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8346 8372])
+                    ("mImageSize" variable (:type "int") (reparse-symbol classsubparts) [8396 8423])
+                    ("mLSN" variable (:type "long long") (reparse-symbol classsubparts) [8446 8468]))                  )
+                (reparse-symbol extern-c-contents) [8058 8502])
+            ("dbmReplMsg" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmReplMsg"
+                :typedef ("dbmReplMsg" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8666 8859])
+            ("dbmReplMsg" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mLSN" variable (:type "long long") (reparse-symbol classsubparts) [8698 8715])
+                    ("mTransLog" variable (:type ("dbmTransLog" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8748 8770])
+                    ("mData" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [8802 8842]))                  )
+                (reparse-symbol extern-c-contents) [8666 8859])
+            ("dbmReplSeqInfo" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmReplSeqInfo"
+                :typedef ("dbmReplSeqInfo" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [8862 9287])
+            ("dbmReplSeqInfo" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("sTxID" variable (:type "int") (reparse-symbol classsubparts) [8898 8912])
+                    ("sLSN" variable (:type "long long") (reparse-symbol classsubparts) [8940 8955])
+                    ("sCurFileNo" variable (:type "int") (reparse-symbol classsubparts) [8983 9002])
+                    ("sTotalBlockNo" variable (:type "int") (reparse-symbol classsubparts) [9030 9052])
+                    ("sTranTotalSize" variable (:type "int") (reparse-symbol classsubparts) [9101 9124])
+                    ("sSeq" variable (:type "long long") (reparse-symbol classsubparts) [9168 9183])
+                    ("sMagicNo" variable (:type "long long") (reparse-symbol classsubparts) [9222 9241]))                  )
+                (reparse-symbol extern-c-contents) [8862 9287])
+            ("dbmReplLog" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmReplLog"
+                :typedef ("dbmReplLog" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [9289 9492])
+            ("dbmReplLog" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("sTotalSize" variable (:type "int") (reparse-symbol classsubparts) [9321 9340])
+                    ("sDataSize" variable (:type "int") (reparse-symbol classsubparts) [9345 9363])
+                    ("sLogCount" variable (:type "int") (reparse-symbol classsubparts) [9368 9386])
+                    ("sDummy" variable (:type "int") (reparse-symbol classsubparts) [9391 9406])
+                    ("sTxID" variable (:type "int") (reparse-symbol classsubparts) [9411 9425])
+                    ("sSeq" variable (:type "long long") (reparse-symbol classsubparts) [9430 9445])
+                    ("sLogData" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [9450 9478]))                  )
+                (reparse-symbol extern-c-contents) [9289 9492])
+            ("dbmReplRecvSeq" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmReplRecvSeq"
+                :typedef ("dbmReplRecvSeq" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [9494 9589])
+            ("dbmReplRecvSeq" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("sSeqOffset" variable (:type "long long") (reparse-symbol classsubparts) [9530 9551])
+                    ("sSeq" variable (:type "long long") (reparse-symbol classsubparts) [9556 9571]))                  )
+                (reparse-symbol extern-c-contents) [9494 9589])
+            ("dbmLogFileHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogFileHeader"
+                :typedef ("dbmLogFileHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [9745 9827])
+            ("dbmLogFileHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mEndLSN" variable (:type "long long") (reparse-symbol classsubparts) [9784 9807]))                  )
+                (reparse-symbol extern-c-contents) [9745 9827])
+            ("dbmLogBlockHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogBlockHeader"
+                :typedef ("dbmLogBlockHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [9993 10339])
+            ("dbmLogBlockHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mLSN" variable (:type "long long") (reparse-symbol classsubparts) [10032 10049])
+                    ("mTotalBlockNo" variable (:type "int") (reparse-symbol classsubparts) [10084 10107])
+                    ("mCurrentBlockNo" variable (:type "int") (reparse-symbol classsubparts) [10136 10161])
+                    ("mTranTotalSize" variable (:type "int") (reparse-symbol classsubparts) [10192 10216])
+                    ("mIsCompressF" variable (:type "int") (reparse-symbol classsubparts) [10245 10267])
+                    ("mWriteTime" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10272 10298]))                  )
+                (reparse-symbol extern-c-contents) [9993 10339])
+            ("dbmLogAnchorPerTx" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogAnchorPerTx"
+                :typedef ("dbmLogAnchorPerTx" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [10502 10816])
+            ("dbmLogAnchorPerTx" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mStat" variable (:type "short") (reparse-symbol classsubparts) [10541 10555])
+                    ("mCurFileNo" variable (:type "int") (reparse-symbol classsubparts) [10595 10614])
+                    ("mAlloc" variable (:type "int") (reparse-symbol classsubparts) [10640 10655])
+                    ("mLastFileSize" variable (:type "long long") (reparse-symbol classsubparts) [10686 10711])
+                    ("mLastSyncSize" variable (:type "long long") (reparse-symbol classsubparts) [10736 10761]))                  )
+                (reparse-symbol extern-c-contents) [10502 10816])
+            ("dbmLogAnchor" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogAnchor"
+                :typedef ("dbmLogAnchor" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [10995 11838])
+            ("dbmLogAnchor" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mLoggerLSN" variable
+                       (:typemodifiers ("volatile")
+                        :type "long long")
+                        (reparse-symbol classsubparts) [11029 11060])
+                    ("mSyncCount" variable (:type "long long") (reparse-symbol classsubparts) [11103 11132])
+                    ("mInstanceName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11183 11230])
+                    ("mLogDest" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11251 11302])
+                    ("mLogFileSize" variable (:type "long long") (reparse-symbol classsubparts) [11307 11338])
+                    ("mLoggerEnableF" variable (:type "int") (reparse-symbol classsubparts) [11376 11410])
+                    ("mLastFileSequence" variable (:type "int") (reparse-symbol classsubparts) [11455 11492])
+                    ("mReplEnableF" variable (:type "int") (reparse-symbol classsubparts) [11531 11562])
+                    ("mReplMemoryEnableF" variable (:type "int") (reparse-symbol classsubparts) [11613 11650])
+                    ("mLastSyncTime" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11702 11734])
+                    ("mTxAnchor" variable
+                       (:dereference 1
+                        :type ("dbmLogAnchorPerTx" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11778 11822]))                  )
+                (reparse-symbol extern-c-contents) [10995 11838])
+            ("dbmUndoHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmUndoHeader"
+                :typedef ("dbmUndoHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12099 12578])
+            ("dbmUndoHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mGSCN" variable (:type "long long") (reparse-symbol classsubparts) [12134 12156])
+                    ("mGLSN" variable (:type "long long") (reparse-symbol classsubparts) [12209 12231])
+                    ("mSessID" variable (:type "long long") (reparse-symbol classsubparts) [12284 12308])
+                    ("mLock" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [12365 12387])
+                    ("mStat" variable (:type ("dbmStatObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12437 12459])
+                    ("mAnchor" variable (:type ("dbmLogAnchor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12501 12525]))                  )
+                (reparse-symbol extern-c-contents) [12099 12578])
+            ("dbmTransHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmTransHeader"
+                :typedef ("dbmTransHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [12891 14928])
+            ("dbmTransHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mPID" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [12927 12948])
+                    ("mMyTxID" variable
+                       (:typemodifiers ("volatile")
+                        :type "int")
+                        (reparse-symbol classsubparts) [13016 13040])
+                    ("mLastAllocLogSlot" variable (:type "int") (reparse-symbol classsubparts) [13093 13127])
+                    ("mLastAllocImageSlot" variable (:type "int") (reparse-symbol classsubparts) [13181 13217])
+                    ("mLogCurPos" variable
+                       (:typemodifiers ("volatile")
+                        :type "long long")
+                        (reparse-symbol classsubparts) [13272 13302])
+                    ("mImageCurPos" variable
+                       (:typemodifiers ("volatile")
+                        :type "long long")
+                        (reparse-symbol classsubparts) [13352 13384])
+                    ("mUserID" variable (:type "int") (reparse-symbol classsubparts) [13435 13459])
+                    ("mSessionID" variable (:type "long long") (reparse-symbol classsubparts) [13520 13547])
+                    ("mSCN" variable (:type "long long") (reparse-symbol classsubparts) [13608 13629])
+                    ("mStatus" variable (:type ("dbmTxStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13699 13723])
+                    ("mDeferStatus" variable (:type ("dbmDeferStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13777 13806])
+                    ("mLogCntPerSlot" variable (:type "int") (reparse-symbol classsubparts) [13860 13891])
+                    ("mImageCntPerSlot" variable (:type "int") (reparse-symbol classsubparts) [13938 13971])
+                    ("mLogStartPos" variable (:type "long long") (reparse-symbol classsubparts) [14019 14048])
+                    ("mImageStartPos" variable (:type "long long") (reparse-symbol classsubparts) [14101 14132])
+                    ("mRecoveryStartPos" variable (:type "long long") (reparse-symbol classsubparts) [14186 14220])
+                    ("mLockRecoveryPos" variable (:type "long long") (reparse-symbol classsubparts) [14449 14482])
+                    ("mWaitForTransID" variable (:type "int") (reparse-symbol classsubparts) [14533 14567])
+                    ("mWaitForObjectID" variable (:type "int") (reparse-symbol classsubparts) [14629 14662])
+                    ("mWaitForSlotID" variable (:type "int") (reparse-symbol classsubparts) [14728 14759])
+                    ("mDiskLoggingEnableF" variable (:type "int") (reparse-symbol classsubparts) [14824 14860]))                  )
+                (reparse-symbol extern-c-contents) [12891 14928])
+            ("dbmTransTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmTransTable"
+                :typedef ("dbmTransTable" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [15106 15231])
+            ("dbmTransTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mItem" variable
+                       (:dereference 1
+                        :type ("dbmTransHeader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15141 15178]))                  )
+                (reparse-symbol extern-c-contents) [15106 15231])
+            ("dbmLogHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogHeader"
+                :typedef ("dbmLogHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [15436 17368])
+            ("dbmLogHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mLogType" variable (:type ("dbmLogType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15470 15495])
+                    ("mMyLogPos" variable (:type "long long") (reparse-symbol classsubparts) [15541 15567])
+                    ("mSCN" variable (:type "long long") (reparse-symbol classsubparts) [15623 15644])
+                    ("mTransID" variable (:type "int") (reparse-symbol classsubparts) [15685 15710])
+                    ("mObjectID" variable (:type "int") (reparse-symbol classsubparts) [15759 15785])
+                    ("mObjectName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [15827 15869])
+                    ("mTableName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [15897 15938])
+                    ("mRefRecord" variable (:type "long long") (reparse-symbol classsubparts) [15967 15994])
+                    ("mImageLogPos" variable (:type "long long") (reparse-symbol classsubparts) [16074 16103])
+                    ("mImageSize" variable (:type "int") (reparse-symbol classsubparts) [16152 16179])
+                    ("mLSN" variable (:type "long long") (reparse-symbol classsubparts) [16229 16250])
+                    ("mLogValidF" variable (:type "int") (reparse-symbol classsubparts) [16690 16717])
+                    ("mImageLogValidF" variable (:type "int") (reparse-symbol classsubparts) [16763 16795])
+                    ("mCommitCompleteF" variable (:type "int") (reparse-symbol classsubparts) [16842 16875])
+                    ("mRollbackCompleteF" variable (:type "int") (reparse-symbol classsubparts) [16923 16958])
+                    ("mQueProcDone" variable (:type "long long") (reparse-symbol classsubparts) [17008 17037])
+                    ("mRefPtr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [17101 17125])
+                    ("mObjectHeader" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [17199 17229])
+                    ("mWriteTime" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [17284 17311]))                  )
+                (reparse-symbol extern-c-contents) [15436 17368])
+            ("dbmLogSlotHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmLogSlotHeader"
+                :typedef ("dbmLogSlotHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [17370 17596])
+            ("dbmLogSlotHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mMySlotID" variable (:type "long long") (reparse-symbol classsubparts) [17408 17434])
+                    ("mPrev" variable (:type "long long") (reparse-symbol classsubparts) [17439 17461])
+                    ("mNext" variable (:type "long long") (reparse-symbol classsubparts) [17510 17532]))                  )
+                (reparse-symbol extern-c-contents) [17370 17596])
+            ("dbmEventOperation" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmEventOperation"
+                :typedef ("dbmEventOperation" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [17791 17941])
+            ("dbmEventOperation" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("DBM_EVENT_INSERT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17828 17848])
+                    ("DBM_EVENT_UPDATE_BEFORE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17849 17876])
+                    ("DBM_EVENT_UPDATE_AFTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17877 17903])
+                    ("DBM_EVENT_DELETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17904 17922]))                  )
+                (reparse-symbol extern-c-contents) [17791 17941])
+            ("dbmEventDataHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :superclasses "dbmEventDataHeader"
+                :typedef ("dbmEventDataHeader" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [17943 18223])
+            ("dbmEventDataHeader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("mTxID" variable (:type "int") (reparse-symbol classsubparts) [17983 18009])
+                    ("mCommitSCN" variable (:type "long long") (reparse-symbol classsubparts) [18014 18045])
+                    ("mEventType" variable (:type ("dbmEventOperation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18050 18081])
+                    ("mObjectID" variable (:type "int") (reparse-symbol classsubparts) [18086 18116])
+                    ("mObjectName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18121 18167])
+                    ("mDataLen" variable (:type "int") (reparse-symbol classsubparts) [18172 18201]))                  )
+                (reparse-symbol extern-c-contents) [17943 18223]))          
+    :file "dbmStruct.h"
+    :pointmax 18281
+    :fsize 20960
+    :lastmodtime '(21932 45346 275400 661000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__O_DBM_STRUCT_H__")
+          )
+
+    )
+   (semanticdb-table "dbmObject.h"
+    :file "dbmObject.h"
+    :fsize 12821
+    :lastmodtime '(21932 45346 257400 408000)
+    )
+   )
+  :file "!home!dplee!work!3rd_iter_trunk!src!goldilocks!header!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

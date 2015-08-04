@@ -809,6 +809,552 @@
           )
 
     )
+   (semanticdb-table "concurrence.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_CONCURRENCE_H" variable (:constant-flag t) nil [1217 1231])
+            ("exception" include (:system-flag t) nil [1262 1282])
+            ("bits/gthr.h" include (:system-flag t) nil [1283 1305])
+            ("bits/functexcept.h" include (:system-flag t) nil [1307 1336])
+            ("bits/cpp_type_traits.h" include (:system-flag t) nil [1337 1370])
+            ("ext/type_traits.h" include (:system-flag t) nil [1371 1399])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("_Lock_policy" type
+                       (:members 
+                          ( ("_S_single" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1816 1826])
+                            ("_S_mutex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1827 1836])
+                            ("_S_atomic" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1837 1848]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [1796 1849])
+                    ("__default_lock_policy" variable
+                       (:typemodifiers ("static")
+                        :constant-flag t
+                        :type ("_Lock_policy" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1955 2184])
+                    ("__concurrence_lock_error" type
+                       (:superclasses 
+                          ( ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2382 2389])
+                            ("what" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2394 2492]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2321 2497])
+                    ("__concurrence_unlock_error" type
+                       (:superclasses 
+                          ( ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2564 2571])
+                            ("what" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2576 2676]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2501 2681])
+                    ("__concurrence_broadcast_error" type
+                       (:superclasses 
+                          ( ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2751 2758])
+                            ("what" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2763 2866]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2685 2871])
+                    ("__concurrence_wait_error" type
+                       (:superclasses 
+                          ( ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2936 2943])
+                            ("what" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2948 3046]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2875 3051])
+                    ("__throw_concurrence_lock_error" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3132 3237])
+                    ("__throw_concurrence_unlock_error" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3241 3350])
+                    ("__mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [3637 3645])
+                            ("_M_mutex" variable (:type ("__gthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3758 3785])
+                            ("__mutex" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3806 3821]))                                  
+                                :type ("__mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3798 3822])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3846 3861]))                                  
+                                :type ("__mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3827 3862])
+                            ("public" label nil (reparse-symbol classsubparts) [3866 3873])
+                            ("__mutex" function
+                               (:constructor-flag t
+                                :type ("__mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3878 4032])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [4195 4362])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [4372 4545])
+                            ("gthread_mutex" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4584 4589]))                                  
+                                :type ("__gthread_mutex_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4551 4617]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3616 4622])
+                    ("__recursive_mutex" type
+                       (:members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [4657 4665])
+                            ("_M_mutex" variable (:type ("__gthread_recursive_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4808 4845])
+                            ("__recursive_mutex" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__recursive_mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4876 4901]))                                  
+                                :type ("__recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4858 4902])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__recursive_mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4936 4961]))                                  
+                                :type ("__recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4907 4962])
+                            ("public" label nil (reparse-symbol classsubparts) [4966 4973])
+                            ("__recursive_mutex" function
+                               (:constructor-flag t
+                                :type ("__recursive_mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4978 5162])
+                            ("lock" function (:type "void") (reparse-symbol classsubparts) [5351 5529])
+                            ("unlock" function (:type "void") (reparse-symbol classsubparts) [5539 5723])
+                            ("gthread_recursive_mutex" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5782 5787]))                                  
+                                :type ("__gthread_recursive_mutex_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5729 5813]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4626 5818])
+                    ("__scoped_lock" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6000 6007])
+                            ("__mutex_type" type
+                               (:typedef ("__mutex" type (:type "class") nil nil)
+                                :superclasses "__mutex"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6012 6041])
+                            ("private" label nil (reparse-symbol classsubparts) [6045 6053])
+                            ("_M_device" variable (:type ("__mutex_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6058 6082])
+                            ("__scoped_lock" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__scoped_lock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6102 6123]))                                  
+                                :type ("__scoped_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6088 6124])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("__scoped_lock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6154 6175]))                                  
+                                :type ("__scoped_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6129 6176])
+                            ("public" label nil (reparse-symbol classsubparts) [6180 6187])
+                            ("__scoped_lock" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("__name" variable
+                                       (:reference 1
+                                        :type ("__mutex_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6215 6236]))                                  
+                                :type ("__scoped_lock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6201 6282])
+                            ("__scoped_lock" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6288 6340]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5974 6345]))                  
+                :type "namespace")
+                nil [1401 7590]))          
+    :file "concurrence.h"
+    :pointmax 7612
+    :fsize 7611
+    :lastmodtime '(21752 43925 0 0)
+    :unmatched-syntax '((symbol 7580 . 7588) (EXPLICIT 6192 . 6200) (symbol 1247 . 1260) (symbol 1243 . 1246) (symbol 1236 . 1242) (punctuation 1235 . 1236))
+    :lexical-table 
+        '(("_CONCURRENCE_H" . ((number "1" 1232 . 1233)))
+          )
+
+    )
+   (semanticdb-table "alloc_traits.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_EXT_ALLOC_TRAITS_H" variable (:constant-flag t) nil [1206 1225])
+            ("bits/move.h" include (:system-flag t) nil [1283 1306])
+            ("bits/alloc_traits.h" include (:system-flag t) nil [1307 1338])
+            ("__gnu_cxx" type
+               (:members 
+                  ( ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Alloc" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1594 1626]))                          )
+                        (reparse-symbol namespacesubparts) [1517 1629])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1633 1723])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1822 1853]))                          
+                        :template-specifier 
+                          ( ("std::allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1727 1856])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1860 1960])
+                    ("array_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1993 2016])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil)
+                            ("_Array" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2141 2172]))                          
+                        :template-specifier 
+                          ( ("array_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2020 2175])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2179 2309])
+                    ("bitmap_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2332 2356])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2457 2488]))                          
+                        :template-specifier 
+                          ( ("bitmap_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2360 2491])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2495 2597])
+                    ("malloc_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2620 2644])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2745 2776]))                          
+                        :template-specifier 
+                          ( ("malloc_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2648 2779])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2783 2885])
+                    ("mt_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2908 2928])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3025 3056]))                          
+                        :template-specifier 
+                          ( ("mt_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2932 3059])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3063 3161])
+                    ("new_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3184 3205])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3303 3334]))                          
+                        :template-specifier 
+                          ( ("new_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3209 3337])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3341 3440])
+                    ("pool_allocator" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3463 3485])
+                    ("__allocator_always_compares_equal" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3584 3615]))                          
+                        :template-specifier 
+                          ( ("pool_allocator" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3489 3618])
+                    ("__allocator_always_compares_equal::value" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3622 3722])
+                    ("__alloc_traits" type
+                       (:template 
+                          ( ("_Alloc" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("allocator_type" type
+                               (:typedef ("_Alloc" type (:type "class") nil nil)
+                                :superclasses "_Alloc"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3947 3977])
+                            ("_Base_type" type
+                               (:typedef ("std::allocator_traits" type
+                                     (:template-specifier 
+                                        ( ("_Alloc" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::allocator_traits"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4009 4068])
+                            ("value_type" type
+                               (:typedef ("_Base_type::value_type" type (:type "class") nil nil)
+                                :superclasses "_Base_type::value_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4073 4132])
+                            ("pointer" type
+                               (:typedef ("_Base_type::pointer" type (:type "class") nil nil)
+                                :superclasses "_Base_type::pointer"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4137 4193])
+                            ("const_pointer" type
+                               (:typedef ("_Base_type::const_pointer" type (:type "class") nil nil)
+                                :superclasses "_Base_type::const_pointer"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4198 4260])
+                            ("size_type" type
+                               (:typedef ("_Base_type::size_type" type (:type "class") nil nil)
+                                :superclasses "_Base_type::size_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4265 4323])
+                            ("difference_type" type
+                               (:typedef ("_Base_type::difference_type" type (:type "class") nil nil)
+                                :superclasses "_Base_type::difference_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4328 4392])
+                            ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4472 4522])
+                            ("const_reference" variable
+                               (:constant-flag t
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4535 4591])
+                            ("_Base_type::allocate" variable (:type "int") (reparse-symbol classsubparts) [4602 4623])
+                            ("_Base_type::deallocate" variable (:type "int") (reparse-symbol classsubparts) [4634 4657])
+                            ("_Base_type::construct" variable (:type "int") (reparse-symbol classsubparts) [4668 4690])
+                            ("_Base_type::destroy" variable (:type "int") (reparse-symbol classsubparts) [4701 4721])
+                            ("_Base_type::max_size" variable (:type "int") (reparse-symbol classsubparts) [4732 4753])
+                            ("private" label nil (reparse-symbol classsubparts) [4757 4765])
+                            ("public" label nil (reparse-symbol classsubparts) [4984 4991])
+                            ("construct" function
+                               (:arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("_Alloc" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5189 5201])
+                                    ("__p" variable (:type ("_Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5202 5211])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("_Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5212 5219])
+                                    ("" variable (:type ("__args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5223 5230]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5168 5338])
+                            ("destroy" function
+                               (:arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("_Alloc" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5514 5526])
+                                    ("__p" variable (:type ("_Ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5527 5536]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5495 5594])
+                            ("_S_select_on_copy" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_Alloc" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5632 5650]))                                  
+                                :type ("_Alloc" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5600 5721])
+                            ("_S_on_swap" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("__a" variable
+                                       (:reference 1
+                                        :type ("_Alloc" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5750 5762])
+                                    ("__b" variable
+                                       (:reference 1
+                                        :type ("_Alloc" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5763 5775]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5727 5815])
+                            ("_S_propagate_on_copy_assign" function (:type "bool") (reparse-symbol classsubparts) [5838 5946])
+                            ("_S_propagate_on_move_assign" function (:type "bool") (reparse-symbol classsubparts) [5969 6077])
+                            ("_S_propagate_on_swap" function (:type "bool") (reparse-symbol classsubparts) [6100 6190])
+                            ("_S_always_equal" function (:type "bool") (reparse-symbol classsubparts) [6213 6300])
+                            ("_S_nothrow_move" function (:type "bool") (reparse-symbol classsubparts) [6323 6412])
+                            ("_S_nothrow_swap" function (:type "bool") (reparse-symbol classsubparts) [6435 6606])
+                            ("rebind" type
+                               (:template 
+                                  ( ("_Tp" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("other" variable (:type ("rebind_alloc" type
+                                         (:template-specifier 
+                                            ( ("_Tp" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6701 6725]))                                  )
+                                (reparse-symbol classsubparts) [6612 6728]))                          
+                        :superclasses 
+                          ( ("std::allocator_traits" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3821 8110]))                  
+                :type "namespace")
+                nil [1403 8144]))          
+    :file "alloc_traits.h"
+    :pointmax 8170
+    :fsize 8169
+    :lastmodtime '(21752 43925 0 0)
+    :unmatched-syntax '((symbol 8134 . 8142) (TEMPLATE 6692 . 6700) (punctuation 6691 . 6692) (punctuation 6690 . 6691) (symbol 6680 . 6690) (TYPENAME 6671 . 6679) (TYPEDEF 6663 . 6670) (symbol 6425 . 6434) (STATIC 6418 . 6424) (symbol 6313 . 6322) (STATIC 6306 . 6312) (symbol 6203 . 6212) (STATIC 6196 . 6202) (symbol 6090 . 6099) (STATIC 6083 . 6089) (symbol 5959 . 5968) (STATIC 5952 . 5958) (symbol 5828 . 5837) (STATIC 5821 . 5827) (punctuation 5494 . 5495) (punctuation 5493 . 5494) (punctuation 5492 . 5493) (symbol 5487 . 5492) (punctuation 5486 . 5487) (punctuation 5485 . 5486) (punctuation 5484 . 5485) (symbol 5480 . 5484) (punctuation 5479 . 5480) (symbol 5460 . 5479) (punctuation 5459 . 5460) (symbol 5450 . 5459) (punctuation 5449 . 5450) (punctuation 5448 . 5449) (symbol 5445 . 5448) (TYPENAME 5436 . 5444) (STATIC 5429 . 5435) (punctuation 5421 . 5422) (symbol 5417 . 5421) (TYPENAME 5408 . 5416) (punctuation 5407 . 5408) (TEMPLATE 5399 . 5407) (punctuation 5221 . 5222) (punctuation 5220 . 5221) (punctuation 5219 . 5220) (punctuation 5218 . 5219) (punctuation 5167 . 5168) (punctuation 5166 . 5167) (punctuation 5165 . 5166) (symbol 5160 . 5165) (punctuation 5159 . 5160) (punctuation 5158 . 5159) (punctuation 5157 . 5158) (symbol 5153 . 5157) (punctuation 5152 . 5153) (symbol 5133 . 5152) (punctuation 5132 . 5133) (symbol 5123 . 5132) (punctuation 5122 . 5123) (punctuation 5121 . 5122) (symbol 5118 . 5121) (TYPENAME 5109 . 5117) (STATIC 5102 . 5108) (punctuation 5094 . 5095) (symbol 5089 . 5094) (punctuation 5087 . 5088) (punctuation 5086 . 5087) (punctuation 5085 . 5086) (TYPENAME 5077 . 5085) (punctuation 5075 . 5076) (symbol 5071 . 5075) (TYPENAME 5062 . 5070) (punctuation 5061 . 5062) (TEMPLATE 5053 . 5061) (punctuation 4979 . 4980) (semantic-list 4976 . 4979) (punctuation 4968 . 4969) (symbol 4963 . 4968) (punctuation 4962 . 4963) (punctuation 4961 . 4962) (punctuation 4960 . 4961) (symbol 4956 . 4960) (punctuation 4955 . 4956) (symbol 4945 . 4955) (punctuation 4944 . 4945) (punctuation 4943 . 4944) (symbol 4940 . 4943) (punctuation 4939 . 4940) (punctuation 4937 . 4938) (punctuation 4936 . 4937) (symbol 4893 . 4898) (punctuation 4892 . 4893) (punctuation 4891 . 4892) (punctuation 4890 . 4891) (symbol 4886 . 4890) (punctuation 4884 . 4885) (symbol 4877 . 4884) (punctuation 4876 . 4877) (symbol 4869 . 4876) (punctuation 4868 . 4869) (punctuation 4867 . 4868) (symbol 4864 . 4867) (punctuation 4862 . 4863) (BOOL 4858 . 4862) (punctuation 4857 . 4858) (symbol 4840 . 4857) (punctuation 4839 . 4840) (punctuation 4838 . 4839) (symbol 4835 . 4838) (punctuation 4833 . 4834) (symbol 4807 . 4826) (STRUCT 4800 . 4806) (punctuation 4792 . 4793) (symbol 4788 . 4792) (TYPENAME 4779 . 4787) (punctuation 4778 . 4779) (TEMPLATE 4770 . 4778) (USING 4726 . 4731) (USING 4695 . 4700) (USING 4662 . 4667) (USING 4628 . 4633) (USING 4596 . 4601) (TYPEDEF 4527 . 4534) (TYPEDEF 4464 . 4471) (punctuation 3461 . 3462) (TYPENAME 3453 . 3461) (punctuation 3452 . 3453) (TEMPLATE 3444 . 3452) (punctuation 3182 . 3183) (TYPENAME 3174 . 3182) (punctuation 3173 . 3174) (TEMPLATE 3165 . 3173) (punctuation 2906 . 2907) (TYPENAME 2898 . 2906) (punctuation 2897 . 2898) (TEMPLATE 2889 . 2897) (punctuation 2618 . 2619) (TYPENAME 2610 . 2618) (punctuation 2609 . 2610) (TEMPLATE 2601 . 2609) (punctuation 2330 . 2331) (TYPENAME 2322 . 2330) (punctuation 2321 . 2322) (TEMPLATE 2313 . 2321) (punctuation 1991 . 1992) (TYPENAME 1983 . 1991) (punctuation 1981 . 1982) (TYPENAME 1973 . 1981) (punctuation 1972 . 1973) (TEMPLATE 1964 . 1972) (symbol 1241 . 1254) (symbol 1237 . 1240) (symbol 1230 . 1236) (punctuation 1229 . 1230))
+    :lexical-table 
+        '(("_EXT_ALLOC_TRAITS_H" . ((number "1" 1226 . 1227)))
+          )
+
+    )
    )
   :file "!usr!include!c++!4.8.2!ext!semantic.cache"
   :semantic-tag-version "2.0"

@@ -606,6 +606,2848 @@
     :lastmodtime '(21752 51267 0 0)
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "posix_opt.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_BITS_POSIX_OPT_H" variable (:constant-flag t) nil [904 921])
+            ("_POSIX_JOB_CONTROL" variable (:constant-flag t) nil [966 984])
+            ("_POSIX_SAVED_IDS" variable (:constant-flag t) nil [1064 1080])
+            ("_POSIX_PRIORITY_SCHEDULING" variable (:constant-flag t) nil [1133 1159])
+            ("_POSIX_SYNCHRONIZED_IO" variable (:constant-flag t) nil [1222 1244])
+            ("_POSIX_FSYNC" variable (:constant-flag t) nil [1300 1312])
+            ("_POSIX_MAPPED_FILES" variable (:constant-flag t) nil [1378 1397])
+            ("_POSIX_MEMLOCK" variable (:constant-flag t) nil [1458 1472])
+            ("_POSIX_MEMLOCK_RANGE" variable (:constant-flag t) nil [1539 1559])
+            ("_POSIX_MEMORY_PROTECTION" variable (:constant-flag t) nil [1628 1652])
+            ("_POSIX_CHOWN_RESTRICTED" variable (:constant-flag t) nil [1736 1759])
+            ("_POSIX_VDISABLE" variable (:constant-flag t) nil [1877 1892])
+            ("_POSIX_NO_TRUNC" variable (:constant-flag t) nil [1952 1967])
+            ("_XOPEN_REALTIME" variable (:constant-flag t) nil [2024 2039])
+            ("_XOPEN_REALTIME_THREADS" variable (:constant-flag t) nil [2103 2126])
+            ("_XOPEN_SHM" variable (:constant-flag t) nil [2180 2190])
+            ("_POSIX_THREADS" variable (:constant-flag t) nil [2237 2251])
+            ("_POSIX_REENTRANT_FUNCTIONS" variable (:constant-flag t) nil [2328 2354])
+            ("_POSIX_THREAD_SAFE_FUNCTIONS" variable (:constant-flag t) nil [2370 2398])
+            ("_POSIX_THREAD_PRIORITY_SCHEDULING" variable (:constant-flag t) nil [2467 2500])
+            ("_POSIX_THREAD_ATTR_STACKSIZE" variable (:constant-flag t) nil [2562 2590])
+            ("_POSIX_THREAD_ATTR_STACKADDR" variable (:constant-flag t) nil [2647 2675])
+            ("_POSIX_THREAD_PRIO_INHERIT" variable (:constant-flag t) nil [2733 2759])
+            ("_POSIX_THREAD_PRIO_PROTECT" variable (:constant-flag t) nil [2855 2881])
+            ("_POSIX_SEMAPHORES" variable (:constant-flag t) nil [3190 3207])
+            ("_POSIX_REALTIME_SIGNALS" variable (:constant-flag t) nil [3265 3288])
+            ("_POSIX_ASYNCHRONOUS_IO" variable (:constant-flag t) nil [3342 3364])
+            ("_POSIX_ASYNC_IO" variable (:constant-flag t) nil [3381 3396])
+            ("_LFS_ASYNCHRONOUS_IO" variable (:constant-flag t) nil [3444 3464])
+            ("_POSIX_PRIORITIZED_IO" variable (:constant-flag t) nil [3528 3549])
+            ("_LFS64_ASYNCHRONOUS_IO" variable (:constant-flag t) nil [3629 3651])
+            ("_LFS_LARGEFILE" variable (:constant-flag t) nil [3709 3723])
+            ("_LFS64_LARGEFILE" variable (:constant-flag t) nil [3735 3751])
+            ("_LFS64_STDIO" variable (:constant-flag t) nil [3762 3774])
+            ("_POSIX_SHARED_MEMORY_OBJECTS" variable (:constant-flag t) nil [3839 3867])
+            ("_POSIX_CPUTIME" variable (:constant-flag t) nil [3948 3962])
+            ("_POSIX_THREAD_CPUTIME" variable (:constant-flag t) nil [4039 4060])
+            ("_POSIX_REGEXP" variable (:constant-flag t) nil [4126 4139])
+            ("_POSIX_READER_WRITER_LOCKS" variable (:constant-flag t) nil [4193 4219])
+            ("_POSIX_SHELL" variable (:constant-flag t) nil [4267 4279])
+            ("_POSIX_TIMEOUTS" variable (:constant-flag t) nil [4330 4345])
+            ("_POSIX_SPIN_LOCKS" variable (:constant-flag t) nil [4392 4409])
+            ("_POSIX_SPAWN" variable (:constant-flag t) nil [4476 4488])
+            ("_POSIX_TIMERS" variable (:constant-flag t) nil [4535 4548])
+            ("_POSIX_BARRIERS" variable (:constant-flag t) nil [4610 4625])
+            ("_POSIX_MESSAGE_PASSING" variable (:constant-flag t) nil [4686 4708])
+            ("_POSIX_THREAD_PROCESS_SHARED" variable (:constant-flag t) nil [4785 4813])
+            ("_POSIX_MONOTONIC_CLOCK" variable (:constant-flag t) nil [4878 4900])
+            ("_POSIX_CLOCK_SELECTION" variable (:constant-flag t) nil [4965 4987])
+            ("_POSIX_ADVISORY_INFO" variable (:constant-flag t) nil [5059 5079])
+            ("_POSIX_IPV6" variable (:constant-flag t) nil [5131 5142])
+            ("_POSIX_RAW_SOCKETS" variable (:constant-flag t) nil [5200 5218])
+            ("_POSIX2_CHAR_TERM" variable (:constant-flag t) nil [5274 5291])
+            ("_POSIX_SPORADIC_SERVER" variable (:constant-flag t) nil [5384 5406])
+            ("_POSIX_THREAD_SPORADIC_SERVER" variable (:constant-flag t) nil [5418 5447])
+            ("_POSIX_TRACE" variable (:constant-flag t) nil [5493 5505])
+            ("_POSIX_TRACE_EVENT_FILTER" variable (:constant-flag t) nil [5517 5542])
+            ("_POSIX_TRACE_INHERIT" variable (:constant-flag t) nil [5554 5574])
+            ("_POSIX_TRACE_LOG" variable (:constant-flag t) nil [5586 5602])
+            ("_POSIX_TYPED_MEMORY_OBJECTS" variable (:constant-flag t) nil [5662 5689])
+            ("_XOPEN_STREAMS" variable (:constant-flag t) nil [5736 5750]))          
+    :file "posix_opt.h"
+    :pointmax 5785
+    :fsize 5784
+    :lastmodtime '(21752 51271 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_POSIX_SAVED_IDS" . ((number "1" 1081 . 1082)))
+          ("_POSIX_THREADS" . ((number "200809L" 2252 . 2259)))
+          ("_POSIX_REENTRANT_FUNCTIONS" . ((number "1" 2360 . 2361)))
+          ("_POSIX_ASYNC_IO" . ((number "1" 3398 . 3399)))
+          ("_LFS64_LARGEFILE" . ((number "1" 3752 . 3753)))
+          ("_LFS64_STDIO" . ((number "1" 3776 . 3777)))
+          ("_POSIX_SHELL" . ((number "1" 4280 . 4281)))
+          ("_POSIX_TRACE_EVENT_FILTER" . ((punctuation "-" 5543 . 5544) (number "1" 5544 . 5545)))
+          ("_XOPEN_STREAMS" . ((punctuation "-" 5751 . 5752) (number "1" 5752 . 5753)))
+          ("_XOPEN_REALTIME" . ((number "1" 2040 . 2041)))
+          ("_XOPEN_REALTIME_THREADS" . ((number "1" 2127 . 2128)))
+          ("_POSIX_THREAD_PRIO_PROTECT" . ((number "200809L" 2882 . 2889)))
+          ("_POSIX_SEMAPHORES" . ((number "200809L" 3208 . 3215)))
+          ("_POSIX_TIMEOUTS" . ((number "200809L" 4346 . 4353)))
+          ("_POSIX_SPIN_LOCKS" . ((number "200809L" 4410 . 4417)))
+          ("_POSIX_ADVISORY_INFO" . ((number "200809L" 5080 . 5087)))
+          ("_POSIX_JOB_CONTROL" . ((number "1" 985 . 986)))
+          ("_POSIX_ASYNCHRONOUS_IO" . ((number "200809L" 3365 . 3372)))
+          ("_POSIX_THREAD_CPUTIME" . ((number "0" 4061 . 4062)))
+          ("_POSIX_RAW_SOCKETS" . ((number "200809L" 5219 . 5226)))
+          ("_BITS_POSIX_OPT_H" . ((number "1" 922 . 923)))
+          ("_LFS_ASYNCHRONOUS_IO" . ((number "1" 3465 . 3466)))
+          ("_POSIX_SHARED_MEMORY_OBJECTS" . ((number "200809L" 3868 . 3875)))
+          ("_POSIX_THREAD_PROCESS_SHARED" . ((number "200809L" 4814 . 4821)))
+          ("_POSIX_THREAD_PRIO_INHERIT" . ((number "200809L" 2760 . 2767)))
+          ("_LFS64_ASYNCHRONOUS_IO" . ((number "1" 3652 . 3653)))
+          ("_POSIX_READER_WRITER_LOCKS" . ((number "200809L" 4220 . 4227)))
+          ("_POSIX_IPV6" . ((number "200809L" 5143 . 5150)))
+          ("_POSIX_TYPED_MEMORY_OBJECTS" . ((punctuation "-" 5690 . 5691) (number "1" 5691 . 5692)))
+          ("_POSIX_FSYNC" . ((number "200809L" 1313 . 1320)))
+          ("_POSIX_MEMORY_PROTECTION" . ((number "200809L" 1653 . 1660)))
+          ("_POSIX_CHOWN_RESTRICTED" . ((number "0" 1760 . 1761)))
+          ("_POSIX_VDISABLE" . ((string "'\\0'" 1893 . 1897)))
+          ("_POSIX_REALTIME_SIGNALS" . ((number "200809L" 3289 . 3296)))
+          ("_LFS_LARGEFILE" . ((number "1" 3725 . 3726)))
+          ("_POSIX_TIMERS" . ((number "200809L" 4549 . 4556)))
+          ("_POSIX_MONOTONIC_CLOCK" . ((number "0" 4901 . 4902)))
+          ("_POSIX_CLOCK_SELECTION" . ((number "200809L" 4988 . 4995)))
+          ("_POSIX_PRIORITY_SCHEDULING" . ((number "200809L" 1160 . 1167)))
+          ("_POSIX_SYNCHRONIZED_IO" . ((number "200809L" 1245 . 1252)))
+          ("_POSIX_MAPPED_FILES" . ((number "200809L" 1398 . 1405)))
+          ("_POSIX_THREAD_SAFE_FUNCTIONS" . ((number "200809L" 2399 . 2406)))
+          ("_POSIX_THREAD_ATTR_STACKSIZE" . ((number "200809L" 2591 . 2598)))
+          ("_POSIX_SPAWN" . ((number "200809L" 4489 . 4496)))
+          ("_POSIX_SPORADIC_SERVER" . ((punctuation "-" 5407 . 5408) (number "1" 5408 . 5409)))
+          ("_POSIX_TRACE_LOG" . ((punctuation "-" 5603 . 5604) (number "1" 5604 . 5605)))
+          ("_POSIX_MEMLOCK" . ((number "200809L" 1473 . 1480)))
+          ("_POSIX_THREAD_PRIORITY_SCHEDULING" . ((number "200809L" 2501 . 2508)))
+          ("_POSIX_THREAD_ATTR_STACKADDR" . ((number "200809L" 2676 . 2683)))
+          ("_POSIX_CPUTIME" . ((number "0" 3963 . 3964)))
+          ("_POSIX_TRACE" . ((punctuation "-" 5506 . 5507) (number "1" 5507 . 5508)))
+          ("_POSIX_NO_TRUNC" . ((number "1" 1968 . 1969)))
+          ("_XOPEN_SHM" . ((number "1" 2191 . 2192)))
+          ("_POSIX_MESSAGE_PASSING" . ((number "200809L" 4709 . 4716)))
+          ("_POSIX2_CHAR_TERM" . ((number "200809L" 5292 . 5299)))
+          ("_POSIX_THREAD_SPORADIC_SERVER" . ((punctuation "-" 5448 . 5449) (number "1" 5449 . 5450)))
+          ("_POSIX_MEMLOCK_RANGE" . ((number "200809L" 1560 . 1567)))
+          ("_POSIX_BARRIERS" . ((number "200809L" 4626 . 4633)))
+          ("_POSIX_PRIORITIZED_IO" . ((number "200809L" 3550 . 3557)))
+          ("_POSIX_REGEXP" . ((number "1" 4140 . 4141)))
+          ("_POSIX_TRACE_INHERIT" . ((punctuation "-" 5575 . 5576) (number "1" 5576 . 5577)))
+          )
+
+    )
+   (semanticdb-table "confname.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("" type
+               (:members 
+                  ( ("_PC_LINK_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1086 1099])
+                    ("_PC_MAX_CANON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1140 1154])
+                    ("_PC_MAX_INPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1197 1211])
+                    ("_PC_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1254 1267])
+                    ("_PC_PATH_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1308 1321])
+                    ("_PC_PIPE_BUF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1362 1375])
+                    ("_PC_CHOWN_RESTRICTED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1416 1437])
+                    ("_PC_NO_TRUNC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1493 1506])
+                    ("_PC_VDISABLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1547 1560])
+                    ("_PC_SYNC_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1601 1613])
+                    ("_PC_ASYNC_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1652 1665])
+                    ("_PC_PRIO_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1706 1718])
+                    ("_PC_SOCK_MAXBUF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1757 1773])
+                    ("_PC_FILESIZEBITS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1820 1837])
+                    ("_PC_REC_INCR_XFER_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1885 1908])
+                    ("_PC_REC_MAX_XFER_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1968 1990])
+                    ("_PC_REC_MIN_XFER_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2048 2070])
+                    ("_PC_REC_XFER_ALIGN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2128 2147])
+                    ("_PC_ALLOC_SIZE_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2199 2218])
+                    ("_PC_SYMLINK_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2270 2286])
+                    ("_PC_2_SYMLINKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2333 2370]))                  
+                :type "enum")
+                nil [1073 2392])
+            ("" type
+               (:members 
+                  ( ("_SC_ARG_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2452 2464])
+                    ("_SC_CHILD_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2503 2517])
+                    ("_SC_CLK_TCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2560 2572])
+                    ("_SC_NGROUPS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2611 2627])
+                    ("_SC_OPEN_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2674 2687])
+                    ("_SC_STREAM_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2728 2743])
+                    ("_SC_TZNAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2788 2803])
+                    ("_SC_JOB_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2848 2864])
+                    ("_SC_SAVED_IDS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2911 2925])
+                    ("_SC_REALTIME_SIGNALS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2968 2989])
+                    ("_SC_PRIORITY_SCHEDULING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3045 3069])
+                    ("_SC_TIMERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3131 3142])
+                    ("_SC_ASYNCHRONOUS_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3179 3199])
+                    ("_SC_PRIORITIZED_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3253 3272])
+                    ("_SC_SYNCHRONIZED_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3324 3344])
+                    ("_SC_FSYNC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3398 3408])
+                    ("_SC_MAPPED_FILES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3443 3460])
+                    ("_SC_MEMLOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3508 3520])
+                    ("_SC_MEMLOCK_RANGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3559 3577])
+                    ("_SC_MEMORY_PROTECTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3627 3649])
+                    ("_SC_MESSAGE_PASSING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3707 3727])
+                    ("_SC_SEMAPHORES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3781 3796])
+                    ("_SC_SHARED_MEMORY_OBJECTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3841 3867])
+                    ("_SC_AIO_LISTIO_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3932 3951])
+                    ("_SC_AIO_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4003 4015])
+                    ("_SC_AIO_PRIO_DELTA_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4054 4077])
+                    ("_SC_DELAYTIMER_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4137 4156])
+                    ("_SC_MQ_OPEN_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4208 4224])
+                    ("_SC_MQ_PRIO_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4271 4287])
+                    ("_SC_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4334 4346])
+                    ("_SC_PAGESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4385 4398])
+                    ("_SC_RTSIG_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4476 4490])
+                    ("_SC_SEM_NSEMS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4533 4551])
+                    ("_SC_SEM_VALUE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4601 4619])
+                    ("_SC_SIGQUEUE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4669 4686])
+                    ("_SC_TIMER_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4734 4748])
+                    ("_SC_BC_BASE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4883 4899])
+                    ("_SC_BC_DIM_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4946 4961])
+                    ("_SC_BC_SCALE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5006 5023])
+                    ("_SC_BC_STRING_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5071 5089])
+                    ("_SC_COLL_WEIGHTS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5139 5160])
+                    ("_SC_EQUIV_CLASS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5216 5236])
+                    ("_SC_EXPR_NEST_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5290 5308])
+                    ("_SC_LINE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5358 5371])
+                    ("_SC_RE_DUP_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5412 5427])
+                    ("_SC_CHARCLASS_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5472 5495])
+                    ("_SC_2_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5556 5570])
+                    ("_SC_2_C_BIND" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5613 5626])
+                    ("_SC_2_C_DEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5667 5679])
+                    ("_SC_2_FORT_DEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5718 5733])
+                    ("_SC_2_FORT_RUN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5778 5793])
+                    ("_SC_2_SW_DEV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5838 5851])
+                    ("_SC_2_LOCALEDEF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5892 5908])
+                    ("_SC_PII" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5956 5964])
+                    ("_SC_PII_XTI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5996 6008])
+                    ("_SC_PII_SOCKET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6047 6062])
+                    ("_SC_PII_INTERNET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6107 6124])
+                    ("_SC_PII_OSI" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6172 6184])
+                    ("_SC_POLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6223 6232])
+                    ("_SC_SELECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6265 6276])
+                    ("_SC_UIO_MAXIOV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6313 6328])
+                    ("_SC_IOV_MAX" variable
+                       (:constant-flag t
+                        :default-value (6387 6402)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6373 6402])
+                    ("_SC_PII_INTERNET_STREAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6441 6465])
+                    ("_SC_PII_INTERNET_DGRAM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6527 6550])
+                    ("_SC_PII_OSI_COTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6610 6627])
+                    ("_SC_PII_OSI_CLTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6675 6692])
+                    ("_SC_PII_OSI_M" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6740 6754])
+                    ("_SC_T_IOV_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6797 6811])
+                    ("_SC_THREADS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6917 6929])
+                    ("_SC_THREAD_SAFE_FUNCTIONS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6968 6994])
+                    ("_SC_GETGR_R_SIZE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7059 7080])
+                    ("_SC_GETPW_R_SIZE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7136 7157])
+                    ("_SC_LOGIN_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7213 7232])
+                    ("_SC_TTY_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7284 7301])
+                    ("_SC_THREAD_DESTRUCTOR_ITERATIONS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7349 7382])
+                    ("_SC_THREAD_KEYS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7461 7481])
+                    ("_SC_THREAD_STACK_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7535 7556])
+                    ("_SC_THREAD_THREADS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7612 7635])
+                    ("_SC_THREAD_ATTR_STACKADDR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7695 7721])
+                    ("_SC_THREAD_ATTR_STACKSIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7786 7812])
+                    ("_SC_THREAD_PRIORITY_SCHEDULING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7877 7908])
+                    ("_SC_THREAD_PRIO_INHERIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7983 8007])
+                    ("_SC_THREAD_PRIO_PROTECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8069 8093])
+                    ("_SC_THREAD_PROCESS_SHARED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8155 8181])
+                    ("_SC_NPROCESSORS_CONF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8247 8268])
+                    ("_SC_NPROCESSORS_ONLN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8324 8345])
+                    ("_SC_PHYS_PAGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8401 8416])
+                    ("_SC_AVPHYS_PAGES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8461 8478])
+                    ("_SC_ATEXIT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8526 8541])
+                    ("_SC_PASS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8586 8599])
+                    ("_SC_XOPEN_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8641 8659])
+                    ("_SC_XOPEN_XCU_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8709 8731])
+                    ("_SC_XOPEN_UNIX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8789 8804])
+                    ("_SC_XOPEN_CRYPT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8849 8865])
+                    ("_SC_XOPEN_ENH_I18N" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8912 8931])
+                    ("_SC_XOPEN_SHM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8983 8997])
+                    ("_SC_2_CHAR_TERM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9041 9057])
+                    ("_SC_2_C_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9104 9120])
+                    ("_SC_2_UPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9167 9177])
+                    ("_SC_XOPEN_XPG2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9213 9228])
+                    ("_SC_XOPEN_XPG3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9273 9288])
+                    ("_SC_XOPEN_XPG4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9333 9348])
+                    ("_SC_CHAR_BIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9394 9407])
+                    ("_SC_CHAR_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9448 9461])
+                    ("_SC_CHAR_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9502 9515])
+                    ("_SC_INT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9556 9568])
+                    ("_SC_INT_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9607 9619])
+                    ("_SC_LONG_BIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9658 9671])
+                    ("_SC_WORD_BIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9712 9725])
+                    ("_SC_MB_LEN_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9766 9781])
+                    ("_SC_NZERO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9826 9836])
+                    ("_SC_SSIZE_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9871 9885])
+                    ("_SC_SCHAR_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9928 9942])
+                    ("_SC_SCHAR_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [9985 9999])
+                    ("_SC_SHRT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10042 10055])
+                    ("_SC_SHRT_MIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10096 10109])
+                    ("_SC_UCHAR_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10150 10164])
+                    ("_SC_UINT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10207 10220])
+                    ("_SC_ULONG_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10261 10275])
+                    ("_SC_USHRT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10318 10332])
+                    ("_SC_NL_ARGMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10376 10390])
+                    ("_SC_NL_LANGMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10433 10448])
+                    ("_SC_NL_MSGMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10493 10507])
+                    ("_SC_NL_NMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10550 10562])
+                    ("_SC_NL_SETMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10601 10615])
+                    ("_SC_NL_TEXTMAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10658 10673])
+                    ("_SC_XBS5_ILP32_OFF32" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10719 10740])
+                    ("_SC_XBS5_ILP32_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10796 10818])
+                    ("_SC_XBS5_LP64_OFF64" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10876 10896])
+                    ("_SC_XBS5_LPBIG_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10950 10972])
+                    ("_SC_XOPEN_LEGACY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11031 11048])
+                    ("_SC_XOPEN_REALTIME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11096 11115])
+                    ("_SC_XOPEN_REALTIME_THREADS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11167 11194])
+                    ("_SC_ADVISORY_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11262 11280])
+                    ("_SC_BARRIERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11330 11343])
+                    ("_SC_BASE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11384 11393])
+                    ("_SC_C_LANG_SUPPORT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11426 11445])
+                    ("_SC_C_LANG_SUPPORT_R" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11497 11518])
+                    ("_SC_CLOCK_SELECTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11574 11594])
+                    ("_SC_CPUTIME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11648 11660])
+                    ("_SC_THREAD_CPUTIME" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11699 11718])
+                    ("_SC_DEVICE_IO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11770 11784])
+                    ("_SC_DEVICE_SPECIFIC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11827 11847])
+                    ("_SC_DEVICE_SPECIFIC_R" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11901 11923])
+                    ("_SC_FD_MGMT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [11981 11993])
+                    ("_SC_FIFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12032 12041])
+                    ("_SC_PIPE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12074 12083])
+                    ("_SC_FILE_ATTRIBUTES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12116 12136])
+                    ("_SC_FILE_LOCKING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12190 12207])
+                    ("_SC_FILE_SYSTEM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12255 12271])
+                    ("_SC_MONOTONIC_CLOCK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12318 12338])
+                    ("_SC_MULTI_PROCESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12392 12410])
+                    ("_SC_SINGLE_PROCESS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12460 12479])
+                    ("_SC_NETWORKING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12531 12546])
+                    ("_SC_READER_WRITER_LOCKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12591 12615])
+                    ("_SC_SPIN_LOCKS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12677 12692])
+                    ("_SC_REGEXP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12737 12748])
+                    ("_SC_REGEX_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12785 12803])
+                    ("_SC_SHELL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12853 12863])
+                    ("_SC_SIGNALS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12898 12910])
+                    ("_SC_SPAWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12949 12959])
+                    ("_SC_SPORADIC_SERVER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12994 13014])
+                    ("_SC_THREAD_SPORADIC_SERVER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13068 13095])
+                    ("_SC_SYSTEM_DATABASE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13162 13182])
+                    ("_SC_SYSTEM_DATABASE_R" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13236 13258])
+                    ("_SC_TIMEOUTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13316 13329])
+                    ("_SC_TYPED_MEMORY_OBJECTS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13370 13395])
+                    ("_SC_USER_GROUPS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13458 13474])
+                    ("_SC_USER_GROUPS_R" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13521 13539])
+                    ("_SC_2_PBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13589 13599])
+                    ("_SC_2_PBS_ACCOUNTING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13634 13655])
+                    ("_SC_2_PBS_LOCATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13711 13728])
+                    ("_SC_2_PBS_MESSAGE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13776 13794])
+                    ("_SC_2_PBS_TRACK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13844 13860])
+                    ("_SC_SYMLOOP_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13907 13923])
+                    ("_SC_STREAMS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [13970 13982])
+                    ("_SC_2_PBS_CHECKPOINT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14021 14042])
+                    ("_SC_V6_ILP32_OFF32" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14099 14118])
+                    ("_SC_V6_ILP32_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14170 14190])
+                    ("_SC_V6_LP64_OFF64" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14244 14262])
+                    ("_SC_V6_LPBIG_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14312 14332])
+                    ("_SC_HOST_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14387 14405])
+                    ("_SC_TRACE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14455 14465])
+                    ("_SC_TRACE_EVENT_FILTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14500 14523])
+                    ("_SC_TRACE_INHERIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14583 14601])
+                    ("_SC_TRACE_LOG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14651 14665])
+                    ("_SC_LEVEL1_ICACHE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14709 14732])
+                    ("_SC_LEVEL1_ICACHE_ASSOC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14792 14816])
+                    ("_SC_LEVEL1_ICACHE_LINESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14878 14905])
+                    ("_SC_LEVEL1_DCACHE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14972 14995])
+                    ("_SC_LEVEL1_DCACHE_ASSOC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15055 15079])
+                    ("_SC_LEVEL1_DCACHE_LINESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15141 15168])
+                    ("_SC_LEVEL2_CACHE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15235 15257])
+                    ("_SC_LEVEL2_CACHE_ASSOC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15315 15338])
+                    ("_SC_LEVEL2_CACHE_LINESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15398 15424])
+                    ("_SC_LEVEL3_CACHE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15489 15511])
+                    ("_SC_LEVEL3_CACHE_ASSOC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15569 15592])
+                    ("_SC_LEVEL3_CACHE_LINESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15652 15678])
+                    ("_SC_LEVEL4_CACHE_SIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15743 15765])
+                    ("_SC_LEVEL4_CACHE_ASSOC" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15823 15846])
+                    ("_SC_LEVEL4_CACHE_LINESIZE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15906 15932])
+                    ("_SC_IPV6" variable
+                       (:constant-flag t
+                        :default-value (16085 16112)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16074 16112])
+                    ("_SC_RAW_SOCKETS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16146 16162])
+                    ("_SC_V7_ILP32_OFF32" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16210 16229])
+                    ("_SC_V7_ILP32_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16281 16301])
+                    ("_SC_V7_LP64_OFF64" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16355 16373])
+                    ("_SC_V7_LPBIG_OFFBIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16423 16443])
+                    ("_SC_SS_REPL_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16498 16514])
+                    ("_SC_TRACE_EVENT_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16562 16587])
+                    ("_SC_TRACE_NAME_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16650 16669])
+                    ("_SC_TRACE_SYS_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16721 16739])
+                    ("_SC_TRACE_USER_EVENT_MAX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16789 16814])
+                    ("_SC_XOPEN_STREAMS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16878 16896])
+                    ("_SC_THREAD_ROBUST_PRIO_INHERIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [16947 16978])
+                    ("_SC_THREAD_ROBUST_PRIO_PROTECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17053 17122]))                  
+                :type "enum")
+                nil [2439 17158])
+            ("" type
+               (:members 
+                  ( ("_CS_PATH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17223 17232])
+                    ("_CS_V6_WIDTH_RESTRICTED_ENVS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17299 17328])
+                    ("_CS_GNU_LIBC_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17472 17493])
+                    ("_CS_GNU_LIBPTHREAD_VERSION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17548 17575])
+                    ("_CS_V5_WIDTH_RESTRICTED_ENVS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17643 17672])
+                    ("_CS_V7_WIDTH_RESTRICTED_ENVS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17816 17845])
+                    ("_CS_LFS_CFLAGS" variable
+                       (:constant-flag t
+                        :default-value (18006 18010)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [17989 18010])
+                    ("_CS_LFS_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18054 18070])
+                    ("_CS_LFS_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18115 18128])
+                    ("_CS_LFS_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18168 18186])
+                    ("_CS_LFS64_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18235 18252])
+                    ("_CS_LFS64_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18299 18317])
+                    ("_CS_LFS64_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18366 18381])
+                    ("_CS_LFS64_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18424 18444])
+                    ("_CS_XBS5_ILP32_OFF32_CFLAGS" variable
+                       (:constant-flag t
+                        :default-value (18528 18532)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18498 18532])
+                    ("_CS_XBS5_ILP32_OFF32_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18602 18631])
+                    ("_CS_XBS5_ILP32_OFF32_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18702 18728])
+                    ("_CS_XBS5_ILP32_OFF32_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18793 18824])
+                    ("_CS_XBS5_ILP32_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18899 18928])
+                    ("_CS_XBS5_ILP32_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [18999 19029])
+                    ("_CS_XBS5_ILP32_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19102 19129])
+                    ("_CS_XBS5_ILP32_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19196 19228])
+                    ("_CS_XBS5_LP64_OFF64_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19305 19332])
+                    ("_CS_XBS5_LP64_OFF64_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19399 19427])
+                    ("_CS_XBS5_LP64_OFF64_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19496 19521])
+                    ("_CS_XBS5_LP64_OFF64_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19584 19614])
+                    ("_CS_XBS5_LPBIG_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19687 19716])
+                    ("_CS_XBS5_LPBIG_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19787 19817])
+                    ("_CS_XBS5_LPBIG_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19890 19917])
+                    ("_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19984 20016])
+                    ("_CS_POSIX_V6_ILP32_OFF32_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20094 20126])
+                    ("_CS_POSIX_V6_ILP32_OFF32_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20203 20236])
+                    ("_CS_POSIX_V6_ILP32_OFF32_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20315 20345])
+                    ("_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20418 20453])
+                    ("_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20536 20569])
+                    ("_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20648 20682])
+                    ("_CS_POSIX_V6_ILP32_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20763 20794])
+                    ("_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20869 20905])
+                    ("_CS_POSIX_V6_LP64_OFF64_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20990 21021])
+                    ("_CS_POSIX_V6_LP64_OFF64_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21096 21128])
+                    ("_CS_POSIX_V6_LP64_OFF64_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21205 21234])
+                    ("_CS_POSIX_V6_LP64_OFF64_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21305 21339])
+                    ("_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21420 21453])
+                    ("_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21532 21566])
+                    ("_CS_POSIX_V6_LPBIG_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21647 21678])
+                    ("_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21753 21789])
+                    ("_CS_POSIX_V7_ILP32_OFF32_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21875 21907])
+                    ("_CS_POSIX_V7_ILP32_OFF32_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21984 22017])
+                    ("_CS_POSIX_V7_ILP32_OFF32_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22096 22126])
+                    ("_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22199 22234])
+                    ("_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22317 22350])
+                    ("_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22429 22463])
+                    ("_CS_POSIX_V7_ILP32_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22544 22575])
+                    ("_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22650 22686])
+                    ("_CS_POSIX_V7_LP64_OFF64_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22771 22802])
+                    ("_CS_POSIX_V7_LP64_OFF64_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22877 22909])
+                    ("_CS_POSIX_V7_LP64_OFF64_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [22986 23015])
+                    ("_CS_POSIX_V7_LP64_OFF64_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23086 23120])
+                    ("_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23201 23234])
+                    ("_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23313 23347])
+                    ("_CS_POSIX_V7_LPBIG_OFFBIG_LIBS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23428 23459])
+                    ("_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23534 23570])
+                    ("_CS_V6_ENV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23656 23667])
+                    ("_CS_V7_ENV" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [23704 23733]))                  
+                :type "enum")
+                nil [17210 23751]))          
+    :file "confname.h"
+    :pointmax 23752
+    :fsize 23751
+    :lastmodtime '(21752 51271 0 0)
+    :unmatched-syntax '((spp-macro-def 23723 . 23733) (spp-macro-def 23676 . 23686) (spp-macro-def 23579 . 23614) (spp-macro-def 23468 . 23498) (spp-macro-def 23356 . 23389) (spp-macro-def 23243 . 23275) (spp-macro-def 23129 . 23162) (spp-macro-def 23024 . 23052) (spp-macro-def 22918 . 22949) (spp-macro-def 22811 . 22841) (spp-macro-def 22695 . 22730) (spp-macro-def 22584 . 22614) (spp-macro-def 22472 . 22505) (spp-macro-def 22359 . 22391) (spp-macro-def 22243 . 22277) (spp-macro-def 22135 . 22164) (spp-macro-def 22026 . 22058) (spp-macro-def 21916 . 21947) (spp-macro-def 21798 . 21833) (spp-macro-def 21687 . 21717) (spp-macro-def 21575 . 21608) (spp-macro-def 21462 . 21494) (spp-macro-def 21348 . 21381) (spp-macro-def 21243 . 21271) (spp-macro-def 21137 . 21168) (spp-macro-def 21030 . 21060) (spp-macro-def 20914 . 20949) (spp-macro-def 20803 . 20833) (spp-macro-def 20691 . 20724) (spp-macro-def 20578 . 20610) (spp-macro-def 20462 . 20496) (spp-macro-def 20354 . 20383) (spp-macro-def 20245 . 20277) (spp-macro-def 20135 . 20166) (spp-macro-def 20025 . 20056) (spp-macro-def 19926 . 19952) (spp-macro-def 19826 . 19855) (spp-macro-def 19725 . 19753) (spp-macro-def 19623 . 19652) (spp-macro-def 19530 . 19554) (spp-macro-def 19436 . 19463) (spp-macro-def 19341 . 19367) (spp-macro-def 19237 . 19268) (spp-macro-def 19138 . 19164) (spp-macro-def 19038 . 19067) (spp-macro-def 18937 . 18965) (spp-macro-def 18833 . 18863) (spp-macro-def 18737 . 18762) (spp-macro-def 18640 . 18668) (spp-macro-def 18542 . 18569) (spp-macro-def 18453 . 18472) (spp-macro-def 18390 . 18404) (spp-macro-def 18326 . 18343) (spp-macro-def 18261 . 18277) (spp-macro-def 18195 . 18212) (spp-macro-def 18137 . 18149) (spp-macro-def 18079 . 18094) (spp-macro-def 18020 . 18034) (spp-macro-def 17920 . 17954) (spp-macro-def 17854 . 17882) (spp-macro-def 17747 . 17781) (spp-macro-def 17681 . 17709) (spp-macro-def 17584 . 17610) (spp-macro-def 17502 . 17522) (spp-macro-def 17403 . 17437) (spp-macro-def 17337 . 17365) (spp-macro-def 17275 . 17283) (spp-macro-def 17092 . 17122) (spp-macro-def 16987 . 17017) (spp-macro-def 16905 . 16922) (spp-macro-def 16823 . 16847) (spp-macro-def 16748 . 16765) (spp-macro-def 16678 . 16696) (spp-macro-def 16596 . 16620) (spp-macro-def 16523 . 16538) (spp-macro-def 16452 . 16471) (spp-macro-def 16382 . 16399) (spp-macro-def 16310 . 16329) (spp-macro-def 16238 . 16256) (spp-macro-def 16171 . 16186) (spp-macro-def 16122 . 16130) (spp-macro-def 15941 . 15966) (spp-macro-def 15855 . 15877) (spp-macro-def 15774 . 15795) (spp-macro-def 15687 . 15712) (spp-macro-def 15601 . 15623) (spp-macro-def 15520 . 15541) (spp-macro-def 15433 . 15458) (spp-macro-def 15347 . 15369) (spp-macro-def 15266 . 15287) (spp-macro-def 15177 . 15203) (spp-macro-def 15088 . 15111) (spp-macro-def 15004 . 15026) (spp-macro-def 14914 . 14940) (spp-macro-def 14825 . 14848) (spp-macro-def 14741 . 14763) (spp-macro-def 14674 . 14687) (spp-macro-def 14610 . 14627) (spp-macro-def 14532 . 14554) (spp-macro-def 14474 . 14483) (spp-macro-def 14414 . 14431) (spp-macro-def 14341 . 14360) (spp-macro-def 14271 . 14288) (spp-macro-def 14199 . 14218) (spp-macro-def 14127 . 14145) (spp-macro-def 14051 . 14071) (spp-macro-def 13991 . 14002) (spp-macro-def 13932 . 13947) (spp-macro-def 13869 . 13884) (spp-macro-def 13803 . 13820) (spp-macro-def 13737 . 13753) (spp-macro-def 13664 . 13684) (spp-macro-def 13608 . 13617) (spp-macro-def 13548 . 13565) (spp-macro-def 13483 . 13498) (spp-macro-def 13404 . 13428) (spp-macro-def 13338 . 13350) (spp-macro-def 13267 . 13288) (spp-macro-def 13191 . 13210) (spp-macro-def 13104 . 13130) (spp-macro-def 13023 . 13042) (spp-macro-def 12968 . 12977) (spp-macro-def 12919 . 12930) (spp-macro-def 12872 . 12881) (spp-macro-def 12812 . 12829) (spp-macro-def 12757 . 12767) (spp-macro-def 12701 . 12715) (spp-macro-def 12624 . 12647) (spp-macro-def 12555 . 12569) (spp-macro-def 12488 . 12506) (spp-macro-def 12419 . 12436) (spp-macro-def 12347 . 12366) (spp-macro-def 12280 . 12295) (spp-macro-def 12216 . 12232) (spp-macro-def 12145 . 12164) (spp-macro-def 12092 . 12100) (spp-macro-def 12050 . 12058) (spp-macro-def 12002 . 12013) (spp-macro-def 11932 . 11953) (spp-macro-def 11856 . 11875) (spp-macro-def 11793 . 11806) (spp-macro-def 11727 . 11745) (spp-macro-def 11669 . 11680) (spp-macro-def 11603 . 11622) (spp-macro-def 11527 . 11547) (spp-macro-def 11454 . 11472) (spp-macro-def 11402 . 11410) (spp-macro-def 11352 . 11364) (spp-macro-def 11289 . 11306) (spp-macro-def 11203 . 11229) (spp-macro-def 11124 . 11142) (spp-macro-def 11057 . 11073) (spp-macro-def 10981 . 11002) (spp-macro-def 10905 . 10924) (spp-macro-def 10827 . 10848) (spp-macro-def 10749 . 10769) (spp-macro-def 10682 . 10696) (spp-macro-def 10624 . 10637) (spp-macro-def 10571 . 10582) (spp-macro-def 10516 . 10529) (spp-macro-def 10457 . 10471) (spp-macro-def 10399 . 10412) (spp-macro-def 10341 . 10354) (spp-macro-def 10284 . 10297) (spp-macro-def 10229 . 10241) (spp-macro-def 10173 . 10186) (spp-macro-def 10118 . 10130) (spp-macro-def 10064 . 10076) (spp-macro-def 10008 . 10021) (spp-macro-def 9951 . 9964) (spp-macro-def 9894 . 9907) (spp-macro-def 9845 . 9854) (spp-macro-def 9790 . 9804) (spp-macro-def 9734 . 9746) (spp-macro-def 9680 . 9692) (spp-macro-def 9628 . 9639) (spp-macro-def 9577 . 9588) (spp-macro-def 9524 . 9536) (spp-macro-def 9470 . 9482) (spp-macro-def 9416 . 9428) (spp-macro-def 9357 . 9371) (spp-macro-def 9297 . 9311) (spp-macro-def 9237 . 9251) (spp-macro-def 9186 . 9195) (spp-macro-def 9129 . 9144) (spp-macro-def 9066 . 9081) (spp-macro-def 9006 . 9019) (spp-macro-def 8940 . 8958) (spp-macro-def 8874 . 8889) (spp-macro-def 8813 . 8827) (spp-macro-def 8740 . 8761) (spp-macro-def 8668 . 8685) (spp-macro-def 8608 . 8620) (spp-macro-def 8550 . 8564) (spp-macro-def 8487 . 8503) (spp-macro-def 8425 . 8439) (spp-macro-def 8354 . 8374) (spp-macro-def 8277 . 8297) (spp-macro-def 8190 . 8215) (spp-macro-def 8102 . 8125) (spp-macro-def 8016 . 8039) (spp-macro-def 7917 . 7947) (spp-macro-def 7821 . 7846) (spp-macro-def 7730 . 7755) (spp-macro-def 7644 . 7666) (spp-macro-def 7565 . 7585) (spp-macro-def 7490 . 7509) (spp-macro-def 7391 . 7423) (spp-macro-def 7310 . 7326) (spp-macro-def 7241 . 7259) (spp-macro-def 7166 . 7186) (spp-macro-def 7089 . 7109) (spp-macro-def 7003 . 7028) (spp-macro-def 6938 . 6949) (spp-macro-def 6820 . 6833) (spp-macro-def 6763 . 6776) (spp-macro-def 6701 . 6717) (spp-macro-def 6636 . 6652) (spp-macro-def 6559 . 6581) (spp-macro-def 6474 . 6497) (spp-macro-def 6411 . 6422) (spp-macro-def 6337 . 6351) (spp-macro-def 6285 . 6295) (spp-macro-def 6241 . 6249) (spp-macro-def 6193 . 6204) (spp-macro-def 6133 . 6149) (spp-macro-def 6071 . 6085) (spp-macro-def 6017 . 6028) (spp-macro-def 5973 . 5980) (spp-macro-def 5917 . 5932) (spp-macro-def 5860 . 5872) (spp-macro-def 5802 . 5816) (spp-macro-def 5742 . 5756) (spp-macro-def 5688 . 5699) (spp-macro-def 5635 . 5647) (spp-macro-def 5579 . 5592) (spp-macro-def 5504 . 5526) (spp-macro-def 5436 . 5450) (spp-macro-def 5380 . 5392) (spp-macro-def 5317 . 5334) (spp-macro-def 5245 . 5264) (spp-macro-def 5169 . 5189) (spp-macro-def 5098 . 5115) (spp-macro-def 5032 . 5048) (spp-macro-def 4970 . 4984) (spp-macro-def 4908 . 4923) (spp-macro-def 4757 . 4770) (spp-macro-def 4695 . 4711) (spp-macro-def 4628 . 4645) (spp-macro-def 4560 . 4577) (spp-macro-def 4499 . 4512) (spp-macro-def 4443 . 4456) (spp-macro-def 4407 . 4419) (spp-macro-def 4355 . 4366) (spp-macro-def 4296 . 4311) (spp-macro-def 4233 . 4248) (spp-macro-def 4165 . 4183) (spp-macro-def 4086 . 4108) (spp-macro-def 4024 . 4035) (spp-macro-def 3960 . 3978) (spp-macro-def 3876 . 3901) (spp-macro-def 3805 . 3819) (spp-macro-def 3736 . 3755) (spp-macro-def 3658 . 3679) (spp-macro-def 3586 . 3603) (spp-macro-def 3529 . 3540) (spp-macro-def 3469 . 3485) (spp-macro-def 3417 . 3426) (spp-macro-def 3353 . 3372) (spp-macro-def 3281 . 3299) (spp-macro-def 3208 . 3227) (spp-macro-def 3151 . 3161) (spp-macro-def 3078 . 3101) (spp-macro-def 2998 . 3018) (spp-macro-def 2934 . 2947) (spp-macro-def 2873 . 2888) (spp-macro-def 2812 . 2826) (spp-macro-def 2752 . 2766) (spp-macro-def 2696 . 2708) (spp-macro-def 2636 . 2651) (spp-macro-def 2581 . 2592) (spp-macro-def 2526 . 2539) (spp-macro-def 2473 . 2484) (spp-macro-def 2356 . 2370) (spp-macro-def 2295 . 2310) (spp-macro-def 2227 . 2245) (spp-macro-def 2156 . 2174) (spp-macro-def 2079 . 2100) (spp-macro-def 1999 . 2020) (spp-macro-def 1917 . 1939) (spp-macro-def 1846 . 1862) (spp-macro-def 1782 . 1797) (spp-macro-def 1727 . 1738) (spp-macro-def 1674 . 1686) (spp-macro-def 1622 . 1633) (spp-macro-def 1569 . 1581) (spp-macro-def 1515 . 1527) (spp-macro-def 1446 . 1466) (spp-macro-def 1384 . 1396) (spp-macro-def 1330 . 1342) (spp-macro-def 1276 . 1288) (spp-macro-def 1220 . 1233) (spp-macro-def 1163 . 1176) (spp-macro-def 1108 . 1120) (string 930 . 997) (symbol 924 . 929) (punctuation 922 . 923))
+    :lexical-table 
+        '(("_PC_LINK_MAX" . ((symbol "_PC_LINK_MAX" 1123 . 1135)))
+          ("_PC_MAX_CANON" . ((symbol "_PC_MAX_CANON" 1179 . 1192)))
+          ("_PC_ASYNC_IO" . ((symbol "_PC_ASYNC_IO" 1689 . 1701)))
+          ("_SC_TZNAME_MAX" . ((symbol "_SC_TZNAME_MAX" 2829 . 2843)))
+          ("_SC_SAVED_IDS" . ((symbol "_SC_SAVED_IDS" 2950 . 2963)))
+          ("_SC_AIO_LISTIO_MAX" . ((symbol "_SC_AIO_LISTIO_MAX" 3980 . 3998)))
+          ("_SC_SEM_VALUE_MAX" . ((symbol "_SC_SEM_VALUE_MAX" 4647 . 4664)))
+          ("_SC_BC_BASE_MAX" . ((symbol "_SC_BC_BASE_MAX" 4926 . 4941)))
+          ("_SC_THREAD_DESTRUCTOR_ITERATIONS" . ((symbol "_SC_THREAD_DESTRUCTOR_ITERATIONS" 7424 . 7456)))
+          ("_SC_THREAD_PROCESS_SHARED" . ((symbol "_SC_THREAD_PROCESS_SHARED" 8216 . 8241)))
+          ("_SC_INT_MAX" . ((symbol "_SC_INT_MAX" 9591 . 9602)))
+          ("_SC_C_LANG_SUPPORT" . ((symbol "_SC_C_LANG_SUPPORT" 11474 . 11492)))
+          ("_SC_SYSTEM_DATABASE" . ((symbol "_SC_SYSTEM_DATABASE" 13212 . 13231)))
+          ("_SC_THREAD_ROBUST_PRIO_PROTECT" . ((symbol "_SC_THREAD_ROBUST_PRIO_PROTECT" 17123 . 17153)))
+          ("_CS_POSIX_V5_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V5_WIDTH_RESTRICTED_ENVS" 17782 . 17810)))
+          ("_CS_LFS64_LIBS" . ((symbol "_CS_LFS64_LIBS" 18405 . 18419)))
+          ("_CS_POSIX_V6_LP64_OFF64_LINTFLAGS" . ((symbol "_CS_POSIX_V6_LP64_OFF64_LINTFLAGS" 21382 . 21415)))
+          ("_CS_POSIX_V7_ILP32_OFF32_LDFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFF32_LDFLAGS" 22059 . 22091)))
+          ("_CS_POSIX_V7_ILP32_OFFBIG_LIBS" . ((symbol "_CS_POSIX_V7_ILP32_OFFBIG_LIBS" 22615 . 22645)))
+          ("_SC_MAPPED_FILES" . ((symbol "_SC_MAPPED_FILES" 3487 . 3503)))
+          ("_SC_DELAYTIMER_MAX" . ((symbol "_SC_DELAYTIMER_MAX" 4185 . 4203)))
+          ("_SC_VERSION" . ((symbol "_SC_VERSION" 4369 . 4380)))
+          ("_SC_PAGE_SIZE" . ((symbol "_SC_PAGESIZE" 4459 . 4471)))
+          ("_SC_EQUIV_CLASS_MAX" . ((symbol "_SC_EQUIV_CLASS_MAX" 5266 . 5285)))
+          ("_SC_THREAD_KEYS_MAX" . ((symbol "_SC_THREAD_KEYS_MAX" 7511 . 7530)))
+          ("_SC_AVPHYS_PAGES" . ((symbol "_SC_AVPHYS_PAGES" 8505 . 8521)))
+          ("_SC_CHAR_BIT" . ((symbol "_SC_CHAR_BIT" 9431 . 9443)))
+          ("_SC_INT_MIN" . ((symbol "_SC_INT_MIN" 9642 . 9653)))
+          ("_SC_SHRT_MAX" . ((symbol "_SC_SHRT_MAX" 10079 . 10091)))
+          ("_SC_PIPE" . ((symbol "_SC_PIPE" 12103 . 12111)))
+          ("_SC_MULTI_PROCESS" . ((symbol "_SC_MULTI_PROCESS" 12438 . 12455)))
+          ("_SC_USER_GROUPS_R" . ((symbol "_SC_USER_GROUPS_R" 13567 . 13584)))
+          ("_SC_LEVEL1_ICACHE_SIZE" . ((symbol "_SC_LEVEL1_ICACHE_SIZE" 14765 . 14787)))
+          ("_CS_POSIX_V6_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V6_WIDTH_RESTRICTED_ENVS" 17438 . 17466)))
+          ("_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS" 20611 . 20643)))
+          ("_CS_POSIX_V6_LP64_OFF64_LIBS" . ((symbol "_CS_POSIX_V6_LP64_OFF64_LIBS" 21272 . 21300)))
+          ("_CS_V7_ENV" . ((symbol "_CS_V7_ENV" 23736 . 23746)))
+          ("_PC_SOCK_MAXBUF" . ((symbol "_PC_SOCK_MAXBUF" 1800 . 1815)))
+          ("_PC_2_SYMLINKS" . ((symbol "_PC_2_SYMLINKS" 2373 . 2387)))
+          ("_SC_ARG_MAX" . ((symbol "_SC_ARG_MAX" 2487 . 2498)))
+          ("_SC_PRIORITIZED_IO" . ((symbol "_SC_PRIORITIZED_IO" 3301 . 3319)))
+          ("_SC_FSYNC" . ((symbol "_SC_FSYNC" 3429 . 3438)))
+          ("_SC_MQ_OPEN_MAX" . ((symbol "_SC_MQ_OPEN_MAX" 4251 . 4266)))
+          ("_SC_2_SW_DEV" . ((symbol "_SC_2_SW_DEV" 5875 . 5887)))
+          ("_SC_IOV_MAX" . ((symbol "_SC_IOV_MAX" 6425 . 6436)))
+          ("_SC_PII_OSI_M" . ((symbol "_SC_PII_OSI_M" 6779 . 6792)))
+          ("_SC_T_IOV_MAX" . ((symbol "_SC_T_IOV_MAX" 6836 . 6849)))
+          ("_SC_GETGR_R_SIZE_MAX" . ((symbol "_SC_GETGR_R_SIZE_MAX" 7111 . 7131)))
+          ("_SC_THREAD_PRIO_PROTECT" . ((symbol "_SC_THREAD_PRIO_PROTECT" 8127 . 8150)))
+          ("_SC_XOPEN_XPG2" . ((symbol "_SC_XOPEN_XPG2" 9254 . 9268)))
+          ("_SC_CHAR_MAX" . ((symbol "_SC_CHAR_MAX" 9485 . 9497)))
+          ("_SC_LONG_BIT" . ((symbol "_SC_LONG_BIT" 9695 . 9707)))
+          ("_SC_MB_LEN_MAX" . ((symbol "_SC_MB_LEN_MAX" 9807 . 9821)))
+          ("_SC_SHRT_MIN" . ((symbol "_SC_SHRT_MIN" 10133 . 10145)))
+          ("_SC_ADVISORY_INFO" . ((symbol "_SC_ADVISORY_INFO" 11308 . 11325)))
+          ("_SC_BASE" . ((symbol "_SC_BASE" 11413 . 11421)))
+          ("_SC_CLOCK_SELECTION" . ((symbol "_SC_CLOCK_SELECTION" 11624 . 11643)))
+          ("_SC_DEVICE_IO" . ((symbol "_SC_DEVICE_IO" 11809 . 11822)))
+          ("_SC_MONOTONIC_CLOCK" . ((symbol "_SC_MONOTONIC_CLOCK" 12368 . 12387)))
+          ("_SC_SYSTEM_DATABASE_R" . ((symbol "_SC_SYSTEM_DATABASE_R" 13290 . 13311)))
+          ("_SC_2_PBS_LOCATE" . ((symbol "_SC_2_PBS_LOCATE" 13755 . 13771)))
+          ("_SC_2_PBS_CHECKPOINT" . ((symbol "_SC_2_PBS_CHECKPOINT" 14073 . 14093)))
+          ("_SC_V6_LP64_OFF64" . ((symbol "_SC_V6_LP64_OFF64" 14290 . 14307)))
+          ("_SC_TRACE_USER_EVENT_MAX" . ((symbol "_SC_TRACE_USER_EVENT_MAX" 16848 . 16872)))
+          ("_CS_POSIX_V7_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V7_WIDTH_RESTRICTED_ENVS" 17955 . 17983)))
+          ("_CS_XBS5_ILP32_OFFBIG_CFLAGS" . ((symbol "_CS_XBS5_ILP32_OFFBIG_CFLAGS" 18966 . 18994)))
+          ("_CS_XBS5_LPBIG_OFFBIG_CFLAGS" . ((symbol "_CS_XBS5_LPBIG_OFFBIG_CFLAGS" 19754 . 19782)))
+          ("_CS_POSIX_V7_LP64_OFF64_LIBS" . ((symbol "_CS_POSIX_V7_LP64_OFF64_LIBS" 23053 . 23081)))
+          ("_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS" . ((symbol "_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS" 23276 . 23308)))
+          ("_PC_SYNC_IO" . ((symbol "_PC_SYNC_IO" 1636 . 1647)))
+          ("_PC_REC_INCR_XFER_SIZE" . ((symbol "_PC_REC_INCR_XFER_SIZE" 1941 . 1963)))
+          ("_SC_SYNCHRONIZED_IO" . ((symbol "_SC_SYNCHRONIZED_IO" 3374 . 3393)))
+          ("_SC_CHARCLASS_NAME_MAX" . ((symbol "_SC_CHARCLASS_NAME_MAX" 5528 . 5550)))
+          ("_SC_THREADS" . ((symbol "_SC_THREADS" 6952 . 6963)))
+          ("_SC_THREAD_SAFE_FUNCTIONS" . ((symbol "_SC_THREAD_SAFE_FUNCTIONS" 7029 . 7054)))
+          ("_SC_THREAD_ATTR_STACKSIZE" . ((symbol "_SC_THREAD_ATTR_STACKSIZE" 7847 . 7872)))
+          ("_SC_THREAD_PRIORITY_SCHEDULING" . ((symbol "_SC_THREAD_PRIORITY_SCHEDULING" 7948 . 7978)))
+          ("_SC_PHYS_PAGES" . ((symbol "_SC_PHYS_PAGES" 8442 . 8456)))
+          ("_SC_XOPEN_ENH_I18N" . ((symbol "_SC_XOPEN_ENH_I18N" 8960 . 8978)))
+          ("_SC_XOPEN_XPG3" . ((symbol "_SC_XOPEN_XPG3" 9314 . 9328)))
+          ("_SC_CHAR_MIN" . ((symbol "_SC_CHAR_MIN" 9539 . 9551)))
+          ("_SC_NL_NMAX" . ((symbol "_SC_NL_NMAX" 10585 . 10596)))
+          ("_SC_NL_TEXTMAX" . ((symbol "_SC_NL_TEXTMAX" 10699 . 10713)))
+          ("_SC_FILE_LOCKING" . ((symbol "_SC_FILE_LOCKING" 12234 . 12250)))
+          ("_SC_SPAWN" . ((symbol "_SC_SPAWN" 12980 . 12989)))
+          ("_SC_SPORADIC_SERVER" . ((symbol "_SC_SPORADIC_SERVER" 13044 . 13063)))
+          ("_SC_LEVEL2_CACHE_ASSOC" . ((symbol "_SC_LEVEL2_CACHE_ASSOC" 15371 . 15393)))
+          ("_SC_LEVEL4_CACHE_SIZE" . ((symbol "_SC_LEVEL4_CACHE_SIZE" 15797 . 15818)))
+          ("_CS_GNU_LIBC_VERSION" . ((symbol "_CS_GNU_LIBC_VERSION" 17523 . 17543)))
+          ("_CS_LFS64_CFLAGS" . ((symbol "_CS_LFS64_CFLAGS" 18278 . 18294)))
+          ("_CS_LFS64_LINTFLAGS" . ((symbol "_CS_LFS64_LINTFLAGS" 18473 . 18492)))
+          ("_PC_REC_MAX_XFER_SIZE" . ((symbol "_PC_REC_MAX_XFER_SIZE" 2022 . 2043)))
+          ("_PC_SYMLINK_MAX" . ((symbol "_PC_SYMLINK_MAX" 2313 . 2328)))
+          ("_SC_LINE_MAX" . ((symbol "_SC_LINE_MAX" 5395 . 5407)))
+          ("_SC_2_FORT_RUN" . ((symbol "_SC_2_FORT_RUN" 5819 . 5833)))
+          ("_SC_GETPW_R_SIZE_MAX" . ((symbol "_SC_GETPW_R_SIZE_MAX" 7188 . 7208)))
+          ("_SC_THREAD_STACK_MIN" . ((symbol "_SC_THREAD_STACK_MIN" 7587 . 7607)))
+          ("_SC_THREAD_THREADS_MAX" . ((symbol "_SC_THREAD_THREADS_MAX" 7668 . 7690)))
+          ("_SC_THREAD_ATTR_STACKADDR" . ((symbol "_SC_THREAD_ATTR_STACKADDR" 7756 . 7781)))
+          ("_SC_PASS_MAX" . ((symbol "_SC_PASS_MAX" 8623 . 8635)))
+          ("_SC_2_UPE" . ((symbol "_SC_2_UPE" 9198 . 9207)))
+          ("_SC_XOPEN_XPG4" . ((symbol "_SC_XOPEN_XPG4" 9374 . 9388)))
+          ("_SC_SCHAR_MAX" . ((symbol "_SC_SCHAR_MAX" 9967 . 9980)))
+          ("_SC_NL_SETMAX" . ((symbol "_SC_NL_SETMAX" 10640 . 10653)))
+          ("_SC_XOPEN_LEGACY" . ((symbol "_SC_XOPEN_LEGACY" 11075 . 11091)))
+          ("_SC_XOPEN_REALTIME_THREADS" . ((symbol "_SC_XOPEN_REALTIME_THREADS" 11230 . 11256)))
+          ("_SC_FD_MGMT" . ((symbol "_SC_FD_MGMT" 12016 . 12027)))
+          ("_SC_REGEX_VERSION" . ((symbol "_SC_REGEX_VERSION" 12831 . 12848)))
+          ("_SC_SYMLOOP_MAX" . ((symbol "_SC_SYMLOOP_MAX" 13950 . 13965)))
+          ("_SC_TRACE" . ((symbol "_SC_TRACE" 14486 . 14495)))
+          ("_SC_LEVEL1_ICACHE_LINESIZE" . ((symbol "_SC_LEVEL1_ICACHE_LINESIZE" 14941 . 14967)))
+          ("_SC_LEVEL3_CACHE_ASSOC" . ((symbol "_SC_LEVEL3_CACHE_ASSOC" 15625 . 15647)))
+          ("_SC_XOPEN_STREAMS" . ((symbol "_SC_XOPEN_STREAMS" 16924 . 16941)))
+          ("_SC_THREAD_ROBUST_PRIO_INHERIT" . ((symbol "_SC_THREAD_ROBUST_PRIO_INHERIT" 17018 . 17048)))
+          ("_CS_XBS5_LP64_OFF64_CFLAGS" . ((symbol "_CS_XBS5_LP64_OFF64_CFLAGS" 19368 . 19394)))
+          ("_CS_XBS5_LPBIG_OFFBIG_LIBS" . ((symbol "_CS_XBS5_LPBIG_OFFBIG_LIBS" 19953 . 19979)))
+          ("_CS_POSIX_V6_ILP32_OFF32_CFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFF32_CFLAGS" 20167 . 20198)))
+          ("_CS_POSIX_V6_ILP32_OFF32_LIBS" . ((symbol "_CS_POSIX_V6_ILP32_OFF32_LIBS" 20384 . 20413)))
+          ("_CS_POSIX_V6_ILP32_OFFBIG_LIBS" . ((symbol "_CS_POSIX_V6_ILP32_OFFBIG_LIBS" 20834 . 20864)))
+          ("_CS_POSIX_V6_LP64_OFF64_LDFLAGS" . ((symbol "_CS_POSIX_V6_LP64_OFF64_LDFLAGS" 21169 . 21200)))
+          ("_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS" 22392 . 22424)))
+          ("_SC_CLK_TCK" . ((symbol "_SC_CLK_TCK" 2595 . 2606)))
+          ("_SC_OPEN_MAX" . ((symbol "_SC_OPEN_MAX" 2711 . 2723)))
+          ("_SC_MESSAGE_PASSING" . ((symbol "_SC_MESSAGE_PASSING" 3757 . 3776)))
+          ("_SC_PAGESIZE" . ((symbol "_SC_PAGESIZE" 4422 . 4434)))
+          ("_SC_RTSIG_MAX" . ((symbol "_SC_RTSIG_MAX" 4515 . 4528)))
+          ("_SC_PII" . ((symbol "_SC_PII" 5984 . 5991)))
+          ("_SC_PII_XTI" . ((symbol "_SC_PII_XTI" 6031 . 6042)))
+          ("_SC_TTY_NAME_MAX" . ((symbol "_SC_TTY_NAME_MAX" 7328 . 7344)))
+          ("_SC_SSIZE_MAX" . ((symbol "_SC_SSIZE_MAX" 9910 . 9923)))
+          ("_SC_SCHAR_MIN" . ((symbol "_SC_SCHAR_MIN" 10024 . 10037)))
+          ("_SC_NL_MSGMAX" . ((symbol "_SC_NL_MSGMAX" 10532 . 10545)))
+          ("_SC_XBS5_ILP32_OFF32" . ((symbol "_SC_XBS5_ILP32_OFF32" 10771 . 10791)))
+          ("_SC_2_PBS_TRACK" . ((symbol "_SC_2_PBS_TRACK" 13887 . 13902)))
+          ("_SC_V6_ILP32_OFFBIG" . ((symbol "_SC_V6_ILP32_OFFBIG" 14220 . 14239)))
+          ("_SC_V6_LPBIG_OFFBIG" . ((symbol "_SC_V6_LPBIG_OFFBIG" 14362 . 14381)))
+          ("_SC_LEVEL4_CACHE_ASSOC" . ((symbol "_SC_LEVEL4_CACHE_ASSOC" 15879 . 15901)))
+          ("_CS_LFS_CFLAGS" . ((symbol "_CS_LFS_CFLAGS" 18035 . 18049)))
+          ("_CS_LFS_LDFLAGS" . ((symbol "_CS_LFS_LDFLAGS" 18095 . 18110)))
+          ("_CS_LFS_LINTFLAGS" . ((symbol "_CS_LFS_LINTFLAGS" 18213 . 18230)))
+          ("_CS_POSIX_V7_ILP32_OFF32_CFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFF32_CFLAGS" 21948 . 21979)))
+          ("_CS_POSIX_V7_LP64_OFF64_LDFLAGS" . ((symbol "_CS_POSIX_V7_LP64_OFF64_LDFLAGS" 22950 . 22981)))
+          ("_PC_CHOWN_RESTRICTED" . ((symbol "_PC_CHOWN_RESTRICTED" 1468 . 1488)))
+          ("_PC_VDISABLE" . ((symbol "_PC_VDISABLE" 1584 . 1596)))
+          ("_PC_ALLOC_SIZE_MIN" . ((symbol "_PC_ALLOC_SIZE_MIN" 2247 . 2265)))
+          ("_SC_BC_STRING_MAX" . ((symbol "_SC_BC_STRING_MAX" 5117 . 5134)))
+          ("_SC_COLL_WEIGHTS_MAX" . ((symbol "_SC_COLL_WEIGHTS_MAX" 5191 . 5211)))
+          ("_SC_SELECT" . ((symbol "_SC_SELECT" 6298 . 6308)))
+          ("_SC_THREAD_PRIO_INHERIT" . ((symbol "_SC_THREAD_PRIO_INHERIT" 8041 . 8064)))
+          ("_SC_NPROCESSORS_CONF" . ((symbol "_SC_NPROCESSORS_CONF" 8299 . 8319)))
+          ("_SC_XOPEN_XCU_VERSION" . ((symbol "_SC_XOPEN_XCU_VERSION" 8763 . 8784)))
+          ("_SC_2_CHAR_TERM" . ((symbol "_SC_2_CHAR_TERM" 9084 . 9099)))
+          ("_SC_2_C_VERSION" . ((symbol "_SC_2_C_VERSION" 9147 . 9162)))
+          ("_SC_XBS5_ILP32_OFFBIG" . ((symbol "_SC_XBS5_ILP32_OFFBIG" 10850 . 10871)))
+          ("_SC_XBS5_LPBIG_OFFBIG" . ((symbol "_SC_XBS5_LPBIG_OFFBIG" 11004 . 11025)))
+          ("_SC_BARRIERS" . ((symbol "_SC_BARRIERS" 11367 . 11379)))
+          ("_SC_THREAD_CPUTIME" . ((symbol "_SC_THREAD_CPUTIME" 11747 . 11765)))
+          ("_SC_READER_WRITER_LOCKS" . ((symbol "_SC_READER_WRITER_LOCKS" 12649 . 12672)))
+          ("_SC_HOST_NAME_MAX" . ((symbol "_SC_HOST_NAME_MAX" 14433 . 14450)))
+          ("_SC_LEVEL1_DCACHE_ASSOC" . ((symbol "_SC_LEVEL1_DCACHE_ASSOC" 15113 . 15136)))
+          ("_SC_TRACE_NAME_MAX" . ((symbol "_SC_TRACE_NAME_MAX" 16698 . 16716)))
+          ("_CS_LFS64_LDFLAGS" . ((symbol "_CS_LFS64_LDFLAGS" 18344 . 18361)))
+          ("_CS_XBS5_ILP32_OFF32_LIBS" . ((symbol "_CS_XBS5_ILP32_OFF32_LIBS" 18763 . 18788)))
+          ("_CS_XBS5_LP64_OFF64_LIBS" . ((symbol "_CS_XBS5_LP64_OFF64_LIBS" 19555 . 19579)))
+          ("_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS" 20497 . 20531)))
+          ("_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS" 20950 . 20985)))
+          ("_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS" . ((symbol "_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS" 21834 . 21869)))
+          ("_PC_PIPE_BUF" . ((symbol "_PC_PIPE_BUF" 1399 . 1411)))
+          ("_PC_REC_MIN_XFER_SIZE" . ((symbol "_PC_REC_MIN_XFER_SIZE" 2102 . 2123)))
+          ("_SC_STREAM_MAX" . ((symbol "_SC_STREAM_MAX" 2769 . 2783)))
+          ("_SC_REALTIME_SIGNALS" . ((symbol "_SC_REALTIME_SIGNALS" 3020 . 3040)))
+          ("_SC_TIMERS" . ((symbol "_SC_TIMERS" 3164 . 3174)))
+          ("_SC_MQ_PRIO_MAX" . ((symbol "_SC_MQ_PRIO_MAX" 4314 . 4329)))
+          ("_SC_SIGQUEUE_MAX" . ((symbol "_SC_SIGQUEUE_MAX" 4713 . 4729)))
+          ("_SC_TIMER_MAX" . ((symbol "_SC_TIMER_MAX" 4773 . 4786)))
+          ("_SC_EXPR_NEST_MAX" . ((symbol "_SC_EXPR_NEST_MAX" 5336 . 5353)))
+          ("_SC_RE_DUP_MAX" . ((symbol "_SC_RE_DUP_MAX" 5453 . 5467)))
+          ("_SC_2_VERSION" . ((symbol "_SC_2_VERSION" 5595 . 5608)))
+          ("_SC_2_FORT_DEV" . ((symbol "_SC_2_FORT_DEV" 5759 . 5773)))
+          ("_SC_NZERO" . ((symbol "_SC_NZERO" 9857 . 9866)))
+          ("_SC_NL_LANGMAX" . ((symbol "_SC_NL_LANGMAX" 10474 . 10488)))
+          ("_SC_DEVICE_SPECIFIC_R" . ((symbol "_SC_DEVICE_SPECIFIC_R" 11955 . 11976)))
+          ("_SC_STREAMS" . ((symbol "_SC_STREAMS" 14005 . 14016)))
+          ("_SC_V6_ILP32_OFF32" . ((symbol "_SC_V6_ILP32_OFF32" 14147 . 14165)))
+          ("_SC_TRACE_LOG" . ((symbol "_SC_TRACE_LOG" 14690 . 14703)))
+          ("_SC_LEVEL3_CACHE_SIZE" . ((symbol "_SC_LEVEL3_CACHE_SIZE" 15543 . 15564)))
+          ("_CS_PATH" . ((symbol "_CS_PATH" 17285 . 17293)))
+          ("_CS_V5_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V5_WIDTH_RESTRICTED_ENVS" 17710 . 17738)))
+          ("_CS_POSIX_V7_ILP32_OFF32_LIBS" . ((symbol "_CS_POSIX_V7_ILP32_OFF32_LIBS" 22165 . 22194)))
+          ("_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS" 22278 . 22312)))
+          ("_CS_POSIX_V7_LP64_OFF64_CFLAGS" . ((symbol "_CS_POSIX_V7_LP64_OFF64_CFLAGS" 22842 . 22872)))
+          ("_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS" . ((symbol "_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS" 23390 . 23423)))
+          ("_CS_POSIX_V7_LPBIG_OFFBIG_LIBS" . ((symbol "_CS_POSIX_V7_LPBIG_OFFBIG_LIBS" 23499 . 23529)))
+          ("_PC_MAX_INPUT" . ((symbol "_PC_MAX_INPUT" 1236 . 1249)))
+          ("_SC_PRIORITY_SCHEDULING" . ((symbol "_SC_PRIORITY_SCHEDULING" 3103 . 3126)))
+          ("_SC_2_C_DEV" . ((symbol "_SC_2_C_DEV" 5702 . 5713)))
+          ("_SC_PII_SOCKET" . ((symbol "_SC_PII_SOCKET" 6088 . 6102)))
+          ("_SC_LOGIN_NAME_MAX" . ((symbol "_SC_LOGIN_NAME_MAX" 7261 . 7279)))
+          ("_SC_XOPEN_CRYPT" . ((symbol "_SC_XOPEN_CRYPT" 8892 . 8907)))
+          ("_SC_USHRT_MAX" . ((symbol "_SC_USHRT_MAX" 10357 . 10370)))
+          ("_SC_XBS5_LP64_OFF64" . ((symbol "_SC_XBS5_LP64_OFF64" 10926 . 10945)))
+          ("_SC_C_LANG_SUPPORT_R" . ((symbol "_SC_C_LANG_SUPPORT_R" 11549 . 11569)))
+          ("_SC_TYPED_MEMORY_OBJECTS" . ((symbol "_SC_TYPED_MEMORY_OBJECTS" 13429 . 13453)))
+          ("_SC_IPV6" . ((symbol "_SC_IPV6" 16133 . 16141)))
+          ("_SC_V7_ILP32_OFF32" . ((symbol "_SC_V7_ILP32_OFF32" 16258 . 16276)))
+          ("_SC_V7_ILP32_OFFBIG" . ((symbol "_SC_V7_ILP32_OFFBIG" 16331 . 16350)))
+          ("_SC_V7_LPBIG_OFFBIG" . ((symbol "_SC_V7_LPBIG_OFFBIG" 16473 . 16492)))
+          ("_SC_TRACE_EVENT_NAME_MAX" . ((symbol "_SC_TRACE_EVENT_NAME_MAX" 16621 . 16645)))
+          ("_CS_V6_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V6_WIDTH_RESTRICTED_ENVS" 17366 . 17394)))
+          ("_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS" 22506 . 22539)))
+          ("_PC_NO_TRUNC" . ((symbol "_PC_NO_TRUNC" 1530 . 1542)))
+          ("_SC_MEMORY_PROTECTION" . ((symbol "_SC_MEMORY_PROTECTION" 3681 . 3702)))
+          ("_SC_SEMAPHORES" . ((symbol "_SC_SEMAPHORES" 3822 . 3836)))
+          ("_SC_UIO_MAXIOV" . ((symbol "_SC_UIO_MAXIOV" 6354 . 6368)))
+          ("_SC_UCHAR_MAX" . ((symbol "_SC_UCHAR_MAX" 10189 . 10202)))
+          ("_SC_SPIN_LOCKS" . ((symbol "_SC_SPIN_LOCKS" 12718 . 12732)))
+          ("_SC_SHELL" . ((symbol "_SC_SHELL" 12884 . 12893)))
+          ("_SC_USER_GROUPS" . ((symbol "_SC_USER_GROUPS" 13501 . 13516)))
+          ("_SC_2_PBS" . ((symbol "_SC_2_PBS" 13620 . 13629)))
+          ("_SC_2_PBS_MESSAGE" . ((symbol "_SC_2_PBS_MESSAGE" 13822 . 13839)))
+          ("_SC_TRACE_EVENT_FILTER" . ((symbol "_SC_TRACE_EVENT_FILTER" 14556 . 14578)))
+          ("_SC_SS_REPL_MAX" . ((symbol "_SC_SS_REPL_MAX" 16541 . 16556)))
+          ("_CS_GNU_LIBPTHREAD_VERSION" . ((symbol "_CS_GNU_LIBPTHREAD_VERSION" 17611 . 17637)))
+          ("_CS_V7_WIDTH_RESTRICTED_ENVS" . ((symbol "_CS_V7_WIDTH_RESTRICTED_ENVS" 17883 . 17911)))
+          ("_CS_LFS_LIBS" . ((symbol "_CS_LFS_LIBS" 18151 . 18163)))
+          ("_CS_XBS5_ILP32_OFF32_CFLAGS" . ((symbol "_CS_XBS5_ILP32_OFF32_CFLAGS" 18570 . 18597)))
+          ("_CS_XBS5_LP64_OFF64_LDFLAGS" . ((symbol "_CS_XBS5_LP64_OFF64_LDFLAGS" 19464 . 19491)))
+          ("_CS_XBS5_LP64_OFF64_LINTFLAGS" . ((symbol "_CS_XBS5_LP64_OFF64_LINTFLAGS" 19653 . 19682)))
+          ("_CS_XBS5_LPBIG_OFFBIG_LDFLAGS" . ((symbol "_CS_XBS5_LPBIG_OFFBIG_LDFLAGS" 19856 . 19885)))
+          ("_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS" . ((symbol "_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS" 22731 . 22766)))
+          ("_CS_POSIX_V7_LP64_OFF64_LINTFLAGS" . ((symbol "_CS_POSIX_V7_LP64_OFF64_LINTFLAGS" 23163 . 23196)))
+          ("_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS" . ((symbol "_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS" 23615 . 23650)))
+          ("_PC_NAME_MAX" . ((symbol "_PC_NAME_MAX" 1291 . 1303)))
+          ("_PC_PATH_MAX" . ((symbol "_PC_PATH_MAX" 1345 . 1357)))
+          ("_SC_NGROUPS_MAX" . ((symbol "_SC_NGROUPS_MAX" 2654 . 2669)))
+          ("_SC_JOB_CONTROL" . ((symbol "_SC_JOB_CONTROL" 2891 . 2906)))
+          ("_SC_AIO_MAX" . ((symbol "_SC_AIO_MAX" 4038 . 4049)))
+          ("_SC_AIO_PRIO_DELTA_MAX" . ((symbol "_SC_AIO_PRIO_DELTA_MAX" 4110 . 4132)))
+          ("_SC_SEM_NSEMS_MAX" . ((symbol "_SC_SEM_NSEMS_MAX" 4579 . 4596)))
+          ("_SC_PII_INTERNET_STREAM" . ((symbol "_SC_PII_INTERNET_STREAM" 6499 . 6522)))
+          ("_SC_ATEXIT_MAX" . ((symbol "_SC_ATEXIT_MAX" 8567 . 8581)))
+          ("_SC_WORD_BIT" . ((symbol "_SC_WORD_BIT" 9749 . 9761)))
+          ("_SC_ULONG_MAX" . ((symbol "_SC_ULONG_MAX" 10300 . 10313)))
+          ("_SC_DEVICE_SPECIFIC" . ((symbol "_SC_DEVICE_SPECIFIC" 11877 . 11896)))
+          ("_SC_FIFO" . ((symbol "_SC_FIFO" 12061 . 12069)))
+          ("_SC_THREAD_SPORADIC_SERVER" . ((symbol "_SC_THREAD_SPORADIC_SERVER" 13131 . 13157)))
+          ("_SC_TIMEOUTS" . ((symbol "_SC_TIMEOUTS" 13353 . 13365)))
+          ("_SC_LEVEL2_CACHE_LINESIZE" . ((symbol "_SC_LEVEL2_CACHE_LINESIZE" 15459 . 15484)))
+          ("_SC_RAW_SOCKETS" . ((symbol "_SC_RAW_SOCKETS" 16189 . 16204)))
+          ("_CS_XBS5_ILP32_OFF32_LINTFLAGS" . ((symbol "_CS_XBS5_ILP32_OFF32_LINTFLAGS" 18864 . 18894)))
+          ("_CS_XBS5_ILP32_OFFBIG_LDFLAGS" . ((symbol "_CS_XBS5_ILP32_OFFBIG_LDFLAGS" 19068 . 19097)))
+          ("_CS_XBS5_ILP32_OFFBIG_LIBS" . ((symbol "_CS_XBS5_ILP32_OFFBIG_LIBS" 19165 . 19191)))
+          ("_CS_XBS5_ILP32_OFFBIG_LINTFLAGS" . ((symbol "_CS_XBS5_ILP32_OFFBIG_LINTFLAGS" 19269 . 19300)))
+          ("_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS" . ((symbol "_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS" 20057 . 20088)))
+          ("_CS_POSIX_V6_ILP32_OFF32_LDFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFF32_LDFLAGS" 20278 . 20310)))
+          ("_PC_FILESIZEBITS" . ((symbol "_PC_FILESIZEBITS" 1864 . 1880)))
+          ("_SC_CHILD_MAX" . ((symbol "_SC_CHILD_MAX" 2542 . 2555)))
+          ("_SC_ASYNCHRONOUS_IO" . ((symbol "_SC_ASYNCHRONOUS_IO" 3229 . 3248)))
+          ("_SC_MEMLOCK" . ((symbol "_SC_MEMLOCK" 3543 . 3554)))
+          ("_SC_MEMLOCK_RANGE" . ((symbol "_SC_MEMLOCK_RANGE" 3605 . 3622)))
+          ("_SC_2_C_BIND" . ((symbol "_SC_2_C_BIND" 5650 . 5662)))
+          ("_SC_PII_INTERNET" . ((symbol "_SC_PII_INTERNET" 6151 . 6167)))
+          ("_SC_POLL" . ((symbol "_SC_POLL" 6252 . 6260)))
+          ("_SC_PII_OSI_CLTS" . ((symbol "_SC_PII_OSI_CLTS" 6719 . 6735)))
+          ("_SC_NPROCESSORS_ONLN" . ((symbol "_SC_NPROCESSORS_ONLN" 8376 . 8396)))
+          ("_SC_XOPEN_VERSION" . ((symbol "_SC_XOPEN_VERSION" 8687 . 8704)))
+          ("_SC_UINT_MAX" . ((symbol "_SC_UINT_MAX" 10244 . 10256)))
+          ("_SC_NL_ARGMAX" . ((symbol "_SC_NL_ARGMAX" 10415 . 10428)))
+          ("_SC_CPUTIME" . ((symbol "_SC_CPUTIME" 11683 . 11694)))
+          ("_SC_FILE_SYSTEM" . ((symbol "_SC_FILE_SYSTEM" 12298 . 12313)))
+          ("_SC_NETWORKING" . ((symbol "_SC_NETWORKING" 12572 . 12586)))
+          ("_SC_SIGNALS" . ((symbol "_SC_SIGNALS" 12933 . 12944)))
+          ("_SC_2_PBS_ACCOUNTING" . ((symbol "_SC_2_PBS_ACCOUNTING" 13686 . 13706)))
+          ("_SC_LEVEL1_DCACHE_LINESIZE" . ((symbol "_SC_LEVEL1_DCACHE_LINESIZE" 15204 . 15230)))
+          ("_SC_LEVEL2_CACHE_SIZE" . ((symbol "_SC_LEVEL2_CACHE_SIZE" 15289 . 15310)))
+          ("_SC_LEVEL3_CACHE_LINESIZE" . ((symbol "_SC_LEVEL3_CACHE_LINESIZE" 15713 . 15738)))
+          ("_SC_V7_LP64_OFF64" . ((symbol "_SC_V7_LP64_OFF64" 16401 . 16418)))
+          ("_SC_TRACE_SYS_MAX" . ((symbol "_SC_TRACE_SYS_MAX" 16767 . 16784)))
+          ("_CS_XBS5_ILP32_OFF32_LDFLAGS" . ((symbol "_CS_XBS5_ILP32_OFF32_LDFLAGS" 18669 . 18697)))
+          ("_CS_POSIX_V6_LP64_OFF64_CFLAGS" . ((symbol "_CS_POSIX_V6_LP64_OFF64_CFLAGS" 21061 . 21091)))
+          ("_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS" . ((symbol "_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS" 21609 . 21642)))
+          ("_CS_POSIX_V6_LPBIG_OFFBIG_LIBS" . ((symbol "_CS_POSIX_V6_LPBIG_OFFBIG_LIBS" 21718 . 21748)))
+          ("_CS_V6_ENV" . ((symbol "_CS_V6_ENV" 23689 . 23699)))
+          ("_PC_PRIO_IO" . ((symbol "_PC_PRIO_IO" 1741 . 1752)))
+          ("_PC_REC_XFER_ALIGN" . ((symbol "_PC_REC_XFER_ALIGN" 2176 . 2194)))
+          ("_SC_SHARED_MEMORY_OBJECTS" . ((symbol "_SC_SHARED_MEMORY_OBJECTS" 3902 . 3927)))
+          ("_SC_BC_DIM_MAX" . ((symbol "_SC_BC_DIM_MAX" 4987 . 5001)))
+          ("_SC_BC_SCALE_MAX" . ((symbol "_SC_BC_SCALE_MAX" 5050 . 5066)))
+          ("_SC_2_LOCALEDEF" . ((symbol "_SC_2_LOCALEDEF" 5935 . 5950)))
+          ("_SC_PII_OSI" . ((symbol "_SC_PII_OSI" 6207 . 6218)))
+          ("_SC_PII_INTERNET_DGRAM" . ((symbol "_SC_PII_INTERNET_DGRAM" 6583 . 6605)))
+          ("_SC_PII_OSI_COTS" . ((symbol "_SC_PII_OSI_COTS" 6654 . 6670)))
+          ("_SC_XOPEN_UNIX" . ((symbol "_SC_XOPEN_UNIX" 8830 . 8844)))
+          ("_SC_XOPEN_SHM" . ((symbol "_SC_XOPEN_SHM" 9022 . 9035)))
+          ("_SC_XOPEN_REALTIME" . ((symbol "_SC_XOPEN_REALTIME" 11144 . 11162)))
+          ("_SC_FILE_ATTRIBUTES" . ((symbol "_SC_FILE_ATTRIBUTES" 12166 . 12185)))
+          ("_SC_SINGLE_PROCESS" . ((symbol "_SC_SINGLE_PROCESS" 12508 . 12526)))
+          ("_SC_REGEXP" . ((symbol "_SC_REGEXP" 12770 . 12780)))
+          ("_SC_TRACE_INHERIT" . ((symbol "_SC_TRACE_INHERIT" 14629 . 14646)))
+          ("_SC_LEVEL1_ICACHE_ASSOC" . ((symbol "_SC_LEVEL1_ICACHE_ASSOC" 14850 . 14873)))
+          ("_SC_LEVEL1_DCACHE_SIZE" . ((symbol "_SC_LEVEL1_DCACHE_SIZE" 15028 . 15050)))
+          ("_SC_LEVEL4_CACHE_LINESIZE" . ((symbol "_SC_LEVEL4_CACHE_LINESIZE" 15967 . 15992)))
+          ("_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS" . ((symbol "_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS" 20725 . 20758)))
+          ("_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS" . ((symbol "_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS" 21495 . 21527)))
+          )
+
+    )
+   (semanticdb-table "termios.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cc_t" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [966 993])
+            ("speed_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [994 1023])
+            ("tcflag_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1024 1054])
+            ("NCCS" variable (:constant-flag t) nil [1064 1068])
+            ("termios" type
+               (:members 
+                  ( ("c_iflag" variable (:type ("tcflag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1095 1112])
+                    ("c_oflag" variable (:type ("tcflag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1141 1158])
+                    ("c_cflag" variable (:type ("tcflag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1188 1205])
+                    ("c_lflag" variable (:type ("tcflag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1236 1253])
+                    ("c_line" variable (:type ("cc_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1282 1294])
+                    ("c_cc" variable
+                       (:dereference 1
+                        :type ("cc_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1323 1339])
+                    ("c_ispeed" variable (:type ("speed_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1370 1387])
+                    ("c_ospeed" variable (:type ("speed_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1411 1428])
+                    ("_HAVE_STRUCT_TERMIOS_C_ISPEED" variable (:constant-flag t) (reparse-symbol classsubparts) [1457 1486])
+                    ("_HAVE_STRUCT_TERMIOS_C_OSPEED" variable (:constant-flag t) (reparse-symbol classsubparts) [1497 1526]))                  
+                :type "struct")
+                nil [1072 1533])
+            ("VINTR" variable (:constant-flag t) nil [1565 1570])
+            ("VQUIT" variable (:constant-flag t) nil [1581 1586])
+            ("VERASE" variable (:constant-flag t) nil [1597 1603])
+            ("VKILL" variable (:constant-flag t) nil [1614 1619])
+            ("VEOF" variable (:constant-flag t) nil [1630 1634])
+            ("VTIME" variable (:constant-flag t) nil [1645 1650])
+            ("VMIN" variable (:constant-flag t) nil [1661 1665])
+            ("VSWTC" variable (:constant-flag t) nil [1676 1681])
+            ("VSTART" variable (:constant-flag t) nil [1692 1698])
+            ("VSTOP" variable (:constant-flag t) nil [1709 1714])
+            ("VSUSP" variable (:constant-flag t) nil [1725 1730])
+            ("VEOL" variable (:constant-flag t) nil [1742 1746])
+            ("VREPRINT" variable (:constant-flag t) nil [1758 1766])
+            ("VDISCARD" variable (:constant-flag t) nil [1778 1786])
+            ("VWERASE" variable (:constant-flag t) nil [1798 1805])
+            ("VLNEXT" variable (:constant-flag t) nil [1817 1823])
+            ("VEOL2" variable (:constant-flag t) nil [1835 1840])
+            ("IGNBRK" variable (:constant-flag t) nil [1872 1878])
+            ("BRKINT" variable (:constant-flag t) nil [1895 1901])
+            ("IGNPAR" variable (:constant-flag t) nil [1918 1924])
+            ("PARMRK" variable (:constant-flag t) nil [1941 1947])
+            ("INPCK" variable (:constant-flag t) nil [1964 1969])
+            ("ISTRIP" variable (:constant-flag t) nil [1986 1992])
+            ("INLCR" variable (:constant-flag t) nil [2009 2014])
+            ("IGNCR" variable (:constant-flag t) nil [2031 2036])
+            ("ICRNL" variable (:constant-flag t) nil [2053 2058])
+            ("IUCLC" variable (:constant-flag t) nil [2075 2080])
+            ("IXON" variable (:constant-flag t) nil [2097 2101])
+            ("IXANY" variable (:constant-flag t) nil [2118 2123])
+            ("IXOFF" variable (:constant-flag t) nil [2140 2145])
+            ("IMAXBEL" variable (:constant-flag t) nil [2162 2169])
+            ("IUTF8" variable (:constant-flag t) nil [2186 2191])
+            ("OPOST" variable (:constant-flag t) nil [2228 2233])
+            ("OLCUC" variable (:constant-flag t) nil [2250 2255])
+            ("ONLCR" variable (:constant-flag t) nil [2272 2277])
+            ("OCRNL" variable (:constant-flag t) nil [2294 2299])
+            ("ONOCR" variable (:constant-flag t) nil [2316 2321])
+            ("ONLRET" variable (:constant-flag t) nil [2338 2344])
+            ("OFILL" variable (:constant-flag t) nil [2361 2366])
+            ("OFDEL" variable (:constant-flag t) nil [2383 2388])
+            ("VTDLY" variable (:constant-flag t) nil [2901 2906])
+            ("VT0" variable (:constant-flag t) nil [2925 2928])
+            ("VT1" variable (:constant-flag t) nil [2947 2950])
+            ("B0" variable (:constant-flag t) nil [3092 3094])
+            ("B50" variable (:constant-flag t) nil [3127 3130])
+            ("B75" variable (:constant-flag t) nil [3148 3151])
+            ("B110" variable (:constant-flag t) nil [3169 3173])
+            ("B134" variable (:constant-flag t) nil [3191 3195])
+            ("B150" variable (:constant-flag t) nil [3213 3217])
+            ("B200" variable (:constant-flag t) nil [3235 3239])
+            ("B300" variable (:constant-flag t) nil [3257 3261])
+            ("B600" variable (:constant-flag t) nil [3279 3283])
+            ("B1200" variable (:constant-flag t) nil [3301 3306])
+            ("B1800" variable (:constant-flag t) nil [3324 3329])
+            ("B2400" variable (:constant-flag t) nil [3347 3352])
+            ("B4800" variable (:constant-flag t) nil [3370 3375])
+            ("B9600" variable (:constant-flag t) nil [3393 3398])
+            ("B19200" variable (:constant-flag t) nil [3416 3422])
+            ("B38400" variable (:constant-flag t) nil [3440 3446])
+            ("CSIZE" variable (:constant-flag t) nil [3530 3535])
+            ("CS5" variable (:constant-flag t) nil [3554 3557])
+            ("CS6" variable (:constant-flag t) nil [3576 3579])
+            ("CS7" variable (:constant-flag t) nil [3598 3601])
+            ("CS8" variable (:constant-flag t) nil [3620 3623])
+            ("CSTOPB" variable (:constant-flag t) nil [3640 3646])
+            ("CREAD" variable (:constant-flag t) nil [3663 3668])
+            ("PARENB" variable (:constant-flag t) nil [3685 3691])
+            ("PARODD" variable (:constant-flag t) nil [3708 3714])
+            ("HUPCL" variable (:constant-flag t) nil [3731 3736])
+            ("CLOCAL" variable (:constant-flag t) nil [3753 3759])
+            ("B57600" variable (:constant-flag t) nil [3827 3833])
+            ("B115200" variable (:constant-flag t) nil [3853 3860])
+            ("B230400" variable (:constant-flag t) nil [3879 3886])
+            ("B460800" variable (:constant-flag t) nil [3905 3912])
+            ("B500000" variable (:constant-flag t) nil [3931 3938])
+            ("B576000" variable (:constant-flag t) nil [3957 3964])
+            ("B921600" variable (:constant-flag t) nil [3983 3990])
+            ("B1000000" variable (:constant-flag t) nil [4009 4017])
+            ("B1152000" variable (:constant-flag t) nil [4035 4043])
+            ("B1500000" variable (:constant-flag t) nil [4061 4069])
+            ("B2000000" variable (:constant-flag t) nil [4087 4095])
+            ("B2500000" variable (:constant-flag t) nil [4113 4121])
+            ("B3000000" variable (:constant-flag t) nil [4139 4147])
+            ("B3500000" variable (:constant-flag t) nil [4165 4173])
+            ("B4000000" variable (:constant-flag t) nil [4191 4199])
+            ("__MAX_BAUD" variable (:constant-flag t) nil [4216 4226])
+            ("ISIG" variable (:constant-flag t) nil [4472 4476])
+            ("ICANON" variable (:constant-flag t) nil [4493 4499])
+            ("ECHO" variable (:constant-flag t) nil [4592 4596])
+            ("ECHOE" variable (:constant-flag t) nil [4613 4618])
+            ("ECHOK" variable (:constant-flag t) nil [4635 4640])
+            ("ECHONL" variable (:constant-flag t) nil [4657 4663])
+            ("NOFLSH" variable (:constant-flag t) nil [4680 4686])
+            ("TOSTOP" variable (:constant-flag t) nil [4703 4709])
+            ("IEXTEN" variable (:constant-flag t) nil [4876 4882])
+            ("TCOOFF" variable (:constant-flag t) nil [4985 4991])
+            ("TCOON" variable (:constant-flag t) nil [5003 5008])
+            ("TCIOFF" variable (:constant-flag t) nil [5020 5026])
+            ("TCION" variable (:constant-flag t) nil [5038 5043])
+            ("TCIFLUSH" variable (:constant-flag t) nil [5093 5101])
+            ("TCOFLUSH" variable (:constant-flag t) nil [5112 5120])
+            ("TCIOFLUSH" variable (:constant-flag t) nil [5131 5140])
+            ("TCSANOW" variable (:constant-flag t) nil [5179 5186])
+            ("TCSADRAIN" variable (:constant-flag t) nil [5198 5207])
+            ("TCSAFLUSH" variable (:constant-flag t) nil [5218 5227])
+            ("_IOT_termios" variable (:constant-flag t) nil [5240 5252]))          
+    :file "termios.h"
+    :pointmax 5353
+    :fsize 5352
+    :lastmodtime '(21752 51272 0 0)
+    :unmatched-syntax '((string 890 . 957) (symbol 884 . 889) (punctuation 882 . 883))
+    :lexical-table 
+        '(("VEOF" . ((number "4" 1635 . 1636)))
+          ("VSWTC" . ((number "7" 1682 . 1683)))
+          ("IUTF8" . ((number "0040000" 2192 . 2199)))
+          ("OCRNL" . ((number "0000010" 2300 . 2307)))
+          ("B110" . ((number "0000003" 3174 . 3181)))
+          ("B921600" . ((number "0010007" 3992 . 3999)))
+          ("B1000000" . ((number "0010010" 4018 . 4025)))
+          ("B1152000" . ((number "0010011" 4044 . 4051)))
+          ("VDISCARD" . ((number "13" 1787 . 1789)))
+          ("IGNCR" . ((number "0000200" 2037 . 2044)))
+          ("B2000000" . ((number "0010013" 4096 . 4103)))
+          ("VINTR" . ((number "0" 1571 . 1572)))
+          ("IMAXBEL" . ((number "0020000" 2170 . 2177)))
+          ("B300" . ((number "0000007" 3262 . 3269)))
+          ("B3000000" . ((number "0010015" 4148 . 4155)))
+          ("NCCS" . ((number "32" 1069 . 1071)))
+          ("VQUIT" . ((number "1" 1587 . 1588)))
+          ("VERASE" . ((number "2" 1604 . 1605)))
+          ("VEOL2" . ((number "16" 1841 . 1843)))
+          ("INLCR" . ((number "0000100" 2015 . 2022)))
+          ("OLCUC" . ((number "0000002" 2256 . 2263)))
+          ("B600" . ((number "0000010" 3284 . 3291)))
+          ("CSTOPB" . ((number "0000100" 3647 . 3654)))
+          ("CLOCAL" . ((number "0004000" 3760 . 3767)))
+          ("B4000000" . ((number "0010017" 4200 . 4207)))
+          ("ICANON" . ((number "0000002" 4500 . 4507)))
+          ("IGNBRK" . ((number "0000001" 1879 . 1886)))
+          ("PARODD" . ((number "0001000" 3715 . 3722)))
+          ("B57600" . ((number "0010001" 3836 . 3843)))
+          ("ECHONL" . ((number "0000100" 4664 . 4671)))
+          ("TOSTOP" . ((number "0000400" 4710 . 4717)))
+          ("IEXTEN" . ((number "0100000" 4883 . 4890)))
+          ("TCION" . ((number "3" 5045 . 5046)))
+          ("_HAVE_STRUCT_TERMIOS_C_ISPEED" . ((number "1" 1487 . 1488)))
+          ("VSUSP" . ((number "10" 1731 . 1733)))
+          ("BRKINT" . ((number "0000002" 1902 . 1909)))
+          ("B1200" . ((number "0000011" 3307 . 3314)))
+          ("ISIG" . ((number "0000001" 4477 . 4484)))
+          ("ECHO" . ((number "0000010" 4597 . 4604)))
+          ("VEOL" . ((number "11" 1747 . 1749)))
+          ("INPCK" . ((number "0000020" 1970 . 1977)))
+          ("IUCLC" . ((number "0001000" 2081 . 2088)))
+          ("IXANY" . ((number "0004000" 2124 . 2131)))
+          ("OFDEL" . ((number "0000200" 2389 . 2396)))
+          ("B75" . ((number "0000002" 3152 . 3159)))
+          ("B200" . ((number "0000006" 3240 . 3247)))
+          ("CSIZE" . ((number "0000060" 3536 . 3543)))
+          ("B1500000" . ((number "0010012" 4070 . 4077)))
+          ("ECHOE" . ((number "0000020" 4619 . 4626)))
+          ("TCOON" . ((number "1" 5010 . 5011)))
+          ("TCIOFF" . ((number "2" 5028 . 5029)))
+          ("TCIOFLUSH" . ((number "2" 5141 . 5142)))
+          ("_IOT_termios" . ((symbol "_IOT" 5287 . 5291) (semantic-list "(_IOTS (cflag_t), 4, _IOTS (cc_t), NCCS, _IOTS (speed_t), 2)" 5292 . 5352)))
+          ("_HAVE_STRUCT_TERMIOS_C_OSPEED" . ((number "1" 1527 . 1528)))
+          ("VKILL" . ((number "3" 1620 . 1621)))
+          ("VSTART" . ((number "8" 1699 . 1700)))
+          ("VWERASE" . ((number "14" 1806 . 1808)))
+          ("OFILL" . ((number "0000100" 2367 . 2374)))
+          ("B1800" . ((number "0000012" 3330 . 3337)))
+          ("B38400" . ((number "0000017" 3447 . 3454)))
+          ("PARENB" . ((number "0000400" 3692 . 3699)))
+          ("B500000" . ((number "0010005" 3940 . 3947)))
+          ("B2500000" . ((number "0010014" 4122 . 4129)))
+          ("TCSAFLUSH" . ((number "2" 5228 . 5229)))
+          ("VLNEXT" . ((number "15" 1824 . 1826)))
+          ("IGNPAR" . ((number "0000004" 1925 . 1932)))
+          ("ICRNL" . ((number "0000400" 2059 . 2066)))
+          ("ONLCR" . ((number "0000004" 2278 . 2285)))
+          ("VT0" . ((number "0000000" 2929 . 2936)))
+          ("B50" . ((number "0000001" 3131 . 3138)))
+          ("CS5" . ((number "0000000" 3558 . 3565)))
+          ("B576000" . ((number "0010006" 3966 . 3973)))
+          ("B3500000" . ((number "0010016" 4174 . 4181)))
+          ("__MAX_BAUD" . ((symbol "B4000000" 4227 . 4235)))
+          ("TCIFLUSH" . ((number "0" 5102 . 5103)))
+          ("VREPRINT" . ((number "12" 1767 . 1769)))
+          ("PARMRK" . ((number "0000010" 1948 . 1955)))
+          ("OPOST" . ((number "0000001" 2234 . 2241)))
+          ("ONOCR" . ((number "0000020" 2322 . 2329)))
+          ("ONLRET" . ((number "0000040" 2345 . 2352)))
+          ("VT1" . ((number "0040000" 2951 . 2958)))
+          ("CS6" . ((number "0000020" 3580 . 3587)))
+          ("VMIN" . ((number "6" 1666 . 1667)))
+          ("VSTOP" . ((number "9" 1715 . 1716)))
+          ("IXON" . ((number "0002000" 2102 . 2109)))
+          ("VTDLY" . ((number "0040000" 2907 . 2914)))
+          ("B134" . ((number "0000004" 3196 . 3203)))
+          ("B4800" . ((number "0000014" 3376 . 3383)))
+          ("B9600" . ((number "0000015" 3399 . 3406)))
+          ("B19200" . ((number "0000016" 3423 . 3430)))
+          ("CS7" . ((number "0000040" 3602 . 3609)))
+          ("CREAD" . ((number "0000200" 3669 . 3676)))
+          ("B115200" . ((number "0010002" 3862 . 3869)))
+          ("B460800" . ((number "0010004" 3914 . 3921)))
+          ("TCOFLUSH" . ((number "1" 5121 . 5122)))
+          ("IXOFF" . ((number "0010000" 2146 . 2153)))
+          ("B2400" . ((number "0000013" 3353 . 3360)))
+          ("CS8" . ((number "0000060" 3624 . 3631)))
+          ("HUPCL" . ((number "0002000" 3737 . 3744)))
+          ("TCSADRAIN" . ((number "1" 5208 . 5209)))
+          ("VTIME" . ((number "5" 1651 . 1652)))
+          ("ISTRIP" . ((number "0000040" 1993 . 2000)))
+          ("B0" . ((number "0000000" 3095 . 3102)))
+          ("B150" . ((number "0000005" 3218 . 3225)))
+          ("B230400" . ((number "0010003" 3888 . 3895)))
+          ("ECHOK" . ((number "0000040" 4641 . 4648)))
+          ("NOFLSH" . ((number "0000200" 4687 . 4694)))
+          ("TCOOFF" . ((number "0" 4993 . 4994)))
+          ("TCSANOW" . ((number "0" 5188 . 5189)))
+          )
+
+    )
+   (semanticdb-table "fcntl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__O_LARGEFILE" variable (:constant-flag t) nil [958 971])
+            ("F_GETLK64" variable (:constant-flag t) nil [1062 1071])
+            ("F_SETLK64" variable (:constant-flag t) nil [1115 1124])
+            ("F_SETLKW64" variable (:constant-flag t) nil [1183 1193])
+            ("flock" type
+               (:members 
+                  ( ("l_type" variable (:type "short int") (reparse-symbol classsubparts) [1268 1285])
+                    ("l_whence" variable (:type "short int") (reparse-symbol classsubparts) [1340 1359])
+                    ("l_start" variable (:type ("__off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1446 1462])
+                    ("l_len" variable (:type ("__off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1504 1518])
+                    ("l_pid" variable (:type ("__pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1725 1739]))                  
+                :type "struct")
+                nil [1247 1777])
+            ("bits/fcntl-linux.h" include (:system-flag t) nil [2216 2245]))          
+    :file "fcntl.h"
+    :pointmax 2246
+    :fsize 2245
+    :lastmodtime '(21752 51271 0 0)
+    :unmatched-syntax '((string 859 . 922) (symbol 853 . 858) (punctuation 851 . 852))
+    :lexical-table 
+        '(("F_SETLK64" . ((number "6" 1125 . 1126)))
+          ("F_GETLK64" . ((number "5" 1072 . 1073)))
+          ("__O_LARGEFILE" . ((number "0" 972 . 973)))
+          ("F_SETLKW64" . ((number "7" 1194 . 1195)))
+          )
+
+    )
+   (semanticdb-table "param.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__undef_ARG_MAX" variable (:constant-flag t) nil [977 992])
+            ("linux/limits.h" include (:system-flag t) nil [1001 1026])
+            ("linux/param.h" include (:system-flag t) nil [1027 1051])
+            ("MAXSYMLINKS" variable (:constant-flag t) nil [1203 1214])
+            ("NOFILE" variable (:constant-flag t) nil [1398 1404])
+            ("NCARGS" variable (:constant-flag t) nil [1418 1424]))          
+    :file "param.h"
+    :pointmax 1433
+    :fsize 1432
+    :lastmodtime '(21752 51272 0 0)
+    :unmatched-syntax '((string 876 . 943) (symbol 870 . 875) (punctuation 868 . 869))
+    :lexical-table 
+        '(("NOFILE" . ((number "256" 1406 . 1409)))
+          ("NCARGS" . ((number "131072" 1426 . 1432)))
+          ("MAXSYMLINKS" . ((number "20" 1215 . 1217)))
+          )
+
+    )
+   (semanticdb-table "socket.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__BITS_SOCKET_H" variable (:constant-flag t) nil [929 944])
+            ("__need_size_t" variable (:constant-flag t) nil [1062 1075])
+            ("stddef.h" include (:system-flag t) nil [1076 1095])
+            ("sys/types.h" include (:system-flag t) nil [1097 1119])
+            ("socklen_t" type
+               (:typedef ("__socklen_t" type (:type "class") nil nil)
+                :superclasses "__socklen_t"
+                :type "typedef")
+                nil [1199 1229])
+            ("__socklen_t_defined" variable (:constant-flag t) nil [1239 1258])
+            ("bits/socket_type.h" include (:system-flag t) nil [1339 1368])
+            ("PF_UNSPEC" variable (:constant-flag t) nil [1404 1413])
+            ("PF_LOCAL" variable (:constant-flag t) nil [1444 1452])
+            ("PF_UNIX" variable (:constant-flag t) nil [1509 1516])
+            ("PF_FILE" variable (:constant-flag t) nil [1567 1574])
+            ("PF_INET" variable (:constant-flag t) nil [1640 1647])
+            ("PF_AX25" variable (:constant-flag t) nil [1686 1693])
+            ("PF_IPX" variable (:constant-flag t) nil [1733 1739])
+            ("PF_APPLETALK" variable (:constant-flag t) nil [1784 1796])
+            ("PF_NETROM" variable (:constant-flag t) nil [1829 1838])
+            ("PF_BRIDGE" variable (:constant-flag t) nil [1878 1887])
+            ("PF_ATMPVC" variable (:constant-flag t) nil [1927 1936])
+            ("PF_X25" variable (:constant-flag t) nil [1964 1970])
+            ("PF_INET6" variable (:constant-flag t) nil [2016 2024])
+            ("PF_ROSE" variable (:constant-flag t) nil [2057 2064])
+            ("PF_DECnet" variable (:constant-flag t) nil [2108 2117])
+            ("PF_NETBEUI" variable (:constant-flag t) nil [2165 2175])
+            ("PF_SECURITY" variable (:constant-flag t) nil [2225 2236])
+            ("PF_KEY" variable (:constant-flag t) nil [2284 2290])
+            ("PF_NETLINK" variable (:constant-flag t) nil [2337 2347])
+            ("PF_ROUTE" variable (:constant-flag t) nil [2359 2367])
+            ("PF_PACKET" variable (:constant-flag t) nil [2419 2428])
+            ("PF_ASH" variable (:constant-flag t) nil [2462 2468])
+            ("PF_ECONET" variable (:constant-flag t) nil [2493 2502])
+            ("PF_ATMSVC" variable (:constant-flag t) nil [2535 2544])
+            ("PF_RDS" variable (:constant-flag t) nil [2573 2579])
+            ("PF_SNA" variable (:constant-flag t) nil [2612 2618])
+            ("PF_IRDA" variable (:constant-flag t) nil [2655 2662])
+            ("PF_PPPOX" variable (:constant-flag t) nil [2696 2704])
+            ("PF_WANPIPE" variable (:constant-flag t) nil [2738 2748])
+            ("PF_LLC" variable (:constant-flag t) nil [2788 2794])
+            ("PF_CAN" variable (:constant-flag t) nil [2825 2831])
+            ("PF_TIPC" variable (:constant-flag t) nil [2876 2883])
+            ("PF_BLUETOOTH" variable (:constant-flag t) nil [2917 2929])
+            ("PF_IUCV" variable (:constant-flag t) nil [2967 2974])
+            ("PF_RXRPC" variable (:constant-flag t) nil [3008 3016])
+            ("PF_ISDN" variable (:constant-flag t) nil [3050 3057])
+            ("PF_PHONET" variable (:constant-flag t) nil [3092 3101])
+            ("PF_IEEE802154" variable (:constant-flag t) nil [3136 3149])
+            ("PF_CAIF" variable (:constant-flag t) nil [3191 3198])
+            ("PF_ALG" variable (:constant-flag t) nil [3232 3238])
+            ("PF_NFC" variable (:constant-flag t) nil [3277 3283])
+            ("PF_MAX" variable (:constant-flag t) nil [3316 3322])
+            ("AF_UNSPEC" variable (:constant-flag t) nil [3378 3387])
+            ("AF_LOCAL" variable (:constant-flag t) nil [3406 3414])
+            ("AF_UNIX" variable (:constant-flag t) nil [3432 3439])
+            ("AF_FILE" variable (:constant-flag t) nil [3457 3464])
+            ("AF_INET" variable (:constant-flag t) nil [3482 3489])
+            ("AF_AX25" variable (:constant-flag t) nil [3507 3514])
+            ("AF_IPX" variable (:constant-flag t) nil [3532 3538])
+            ("AF_APPLETALK" variable (:constant-flag t) nil [3555 3567])
+            ("AF_NETROM" variable (:constant-flag t) nil [3589 3598])
+            ("AF_BRIDGE" variable (:constant-flag t) nil [3617 3626])
+            ("AF_ATMPVC" variable (:constant-flag t) nil [3645 3654])
+            ("AF_X25" variable (:constant-flag t) nil [3673 3679])
+            ("AF_INET6" variable (:constant-flag t) nil [3696 3704])
+            ("AF_ROSE" variable (:constant-flag t) nil [3722 3729])
+            ("AF_DECnet" variable (:constant-flag t) nil [3747 3756])
+            ("AF_NETBEUI" variable (:constant-flag t) nil [3775 3785])
+            ("AF_SECURITY" variable (:constant-flag t) nil [3805 3816])
+            ("AF_KEY" variable (:constant-flag t) nil [3837 3843])
+            ("AF_NETLINK" variable (:constant-flag t) nil [3860 3870])
+            ("AF_ROUTE" variable (:constant-flag t) nil [3890 3898])
+            ("AF_PACKET" variable (:constant-flag t) nil [3916 3925])
+            ("AF_ASH" variable (:constant-flag t) nil [3944 3950])
+            ("AF_ECONET" variable (:constant-flag t) nil [3967 3976])
+            ("AF_ATMSVC" variable (:constant-flag t) nil [3995 4004])
+            ("AF_RDS" variable (:constant-flag t) nil [4023 4029])
+            ("AF_SNA" variable (:constant-flag t) nil [4046 4052])
+            ("AF_IRDA" variable (:constant-flag t) nil [4069 4076])
+            ("AF_PPPOX" variable (:constant-flag t) nil [4094 4102])
+            ("AF_WANPIPE" variable (:constant-flag t) nil [4120 4130])
+            ("AF_LLC" variable (:constant-flag t) nil [4150 4156])
+            ("AF_CAN" variable (:constant-flag t) nil [4173 4179])
+            ("AF_TIPC" variable (:constant-flag t) nil [4196 4203])
+            ("AF_BLUETOOTH" variable (:constant-flag t) nil [4221 4233])
+            ("AF_IUCV" variable (:constant-flag t) nil [4255 4262])
+            ("AF_RXRPC" variable (:constant-flag t) nil [4280 4288])
+            ("AF_ISDN" variable (:constant-flag t) nil [4306 4313])
+            ("AF_PHONET" variable (:constant-flag t) nil [4331 4340])
+            ("AF_IEEE802154" variable (:constant-flag t) nil [4359 4372])
+            ("AF_CAIF" variable (:constant-flag t) nil [4395 4402])
+            ("AF_ALG" variable (:constant-flag t) nil [4420 4426])
+            ("AF_NFC" variable (:constant-flag t) nil [4443 4449])
+            ("AF_MAX" variable (:constant-flag t) nil [4466 4472])
+            ("SOL_RAW" variable (:constant-flag t) nil [4669 4676])
+            ("SOL_DECNET" variable (:constant-flag t) nil [4690 4700])
+            ("SOL_X25" variable (:constant-flag t) nil [4718 4725])
+            ("SOL_PACKET" variable (:constant-flag t) nil [4746 4756])
+            ("SOL_ATM" variable (:constant-flag t) nil [4769 4776])
+            ("SOL_AAL" variable (:constant-flag t) nil [4821 4828])
+            ("SOL_IRDA" variable (:constant-flag t) nil [4884 4892])
+            ("SOMAXCONN" variable (:constant-flag t) nil [4957 4966])
+            ("bits/sockaddr.h" include (:system-flag t) nil [5050 5076])
+            ("sockaddr" type
+               (:members 
+                  ( ("__SOCKADDR_COMMON" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("sa_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5175 5179]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5156 5180])
+                    ("sa_data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5232 5249]))                  
+                :type "struct")
+                nil [5132 5276])
+            ("__ss_aligntype" variable (:constant-flag t) nil [5414 5428])
+            ("_SS_SIZE" variable (:constant-flag t) nil [5455 5463])
+            ("_SS_PADSIZE" variable (:constant-flag t) nil [5476 5487])
+            ("sockaddr_storage" type
+               (:members 
+                  ( ("__SOCKADDR_COMMON" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("ss_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5583 5587]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5564 5588])
+                    ("__ss_align" variable (:type "unsigned long int") (reparse-symbol classsubparts) [5621 5647])
+                    ("__ss_padding" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5684 5715]))                  
+                :type "struct")
+                nil [5532 5720])
+            ("" type
+               (:members 
+                  ( ("MSG_OOB" variable
+                       (:constant-flag t
+                        :default-value (5807 5811)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5796 5811])
+                    ("MSG_PEEK" variable
+                       (:constant-flag t
+                        :default-value (5887 5891)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5875 5891])
+                    ("MSG_DONTROUTE" variable
+                       (:constant-flag t
+                        :default-value (5973 5977)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5957 5977])
+                    ("MSG_CTRUNC" variable
+                       (:constant-flag t
+                        :default-value (6199 6203)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6185 6203])
+                    ("MSG_PROXY" variable
+                       (:constant-flag t
+                        :default-value (6294 6298)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6281 6298])
+                    ("MSG_TRUNC" variable
+                       (:constant-flag t
+                        :default-value (6382 6386)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6369 6386])
+                    ("MSG_DONTWAIT" variable
+                       (:constant-flag t
+                        :default-value (6435 6439)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6420 6439])
+                    ("MSG_EOR" variable
+                       (:constant-flag t
+                        :default-value (6513 6517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6502 6517])
+                    ("MSG_WAITALL" variable
+                       (:constant-flag t
+                        :default-value (6585 6590)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6570 6590])
+                    ("MSG_FIN" variable
+                       (:constant-flag t
+                        :default-value (6671 6676)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6660 6676])
+                    ("MSG_SYN" variable
+                       (:constant-flag t
+                        :default-value (6718 6723)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6707 6723])
+                    ("MSG_CONFIRM" variable
+                       (:constant-flag t
+                        :default-value (6769 6774)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6754 6774])
+                    ("MSG_RST" variable
+                       (:constant-flag t
+                        :default-value (6853 6859)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6842 6859])
+                    ("MSG_ERRQUEUE" variable
+                       (:constant-flag t
+                        :default-value (6905 6911)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6890 6911])
+                    ("MSG_NOSIGNAL" variable
+                       (:constant-flag t
+                        :default-value (7005 7011)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [6990 7011])
+                    ("MSG_MORE" variable
+                       (:constant-flag t
+                        :default-value (7095 7101)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7083 7101])
+                    ("MSG_WAITFORONE" variable
+                       (:constant-flag t
+                        :default-value (7181 7188)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7164 7188])
+                    ("MSG_CMSG_CLOEXEC" variable
+                       (:constant-flag t
+                        :default-value (7297 7307)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7278 7307]))                  
+                :type "enum")
+                nil [5783 7444])
+            ("msghdr" type
+               (:members 
+                  ( ("msg_name" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [7554 7569])
+                    ("msg_namelen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7615 7637])
+                    ("msg_iov" variable
+                       (:pointer 1
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7674 7696])
+                    ("msg_iovlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7745 7763])
+                    ("msg_control" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [7811 7829])
+                    ("msg_controllen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7883 7905])
+                    ("msg_flags" variable (:type "int") (reparse-symbol classsubparts) [8061 8075]))                  
+                :type "struct")
+                nil [7532 8115])
+            ("cmsghdr" type
+               (:members 
+                  ( ("cmsg_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8212 8228])
+                    ("cmsg_level" variable (:type "int") (reparse-symbol classsubparts) [8423 8438])
+                    ("cmsg_type" variable (:type "int") (reparse-symbol classsubparts) [8473 8487])
+                    ("__cmsg_data" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [8617 8653]))                  
+                :type "struct")
+                nil [8189 8688])
+            ("CMSG_DATA" variable (:constant-flag t) nil [8828 8837])
+            ("CMSG_NXTHDR" variable (:constant-flag t) nil [8964 8975])
+            ("CMSG_FIRSTHDR" variable (:constant-flag t) nil [9023 9036])
+            ("CMSG_ALIGN" variable (:constant-flag t) nil [9192 9202])
+            ("CMSG_SPACE" variable (:constant-flag t) nil [9288 9298])
+            ("CMSG_LEN" variable (:constant-flag t) nil [9376 9384])
+            ("__cmsg_nxthdr" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("__mhdr" variable
+                       (:pointer 1
+                        :type ("msghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9478 9500])
+                    ("__cmsg" variable
+                       (:pointer 1
+                        :type ("cmsghdr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9511 9534]))                  
+                :type ("cmsghdr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [9440 9543])
+            ("" type
+               (:members 
+                  ( ("SCM_RIGHTS" variable
+                       (:constant-flag t
+                        :default-value (10489 10493)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [10476 10493]))                  
+                :type "enum")
+                nil [10463 10685])
+            ("__SYS_SOCKET_H_undef_FIOGETOWN" variable (:constant-flag t) nil [11051 11081])
+            ("__SYS_SOCKET_H_undef_FIOSETOWN" variable (:constant-flag t) nil [11119 11149])
+            ("__SYS_SOCKET_H_undef_SIOCATMARK" variable (:constant-flag t) nil [11188 11219])
+            ("__SYS_SOCKET_H_undef_SIOCGPGRP" variable (:constant-flag t) nil [11257 11287])
+            ("__SYS_SOCKET_H_undef_SIOCGSTAMP" variable (:constant-flag t) nil [11326 11357])
+            ("__SYS_SOCKET_H_undef_SIOCGSTAMPNS" variable (:constant-flag t) nil [11398 11431])
+            ("__SYS_SOCKET_H_undef_SIOCSPGRP" variable (:constant-flag t) nil [11469 11499])
+            ("asm/socket.h" include (:system-flag t) nil [11589 11612])
+            ("linger" type
+               (:members 
+                  ( ("l_onoff" variable (:type "int") (reparse-symbol classsubparts) [12505 12517])
+                    ("l_linger" variable (:type "int") (reparse-symbol classsubparts) [12558 12571]))                  
+                :type "struct")
+                nil [12483 12600]))          
+    :file "socket.h"
+    :pointmax 12629
+    :fsize 12628
+    :lastmodtime '(21752 51273 0 0)
+    :unmatched-syntax '((spp-macro-def 10537 . 10547) (symbol 8603 . 8616) (spp-macro-def 7406 . 7422) (spp-macro-def 7243 . 7257) (spp-macro-def 7142 . 7150) (spp-macro-def 7053 . 7065) (spp-macro-def 6960 . 6972) (spp-macro-def 6869 . 6876) (spp-macro-def 6814 . 6825) (spp-macro-def 6733 . 6740) (spp-macro-def 6686 . 6693) (spp-macro-def 6632 . 6643) (spp-macro-def 6549 . 6556) (spp-macro-def 6472 . 6484) (spp-macro-def 6396 . 6405) (spp-macro-def 6345 . 6354) (spp-macro-def 6255 . 6265) (spp-macro-def 6019 . 6032) (spp-macro-def 5935 . 5943) (spp-macro-def 5854 . 5861) (string 976 . 1045) (symbol 970 . 975) (punctuation 968 . 969))
+    :lexical-table 
+        '(("PF_ROSE" . ((number "11" 2066 . 2068)))
+          ("PF_IEEE802154" . ((number "36" 3150 . 3152)))
+          ("AF_LOCAL" . ((symbol "PF_LOCAL" 3415 . 3423)))
+          ("AF_X25" . ((symbol "PF_X25" 3681 . 3687)))
+          ("AF_DECnet" . ((symbol "PF_DECnet" 3757 . 3766)))
+          ("AF_TIPC" . ((symbol "PF_TIPC" 4205 . 4212)))
+          ("PF_AX25" . ((number "3" 1695 . 1696)))
+          ("PF_IUCV" . ((number "32" 2976 . 2978)))
+          ("AF_BLUETOOTH" . ((symbol "PF_BLUETOOTH" 4234 . 4246)))
+          ("CMSG_LEN" (spp-arg-list ("len") 9384 . 9389) . ((semantic-list "(CMSG_ALIGN (sizeof (struct cmsghdr)) + (len))" 9392 . 9438)))
+          ("MSG_OOB" . ((symbol "MSG_OOB" 5863 . 5870)))
+          ("MSG_DONTROUTE" . ((symbol "MSG_DONTROUTE" 6033 . 6046)))
+          ("MSG_SYN" . ((symbol "MSG_SYN" 6742 . 6749)))
+          ("MSG_MORE" . ((symbol "MSG_MORE" 7151 . 7159)))
+          ("PF_NETROM" . ((number "6" 1839 . 1840)))
+          ("PF_SECURITY" . ((number "14" 2237 . 2239)))
+          ("PF_ROUTE" . ((symbol "PF_NETLINK" 2368 . 2378)))
+          ("PF_LLC" . ((number "26" 2796 . 2798)))
+          ("PF_TIPC" . ((number "30" 2885 . 2887)))
+          ("PF_NFC" . ((number "39" 3285 . 3287)))
+          ("AF_UNSPEC" . ((symbol "PF_UNSPEC" 3388 . 3397)))
+          ("AF_FILE" . ((symbol "PF_FILE" 3466 . 3473)))
+          ("AF_ATMPVC" . ((symbol "PF_ATMPVC" 3655 . 3664)))
+          ("AF_KEY" . ((symbol "PF_KEY" 3845 . 3851)))
+          ("AF_ASH" . ((symbol "PF_ASH" 3952 . 3958)))
+          ("AF_ECONET" . ((symbol "PF_ECONET" 3977 . 3986)))
+          ("AF_PPPOX" . ((symbol "PF_PPPOX" 4103 . 4111)))
+          ("AF_ISDN" . ((symbol "PF_ISDN" 4315 . 4322)))
+          ("CMSG_NXTHDR" (spp-arg-list ("mhdr" "cmsg") 8975 . 8987) . ((symbol "__cmsg_nxthdr" 8988 . 9001) (semantic-list "(mhdr, cmsg)" 9002 . 9014)))
+          ("MSG_CTRUNC" . ((symbol "MSG_CTRUNC" 6266 . 6276)))
+          ("PF_CAN" . ((number "29" 2833 . 2835)))
+          ("AF_IPX" . ((symbol "PF_IPX" 3540 . 3546)))
+          ("AF_ATMSVC" . ((symbol "PF_ATMSVC" 4005 . 4014)))
+          ("AF_RXRPC" . ((symbol "PF_RXRPC" 4289 . 4297)))
+          ("SOL_ATM" . ((number "264" 4778 . 4781)))
+          ("CMSG_DATA" (spp-arg-list ("cmsg") 8837 . 8843) . ((semantic-list "((cmsg)->__cmsg_data)" 8844 . 8865)))
+          ("MSG_WAITFORONE" . ((symbol "MSG_WAITFORONE" 7258 . 7272)))
+          ("MSG_CMSG_CLOEXEC" . ((symbol "MSG_CMSG_CLOEXEC" 7423 . 7439)))
+          ("PF_FILE" . ((symbol "PF_LOCAL" 1576 . 1584)))
+          ("PF_SNA" . ((number "22" 2620 . 2622)))
+          ("PF_ISDN" . ((number "34" 3059 . 3061)))
+          ("PF_PHONET" . ((number "35" 3102 . 3104)))
+          ("AF_INET6" . ((symbol "PF_INET6" 3705 . 3713)))
+          ("AF_PACKET" . ((symbol "PF_PACKET" 3926 . 3935)))
+          ("AF_RDS" . ((symbol "PF_RDS" 4031 . 4037)))
+          ("MSG_PROXY" . ((symbol "MSG_PROXY" 6355 . 6364)))
+          ("PF_X25" . ((number "9" 1972 . 1973)))
+          ("PF_DECnet" . ((number "12" 2118 . 2120)))
+          ("AF_INET" . ((symbol "PF_INET" 3491 . 3498)))
+          ("AF_APPLETALK" . ((symbol "PF_APPLETALK" 3568 . 3580)))
+          ("SOL_RAW" . ((number "255" 4678 . 4681)))
+          ("MSG_TRUNC" . ((symbol "MSG_TRUNC" 6406 . 6415)))
+          ("MSG_EOR" . ((symbol "MSG_EOR" 6558 . 6565)))
+          ("MSG_FIN" . ((symbol "MSG_FIN" 6695 . 6702)))
+          ("MSG_NOSIGNAL" . ((symbol "MSG_NOSIGNAL" 7066 . 7078)))
+          ("PF_LOCAL" . ((number "1" 1453 . 1454)))
+          ("PF_BLUETOOTH" . ((number "31" 2930 . 2932)))
+          ("AF_BRIDGE" . ((symbol "PF_BRIDGE" 3627 . 3636)))
+          ("AF_IRDA" . ((symbol "PF_IRDA" 4078 . 4085)))
+          ("AF_ALG" . ((symbol "PF_ALG" 4428 . 4434)))
+          ("SOL_DECNET" . ((number "261" 4706 . 4709)))
+          ("SOL_X25" . ((number "262" 4734 . 4737)))
+          ("MSG_RST" . ((symbol "MSG_RST" 6878 . 6885)))
+          ("__need_size_t")
+          ("PF_UNSPEC" . ((number "0" 1414 . 1415)))
+          ("PF_INET" . ((number "2" 1649 . 1650)))
+          ("PF_ATMPVC" . ((number "8" 1937 . 1938)))
+          ("PF_KEY" . ((number "15" 2292 . 2294)))
+          ("PF_ASH" . ((number "18" 2470 . 2472)))
+          ("PF_ECONET" . ((number "19" 2503 . 2505)))
+          ("AF_UNIX" . ((symbol "PF_UNIX" 3441 . 3448)))
+          ("AF_WANPIPE" . ((symbol "PF_WANPIPE" 4131 . 4141)))
+          ("AF_MAX" . ((symbol "PF_MAX" 4474 . 4480)))
+          ("_SS_PADSIZE" . ((semantic-list "(_SS_SIZE - (2 * sizeof (__ss_aligntype)))" 5488 . 5530)))
+          ("SCM_RIGHTS" . ((symbol "SCM_RIGHTS" 10548 . 10558)))
+          ("PF_IPX" . ((number "4" 1741 . 1742)))
+          ("PF_ATMSVC" . ((number "20" 2545 . 2547)))
+          ("PF_IRDA" . ((number "23" 2664 . 2666)))
+          ("PF_PPPOX" . ((number "24" 2705 . 2707)))
+          ("AF_NETBEUI" . ((symbol "PF_NETBEUI" 3786 . 3796)))
+          ("CMSG_ALIGN" (spp-arg-list ("len") 9202 . 9207) . ((semantic-list "(((len) + sizeof (size_t) - 1) \\
+			 & (size_t) ~(sizeof (size_t) - 1))" 9208 . 9279)))
+          ("MSG_WAITALL" . ((symbol "MSG_WAITALL" 6644 . 6655)))
+          ("MSG_ERRQUEUE" . ((symbol "MSG_ERRQUEUE" 6973 . 6985)))
+          ("__BITS_SOCKET_H")
+          ("PF_UNIX" . ((symbol "PF_LOCAL" 1518 . 1526)))
+          ("PF_PACKET" . ((number "17" 2429 . 2431)))
+          ("PF_RDS" . ((number "21" 2581 . 2583)))
+          ("PF_WANPIPE" . ((number "25" 2749 . 2751)))
+          ("PF_RXRPC" . ((number "33" 3017 . 3019)))
+          ("AF_SECURITY" . ((symbol "PF_SECURITY" 3817 . 3828)))
+          ("AF_NETLINK" . ((symbol "PF_NETLINK" 3871 . 3881)))
+          ("AF_ROUTE" . ((symbol "PF_ROUTE" 3899 . 3907)))
+          ("_SS_SIZE" . ((number "128" 5464 . 5467)))
+          ("__socklen_t_defined")
+          ("PF_APPLETALK" . ((number "5" 1797 . 1798)))
+          ("PF_INET6" . ((number "10" 2025 . 2027)))
+          ("PF_NETBEUI" . ((number "13" 2176 . 2178)))
+          ("AF_NETROM" . ((symbol "PF_NETROM" 3599 . 3608)))
+          ("AF_LLC" . ((symbol "PF_LLC" 4158 . 4164)))
+          ("AF_CAIF" . ((symbol "PF_CAIF" 4404 . 4411)))
+          ("AF_NFC" . ((symbol "PF_NFC" 4451 . 4457)))
+          ("SOL_PACKET" . ((number "263" 4757 . 4760)))
+          ("SOL_AAL" . ((number "265" 4830 . 4833)))
+          ("SOMAXCONN" . ((number "128" 4967 . 4970)))
+          ("PF_BRIDGE" . ((number "7" 1888 . 1889)))
+          ("PF_NETLINK" . ((number "16" 2348 . 2350)))
+          ("PF_ALG" . ((number "38" 3240 . 3242)))
+          ("AF_ROSE" . ((symbol "PF_ROSE" 3731 . 3738)))
+          ("AF_CAN" . ((symbol "PF_CAN" 4181 . 4187)))
+          ("AF_IEEE802154" . ((symbol "PF_IEEE802154" 4373 . 4386)))
+          ("SOL_IRDA" . ((number "266" 4893 . 4896)))
+          ("__ss_aligntype" . 
+              ((UNSIGNED "unsigned" 5429 . 5437) (LONG "long" 5438 . 5442) (INT "int" 5443 . 5446)))
+          ("CMSG_FIRSTHDR" (spp-arg-list ("mhdr") 9036 . 9042) . ((semantic-list "((size_t) (mhdr)->msg_controllen >= sizeof (struct cmsghdr)		      \\
+   ? (struct cmsghdr *) (mhdr)->msg_control : (struct cmsghdr *) 0)" 9047 . 9183)))
+          ("MSG_PEEK" . ((symbol "MSG_PEEK" 5944 . 5952)))
+          ("MSG_DONTWAIT" . ((symbol "MSG_DONTWAIT" 6485 . 6497)))
+          ("MSG_CONFIRM" . ((symbol "MSG_CONFIRM" 6826 . 6837)))
+          ("PF_CAIF" . ((number "37" 3200 . 3202)))
+          ("PF_MAX" . ((number "40" 3324 . 3326)))
+          ("AF_AX25" . ((symbol "PF_AX25" 3516 . 3523)))
+          ("AF_SNA" . ((symbol "PF_SNA" 4054 . 4060)))
+          ("AF_IUCV" . ((symbol "PF_IUCV" 4264 . 4271)))
+          ("AF_PHONET" . ((symbol "PF_PHONET" 4341 . 4350)))
+          ("CMSG_SPACE" (spp-arg-list ("len") 9298 . 9303) . ((semantic-list "(CMSG_ALIGN (len) \\
+			 + CMSG_ALIGN (sizeof (struct cmsghdr)))" 9304 . 9367)))
+          )
+
+    )
+   (semanticdb-table "sockaddr.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_BITS_SOCKADDR_H" variable (:constant-flag t) nil [995 1011])
+            ("sa_family_t" type
+               (:typedef ("unsigned short int")
+                :superclasses "unsigned short int"
+                :type "typedef")
+                nil [1085 1124])
+            ("__SOCKADDR_COMMON" variable (:constant-flag t) nil [1318 1335])
+            ("__SOCKADDR_COMMON_SIZE" variable (:constant-flag t) nil [1390 1412]))          
+    :file "sockaddr.h"
+    :pointmax 1473
+    :fsize 1472
+    :lastmodtime '(21752 51273 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__SOCKADDR_COMMON" (spp-arg-list ("sa_prefix") 1335 . 1346) . ((symbol "sa_family_t" 1351 . 1362) (spp-symbol-merge ((symbol "sa_prefix" 1363 . 1372) (symbol "family" 1374 . 1380)) 1363 . 1380)))
+          ("_BITS_SOCKADDR_H" . ((number "1" 1012 . 1013)))
+          ("__SOCKADDR_COMMON_SIZE" . ((semantic-list "(sizeof (unsigned short int))" 1413 . 1442)))
+          )
+
+    )
+   (semanticdb-table "fcntl-linux.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("O_ACCMODE" variable (:constant-flag t) nil [1413 1422])
+            ("O_RDONLY" variable (:constant-flag t) nil [1439 1447])
+            ("O_WRONLY" variable (:constant-flag t) nil [1464 1472])
+            ("O_RDWR" variable (:constant-flag t) nil [1489 1495])
+            ("O_CREAT" variable (:constant-flag t) nil [1530 1537])
+            ("O_EXCL" variable (:constant-flag t) nil [1595 1601])
+            ("O_NOCTTY" variable (:constant-flag t) nil [1662 1670])
+            ("O_TRUNC" variable (:constant-flag t) nil [1729 1736])
+            ("O_APPEND" variable (:constant-flag t) nil [1796 1804])
+            ("O_NONBLOCK" variable (:constant-flag t) nil [1848 1858])
+            ("O_NDELAY" variable (:constant-flag t) nil [1900 1908])
+            ("O_SYNC" variable (:constant-flag t) nil [1951 1957])
+            ("O_FSYNC" variable (:constant-flag t) nil [1989 1996])
+            ("O_ASYNC" variable (:constant-flag t) nil [2030 2037])
+            ("__O_LARGEFILE" variable (:constant-flag t) nil [2084 2097])
+            ("__O_DIRECTORY" variable (:constant-flag t) nil [2145 2158])
+            ("__O_NOFOLLOW" variable (:constant-flag t) nil [2205 2217])
+            ("__O_CLOEXEC" variable (:constant-flag t) nil [2262 2273])
+            ("__O_DIRECT" variable (:constant-flag t) nil [2320 2330])
+            ("__O_NOATIME" variable (:constant-flag t) nil [2375 2386])
+            ("__O_PATH" variable (:constant-flag t) nil [2431 2439])
+            ("__O_DSYNC" variable (:constant-flag t) nil [2488 2497])
+            ("F_GETLK" variable (:constant-flag t) nil [2569 2576])
+            ("F_SETLK" variable (:constant-flag t) nil [2621 2628])
+            ("F_SETLKW" variable (:constant-flag t) nil [2688 2696])
+            ("F_GETLK64" variable (:constant-flag t) nil [2997 3006])
+            ("F_SETLK64" variable (:constant-flag t) nil [3051 3060])
+            ("F_SETLKW64" variable (:constant-flag t) nil [3120 3130])
+            ("F_DUPFD" variable (:constant-flag t) nil [4172 4179])
+            ("F_GETFD" variable (:constant-flag t) nil [4225 4232])
+            ("F_SETFD" variable (:constant-flag t) nil [4278 4285])
+            ("F_GETFL" variable (:constant-flag t) nil [4331 4338])
+            ("F_SETFL" variable (:constant-flag t) nil [4380 4387])
+            ("__F_SETOWN" variable (:constant-flag t) nil [4450 4460])
+            ("__F_GETOWN" variable (:constant-flag t) nil [4472 4482])
+            ("__F_SETSIG" variable (:constant-flag t) nil [4747 4757])
+            ("__F_GETSIG" variable (:constant-flag t) nil [4810 4820])
+            ("__F_SETOWN_EX" variable (:constant-flag t) nil [4902 4915])
+            ("__F_GETOWN_EX" variable (:constant-flag t) nil [4971 4984])
+            ("FD_CLOEXEC" variable (:constant-flag t) nil [5835 5845])
+            ("F_RDLCK" variable (:constant-flag t) nil [5997 6004])
+            ("F_WRLCK" variable (:constant-flag t) nil [6035 6042])
+            ("F_UNLCK" variable (:constant-flag t) nil [6073 6080])
+            ("F_EXLCK" variable (:constant-flag t) nil [6182 6189])
+            ("F_SHLCK" variable (:constant-flag t) nil [6213 6220])
+            ("__POSIX_FADV_DONTNEED" variable (:constant-flag t) nil [8124 8145])
+            ("__POSIX_FADV_NOREUSE" variable (:constant-flag t) nil [8158 8178])
+            ("C" extern nil nil [9761 9774]))          
+    :file "fcntl-linux.h"
+    :pointmax 11974
+    :fsize 11973
+    :lastmodtime '(21752 51271 0 0)
+    :unmatched-syntax '((close-paren "}" 11962 . 11973) (string 855 . 924) (symbol 849 . 854) (punctuation 847 . 848))
+    :lexical-table 
+        '(("O_NDELAY" . ((symbol "O_NONBLOCK" 1909 . 1919)))
+          ("O_ASYNC" . ((number "020000" 2039 . 2045)))
+          ("__O_DIRECTORY" . ((number "0200000" 2160 . 2167)))
+          ("F_GETFL" . ((number "3" 4340 . 4341)))
+          ("O_ACCMODE" . ((number "0003" 1426 . 1430)))
+          ("F_SETLK" . ((number "6" 2629 . 2630)))
+          ("O_WRONLY" . ((number "01" 1478 . 1480)))
+          ("O_EXCL" . ((number "0200" 1606 . 1610)))
+          ("O_APPEND" . ((number "02000" 1807 . 1812)))
+          ("O_FSYNC" . ((symbol "O_SYNC" 1998 . 2004)))
+          ("__O_CLOEXEC" . ((number "02000000" 2276 . 2284)))
+          ("F_SETLK64" . ((number "13" 3061 . 3063)))
+          ("F_DUPFD" . ((number "0" 4181 . 4182)))
+          ("F_SETFD" . ((number "2" 4287 . 4288)))
+          ("__F_SETOWN" . ((number "8" 4461 . 4462)))
+          ("__F_SETSIG" . ((number "10" 4758 . 4760)))
+          ("F_RDLCK" . ((number "0" 6006 . 6007)))
+          ("F_GETLK64" . ((number "12" 3007 . 3009)))
+          ("O_NOCTTY" . ((number "0400" 1674 . 1678)))
+          ("F_GETLK" . ((number "5" 2577 . 2578)))
+          ("__F_GETOWN_EX" . ((number "16" 4985 . 4987)))
+          ("O_RDWR" . ((number "02" 1502 . 1504)))
+          ("__O_LARGEFILE" . ((number "0100000" 2098 . 2105)))
+          ("__O_DSYNC" . ((number "010000" 2499 . 2505)))
+          ("F_GETFD" . ((number "1" 4234 . 4235)))
+          ("F_WRLCK" . ((number "1" 6044 . 6045)))
+          ("O_RDONLY" . ((number "00" 1453 . 1455)))
+          ("O_TRUNC" . ((number "01000" 1739 . 1744)))
+          ("__O_DIRECT" . ((number "040000" 2332 . 2338)))
+          ("__O_NOATIME" . ((number "01000000" 2389 . 2397)))
+          ("__F_SETOWN_EX" . ((number "15" 4916 . 4918)))
+          ("F_UNLCK" . ((number "2" 6082 . 6083)))
+          ("__POSIX_FADV_DONTNEED" . ((number "4" 8146 . 8147)))
+          ("__O_NOFOLLOW" . ((number "0400000" 2218 . 2225)))
+          ("FD_CLOEXEC" . ((number "1" 5846 . 5847)))
+          ("F_EXLCK" . ((number "4" 6191 . 6192)))
+          ("F_SHLCK" . ((number "8" 6222 . 6223)))
+          ("O_SYNC" . ((number "04010000" 1965 . 1973)))
+          ("F_SETLKW64" . ((number "14" 3131 . 3133)))
+          ("F_SETFL" . ((number "4" 4389 . 4390)))
+          ("__POSIX_FADV_NOREUSE" . ((number "5" 8179 . 8180)))
+          ("O_CREAT" . ((number "0100" 1541 . 1545)))
+          ("__F_GETOWN" . ((number "9" 4483 . 4484)))
+          ("__F_GETSIG" . ((number "11" 4821 . 4823)))
+          ("O_NONBLOCK" . ((number "04000" 1861 . 1866)))
+          ("__O_PATH" . ((number "010000000" 2444 . 2453)))
+          ("F_SETLKW" . ((number "7" 2697 . 2698)))
+          )
+
+    )
+   (semanticdb-table "uio.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_BITS_UIO_H" variable (:constant-flag t) nil [962 973])
+            ("sys/types.h" include (:system-flag t) nil [977 999])
+            ("UIO_MAXIOV" variable (:constant-flag t) nil [1602 1612])
+            ("iovec" type
+               (:members 
+                  ( ("iov_base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1682 1697])
+                    ("iov_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1726 1741]))                  
+                :type "struct")
+                nil [1661 1769]))          
+    :file "uio.h"
+    :pointmax 2481
+    :fsize 2480
+    :lastmodtime '(21752 51272 0 0)
+    :unmatched-syntax '((string 862 . 925) (symbol 856 . 861) (punctuation 854 . 855))
+    :lexical-table 
+        '(("UIO_MAXIOV" . ((number "1024" 1613 . 1617)))
+          ("_BITS_UIO_H" . ((number "1" 974 . 975)))
+          )
+
+    )
+   (semanticdb-table "socket_type.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__socket_type" type
+               (:members 
+                  ( ("SOCK_STREAM" variable
+                       (:constant-flag t
+                        :default-value (1013 1014)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [999 1014])
+                    ("SOCK_DGRAM" variable
+                       (:constant-flag t
+                        :default-value (1130 1131)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1117 1131])
+                    ("SOCK_RAW" variable
+                       (:constant-flag t
+                        :default-value (1253 1254)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1242 1254])
+                    ("SOCK_RDM" variable
+                       (:constant-flag t
+                        :default-value (1328 1329)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1317 1329])
+                    ("SOCK_SEQPACKET" variable
+                       (:constant-flag t
+                        :default-value (1414 1415)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1397 1415])
+                    ("SOCK_DCCP" variable
+                       (:constant-flag t
+                        :default-value (1558 1559)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1546 1559])
+                    ("SOCK_PACKET" variable
+                       (:constant-flag t
+                        :default-value (1651 1653)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1637 1653])
+                    ("SOCK_CLOEXEC" variable
+                       (:constant-flag t
+                        :default-value (1970 1978)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1955 1978])
+                    ("SOCK_NONBLOCK" variable
+                       (:constant-flag t
+                        :default-value (2107 2115)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2091 2115]))                  
+                :type "enum")
+                nil [976 2215]))          
+    :file "socket_type.h"
+    :pointmax 2216
+    :fsize 2215
+    :lastmodtime '(21752 51273 0 0)
+    :unmatched-syntax '((spp-macro-def 2185 . 2198) (spp-macro-def 2063 . 2075) (spp-macro-def 1802 . 1813) (spp-macro-def 1615 . 1624) (spp-macro-def 1514 . 1528) (spp-macro-def 1377 . 1385) (spp-macro-def 1297 . 1305) (spp-macro-def 1218 . 1228) (spp-macro-def 1091 . 1102) (string 868 . 942) (symbol 862 . 867) (punctuation 860 . 861))
+    :lexical-table 
+        '(("SOCK_CLOEXEC" . ((symbol "SOCK_CLOEXEC" 2076 . 2088)))
+          ("SOCK_STREAM" . ((symbol "SOCK_STREAM" 1103 . 1114)))
+          ("SOCK_PACKET" . ((symbol "SOCK_PACKET" 1814 . 1825)))
+          ("SOCK_NONBLOCK" . ((symbol "SOCK_NONBLOCK" 2199 . 2212)))
+          ("SOCK_RDM" . ((symbol "SOCK_RDM" 1386 . 1394)))
+          ("SOCK_RAW" . ((symbol "SOCK_RAW" 1306 . 1314)))
+          ("SOCK_SEQPACKET" . ((symbol "SOCK_SEQPACKET" 1529 . 1543)))
+          ("SOCK_DGRAM" . ((symbol "SOCK_DGRAM" 1229 . 1239)))
+          ("SOCK_DCCP" . ((symbol "SOCK_DCCP" 1625 . 1634)))
+          )
+
+    )
+   (semanticdb-table "dirent.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("dirent" type
+               (:members 
+                  ( ("d_ino" variable (:type ("__ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [940 954])
+                    ("d_off" variable (:type ("__off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [959 973])
+                    ("d_reclen" variable (:type "unsigned short int") (reparse-symbol classsubparts) [1033 1061])
+                    ("d_type" variable (:type "unsigned char") (reparse-symbol classsubparts) [1066 1087])
+                    ("d_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1092 1109]))                  
+                :type "struct")
+                nil [890 1151])
+            ("d_fileno" variable (:constant-flag t) nil [1379 1387])
+            ("_DIRENT_HAVE_D_RECLEN" variable (:constant-flag t) nil [1465 1486])
+            ("_DIRENT_HAVE_D_OFF" variable (:constant-flag t) nil [1495 1513])
+            ("_DIRENT_HAVE_D_TYPE" variable (:constant-flag t) nil [1522 1541]))          
+    :file "dirent.h"
+    :pointmax 1729
+    :fsize 1728
+    :lastmodtime '(21752 51270 0 0)
+    :unmatched-syntax '((string 816 . 881) (symbol 810 . 815) (punctuation 808 . 809))
+    :lexical-table 
+        '(("_DIRENT_HAVE_D_RECLEN")
+          ("d_fileno" . ((symbol "d_ino" 1388 . 1393)))
+          ("_DIRENT_HAVE_D_OFF")
+          ("_DIRENT_HAVE_D_TYPE")
+          )
+
+    )
+   (semanticdb-table "stat.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_BITS_STAT_H" variable (:constant-flag t) nil [947 959])
+            ("_STAT_VER_KERNEL" variable (:constant-flag t) nil [1336 1352])
+            ("_STAT_VER_LINUX" variable (:constant-flag t) nil [1364 1379])
+            ("_MKNOD_VER_LINUX" variable (:constant-flag t) nil [1442 1458])
+            ("_STAT_VER" variable (:constant-flag t) nil [1477 1486])
+            ("stat" type
+               (:members 
+                  ( ("st_dev" variable (:type ("__dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1525 1540])
+                    ("st_ino" variable (:type ("__ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1673 1688])
+                    ("st_nlink" variable (:type ("__nlink_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1901 1920])
+                    ("st_mode" variable (:type ("__mode_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1945 1962])
+                    ("st_uid" variable (:type ("__uid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1993 2008])
+                    ("st_gid" variable (:type ("__gid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2049 2064])
+                    ("__pad0" variable (:type "int") (reparse-symbol classsubparts) [2123 2134])
+                    ("st_rdev" variable (:type ("__dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2146 2162])
+                    ("st_size" variable (:type ("__off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2313 2329])
+                    ("st_blksize" variable (:type ("__blksize_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2436 2459])
+                    ("st_blocks" variable (:type ("__blkcnt_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2555 2576])
+                    ("st_atime" variable (:type ("__time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3457 3475])
+                    ("st_atimensec" variable (:type ("__syscall_ulong_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3510 3541])
+                    ("st_mtime" variable (:type ("__time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3576 3594])
+                    ("st_mtimensec" variable (:type ("__syscall_ulong_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3635 3666])
+                    ("st_ctime" variable (:type ("__time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3706 3724])
+                    ("st_ctimensec" variable (:type ("__syscall_ulong_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3766 3797])
+                    ("__unused" variable
+                       (:dereference 1
+                        :type ("__syscall_slong_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3863 3893]))                  
+                :type "struct")
+                nil [1505 4071])
+            ("_STATBUF_ST_BLKSIZE" variable (:constant-flag t) nil [6278 6297])
+            ("_STATBUF_ST_RDEV" variable (:constant-flag t) nil [6306 6322])
+            ("_STATBUF_ST_NSEC" variable (:constant-flag t) nil [6387 6403])
+            ("__S_IFMT" variable (:constant-flag t) nil [6448 6456])
+            ("__S_IFDIR" variable (:constant-flag t) nil [6532 6541])
+            ("__S_IFCHR" variable (:constant-flag t) nil [6576 6585])
+            ("__S_IFBLK" variable (:constant-flag t) nil [6627 6636])
+            ("__S_IFREG" variable (:constant-flag t) nil [6674 6683])
+            ("__S_IFIFO" variable (:constant-flag t) nil [6721 6730])
+            ("__S_IFLNK" variable (:constant-flag t) nil [6760 6769])
+            ("__S_IFSOCK" variable (:constant-flag t) nil [6808 6818])
+            ("__S_TYPEISMQ" variable (:constant-flag t) nil [6988 7000])
+            ("__S_TYPEISSEM" variable (:constant-flag t) nil [7049 7062])
+            ("__S_TYPEISSHM" variable (:constant-flag t) nil [7110 7123])
+            ("__S_ISUID" variable (:constant-flag t) nil [7197 7206])
+            ("__S_ISGID" variable (:constant-flag t) nil [7254 7263])
+            ("__S_ISVTX" variable (:constant-flag t) nil [7312 7321])
+            ("__S_IREAD" variable (:constant-flag t) nil [7381 7390])
+            ("__S_IWRITE" variable (:constant-flag t) nil [7426 7436])
+            ("__S_IEXEC" variable (:constant-flag t) nil [7473 7482]))          
+    :file "stat.h"
+    :pointmax 7642
+    :fsize 7641
+    :lastmodtime '(21752 51271 0 0)
+    :unmatched-syntax '((string 844 . 909) (symbol 838 . 843) (punctuation 836 . 837))
+    :lexical-table 
+        '(("__S_ISUID" . ((number "04000" 7207 . 7212)))
+          ("__S_IREAD" . ((number "0400" 7391 . 7395)))
+          ("__S_IEXEC" . ((number "0100" 7483 . 7487)))
+          ("__S_IFBLK" . ((number "0060000" 6637 . 6644)))
+          ("_STAT_VER_LINUX" . ((number "1" 1380 . 1381)))
+          ("__S_IFREG" . ((number "0100000" 6684 . 6691)))
+          ("__S_IFDIR" . ((number "0040000" 6542 . 6549)))
+          ("__S_ISGID" . ((number "02000" 7264 . 7269)))
+          ("__S_IFCHR" . ((number "0020000" 6586 . 6593)))
+          ("__S_TYPEISSHM" (spp-arg-list ("buf") 7123 . 7128) . ((semantic-list "((buf)->st_mode - (buf)->st_mode)" 7129 . 7162)))
+          ("__S_IFLNK" . ((number "0120000" 6770 . 6777)))
+          ("__S_TYPEISMQ" (spp-arg-list ("buf") 7000 . 7005) . ((semantic-list "((buf)->st_mode - (buf)->st_mode)" 7007 . 7040)))
+          ("_STATBUF_ST_BLKSIZE")
+          ("_STATBUF_ST_NSEC")
+          ("__S_IFSOCK" . ((number "0140000" 6819 . 6826)))
+          ("_BITS_STAT_H" . ((number "1" 960 . 961)))
+          ("__S_TYPEISSEM" (spp-arg-list ("buf") 7062 . 7067) . ((semantic-list "((buf)->st_mode - (buf)->st_mode)" 7068 . 7101)))
+          ("__S_IWRITE" . ((number "0200" 7437 . 7441)))
+          ("_MKNOD_VER_LINUX" . ((number "0" 1459 . 1460)))
+          ("__S_ISVTX" . ((number "01000" 7322 . 7327)))
+          ("_STAT_VER_KERNEL" . ((number "0" 1353 . 1354)))
+          ("_STAT_VER" . ((symbol "_STAT_VER_LINUX" 1488 . 1503)))
+          ("__S_IFIFO" . ((number "0010000" 6731 . 6738)))
+          ("_STATBUF_ST_RDEV")
+          ("__S_IFMT" . ((number "0170000" 6457 . 6464)))
+          )
+
+    )
+   (semanticdb-table "select.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bits/wordsize.h" include (:system-flag t) nil [918 944])
+            ("__FD_ZERO_STOS" variable (:constant-flag t) nil [1058 1072])
+            ("__FD_ZERO" variable (:constant-flag t) nil [1099 1108])
+            ("__FD_SET" variable (:constant-flag t) nil [1870 1878])
+            ("__FD_CLR" variable (:constant-flag t) nil [1958 1966])
+            ("__FD_ISSET" variable (:constant-flag t) nil [2047 2057]))          
+    :file "select.h"
+    :pointmax 2126
+    :fsize 2125
+    :lastmodtime '(21752 51272 0 0)
+    :unmatched-syntax '((string 840 . 909) (symbol 834 . 839) (punctuation 832 . 833))
+    :lexical-table 
+        '(("__FD_ZERO_STOS" . ((string "\"stosl\"" 1073 . 1080)))
+          ("__FD_ISSET" (spp-arg-list ("d" "set") 2057 . 2065) . ((semantic-list "((__FDS_BITS (set)[__FD_ELT (d)] & __FD_MASK (d)) != 0)" 2070 . 2125)))
+          ("__FD_SET" (spp-arg-list ("d" "set") 1878 . 1886) . ((semantic-list "((void) (__FDS_BITS (set)[__FD_ELT (d)] |= __FD_MASK (d)))" 1891 . 1949)))
+          ("__FD_ZERO" (spp-arg-list ("fdsp") 1108 . 1114) . 
+              ((DO "do" 1119 . 1121) (semantic-list "{									      \\
+    int __d0, __d1;							      \\
+    __asm__ __volatile__ (\"cld; rep; \" __FD_ZERO_STOS			      \\
+			  : \"=c\" (__d0), \"=D\" (__d1)			      \\
+			  : \"a\" (0), \"0\" (sizeof (fd_set)		      \\
+					  / sizeof (__fd_mask)),	      \\
+			    \"1\" (&__FDS_BITS (fdsp)[0])			      \\
+			  : \"memory\");					      \\
+  }" 1122 . 1442) (WHILE "while" 1443 . 1448) (semantic-list "(0)" 1449 . 1452)))
+          ("__FD_CLR" (spp-arg-list ("d" "set") 1966 . 1974) . ((semantic-list "((void) (__FDS_BITS (set)[__FD_ELT (d)] &= ~__FD_MASK (d)))" 1979 . 2038)))
+          )
+
+    )
+   (semanticdb-table "sigset.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SIGSET_H_types" variable (:constant-flag t) nil [929 944])
+            ("__sig_atomic_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [948 975])
+            ("_SIGSET_NWORDS" variable (:constant-flag t) nil [1034 1048])
+            ("__sigset_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("__val" variable
+                             (:dereference 1
+                              :type "unsigned long int")
+                              (reparse-symbol classsubparts) [1114 1154]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1091 1170]))          
+    :file "sigset.h"
+    :pointmax 4588
+    :fsize 4587
+    :lastmodtime '(21752 51266 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SIGSET_NWORDS" . ((semantic-list "(1024 / (8 * sizeof (unsigned long int)))" 1049 . 1090)))
+          ("_SIGSET_H_types" . ((number "1" 945 . 946)))
+          )
+
+    )
    )
   :file "!usr!include!bits!semantic.cache"
   :semantic-tag-version "2.0"
