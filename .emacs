@@ -1,18 +1,24 @@
 ; load theme
 (load-theme 'misterioso)
 
-; start package.el with emacs
 (require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
+
+; start package.el with emacs
+;(require 'package)
+;(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+;			 ("marmalade" . "https://marmalade-repo.org/packages/")))
 ;(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 ;                         ("marmalade" . "https://marmalade-repo.org/packages/")
 ;                         ("melpa" . "http://melpa.org/packages/")))
 ; initialize package.el
-(package-initialize)
+;(package-initialize)
 
 ; set neotree
 (require 'neotree)
-(add-to-list 'load-path' "/home/dplee/.emacs.d/elpa/neotree-20150726.636/")
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/neotree-20150726.636/")
 (global-set-key [f8] 'neotree-toggle) 
 
 ; start auto-completion with emacs
@@ -49,6 +55,7 @@
 (ede-cpp-root-project "goldilocks" :file "~/work/3rd_iter_trunk/src/goldilocks/src/dbm/dbmAPI/dbmInitHandle.cpp"
 		      :include-path '("/home/dplee/work/3rd_iter_trunk/src/goldilocks/header"))
 ; you can use system-include-path for setting up the system header file locations
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -65,3 +72,13 @@
 ; Can't execute package-list-packages without this.
 ; It's for security.
 (setq gnutls-min-prime-bits 1024)
+
+(require 'el-autoyas)
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-autoyas-20120918.617")
+(el-autoyas-enable)
+
+(require 'el-swank-fuzzy)
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-swank-fuzzy-20130824.1157/")
+
+(require 'el-spice)
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-spice-20140805.1138/")
