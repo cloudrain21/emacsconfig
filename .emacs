@@ -1,24 +1,20 @@
 ; load theme
 (load-theme 'misterioso)
 
+; package archives
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-; start package.el with emacs
-;(require 'package)
-;(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;			 ("marmalade" . "https://marmalade-repo.org/packages/")))
-;(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-;                         ("marmalade" . "https://marmalade-repo.org/packages/")
-;                         ("melpa" . "http://melpa.org/packages/")))
-; initialize package.el
-;(package-initialize)
+; load-path
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-autoyas-20120918.617")
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-swank-fuzzy-20130824.1157/")
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-spice-20140805.1138/")
+(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/neotree-20150726.636/")
 
 ; set neotree
 (require 'neotree)
-(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/neotree-20150726.636/")
 (global-set-key [f8] 'neotree-toggle) 
 
 ; start auto-completion with emacs
@@ -56,32 +52,14 @@
 		      :include-path '("/home/dplee/work/3rd_iter_trunk/src/goldilocks/header"))
 ; you can use system-include-path for setting up the system header file locations
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(browse-url-browser-function (quote browse-url-firefox)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-; Can't execute package-list-packages without this.
+; When you can't execute package-list-packages without this.
 ; It's for security.
 (setq gnutls-min-prime-bits 1024)
 
 (require 'el-autoyas)
-(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-autoyas-20120918.617")
 (el-autoyas-enable)
-
 (require 'el-swank-fuzzy)
-(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-swank-fuzzy-20130824.1157/")
-
 (require 'el-spice)
-(add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-spice-20140805.1138/")
 
 ; show line number
 (global-linum-mode t)
@@ -100,15 +78,15 @@
     (if current-prefix-arg
         (progn (setq &p1 (point-min))
                (setq &p2 (point-max)))
-      (progn (if (use-region-p)
+        (progn (if (use-region-p)
                  (progn (setq &p1 (region-beginning))
                         (setq &p2 (region-end)))
-               (progn (setq &p1 (line-beginning-position))
-                      (setq &p2 (line-end-position))))))
+                 (progn (setq &p1 (line-beginning-position))
+                        (setq &p2 (line-end-position))))))
     (kill-ring-save &p1 &p2)
     (if current-prefix-arg
         (message "buffer text copied")
-      (message "text copied"))))
+        (message "text copied"))))
 
 (defun xah-cut-line-or-region ()
   "Cut current line, or text selection.
@@ -120,9 +98,9 @@
       (progn ; not using kill-region because we don't want to include previous kill
         (kill-new (buffer-string))
         (delete-region (point-min) (point-max)))
-    (progn (if (use-region-p)
+      (progn (if (use-region-p)
                (kill-region (region-beginning) (region-end) t)
-             (kill-region (line-beginning-position) (line-beginning-position 2))))))
+               (kill-region (line-beginning-position) (line-beginning-position 2))))))
 
 (global-set-key (kbd "<f2>") 'xah-cut-line-or-region)
 (global-set-key (kbd "<f3>") 'xah-copy-line-or-region)
