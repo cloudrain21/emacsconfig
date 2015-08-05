@@ -82,3 +82,7 @@
 
 (require 'el-spice)
 (add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-spice-20140805.1138/")
+
+(global-linum-mode t)
+
+(show-paren-mode 1)
