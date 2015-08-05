@@ -83,6 +83,47 @@
 (require 'el-spice)
 (add-to-list 'load-path '"/home/dplee/.emacs.d/elpa/el-spice-20140805.1138/")
 
+; show line number
 (global-linum-mode t)
 
+; show parenthesis highlighting
 (show-paren-mode 1)
+
+; copy & cut line or region -> paste
+(defun xah-copy-line-or-region ()
+  "Copy current line, or text selection.
+   When `universal-argument' is called first, copy whole buffer (respects `narrow-to-region').
+   URL `http://ergoemacs.org/emacs/emacs_copy_cut_current_line.html'
+   Version 2015-05-06"
+  (interactive)
+  (let (&p1 &p2)
+    (if current-prefix-arg
+        (progn (setq &p1 (point-min))
+               (setq &p2 (point-max)))
+      (progn (if (use-region-p)
+                 (progn (setq &p1 (region-beginning))
+                        (setq &p2 (region-end)))
+               (progn (setq &p1 (line-beginning-position))
+                      (setq &p2 (line-end-position))))))
+    (kill-ring-save &p1 &p2)
+    (if current-prefix-arg
+        (message "buffer text copied")
+      (message "text copied"))))
+
+(defun xah-cut-line-or-region ()
+  "Cut current line, or text selection.
+   When `universal-argument' is called first, cut whole buffer (respects `narrow-to-region').
+   URL `http://ergoemacs.org/emacs/emacs_copy_cut_current_line.html'
+   Version 2015-06-10"
+  (interactive)
+  (if current-prefix-arg
+      (progn ; not using kill-region because we don't want to include previous kill
+        (kill-new (buffer-string))
+        (delete-region (point-min) (point-max)))
+    (progn (if (use-region-p)
+               (kill-region (region-beginning) (region-end) t)
+             (kill-region (line-beginning-position) (line-beginning-position 2))))))
+
+(global-set-key (kbd "<f2>") 'xah-cut-line-or-region)
+(global-set-key (kbd "<f3>") 'xah-copy-line-or-region)
+(global-set-key (kbd "<f4>") 'yank)
