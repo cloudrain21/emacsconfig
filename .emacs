@@ -105,3 +105,12 @@
 (global-set-key (kbd "<f2>") 'xah-cut-line-or-region)
 (global-set-key (kbd "<f3>") 'xah-copy-line-or-region)
 (global-set-key (kbd "<f4>") 'yank)
+
+; for helm
+(require 'helm-config)
+(require 'helm)
+
+; buffer manipulation
+(require 'buffer-utils)
+(buffer-utils-save-order
+    (bury-buffer "*scratch*"))
