@@ -52,3 +52,5 @@ Return a list of installed packages or nil for every skipped package."
 ;(setq projectile-enable-caching t)
 ;(define-key projectile-mode-map (kbd "s-s") 'projectile-persp-switch-project)
 ;(helm-projectile-on)
+
+(global-relative-line-numbers-mode)
