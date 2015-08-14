@@ -38,12 +38,14 @@ Return a list of installed packages or nil for every skipped package."
                             'perspective
                             'persp-projectile
                             'helm-projectile
+                            'linum-relative
                             'magit)
 
 (evil-mode t)
 (yas-global-mode 1)
 (global-linum-mode t)
 (show-paren-mode 1)
+(require 'linum-relative)
 
 ;(persp-mode)
 ;(require 'persp-projectile)
@@ -52,5 +54,3 @@ Return a list of installed packages or nil for every skipped package."
 ;(setq projectile-enable-caching t)
 ;(define-key projectile-mode-map (kbd "s-s") 'projectile-persp-switch-project)
 ;(helm-projectile-on)
-
-(global-relative-line-numbers-mode)
