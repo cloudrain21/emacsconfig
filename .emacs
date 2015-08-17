@@ -42,10 +42,15 @@ Return a list of installed packages or nil for every skipped package."
                             'magit)
 
 (evil-mode t)
-(yas-global-mode 1)
-(global-linum-mode t)
+
 (show-paren-mode 1)
+
+(global-linum-mode t)
 (require 'linum-relative)
+
+; yasnippet - tab key conflicts with evil mode
+(require 'yasnippet)
+(yas-global-mode 1)
 
 ; function aliases
 (defalias 'hff 'helm-find-files)
