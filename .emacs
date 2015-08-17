@@ -47,6 +47,13 @@ Return a list of installed packages or nil for every skipped package."
 (show-paren-mode 1)
 (require 'linum-relative)
 
+; function aliases
+(defalias 'hff 'helm-find-files)
+
+; indentation style for c, c++, java
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
 ;(persp-mode)
 ;(require 'persp-projectile)
 ;(require 'helm-projectile)
