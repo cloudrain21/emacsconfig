@@ -29,20 +29,22 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install packages
 (ensure-package-installed   'evil
-                            'flycheck
-                            'projectile
-                            'iedit
+                        ;;  'flycheck
+                        ;;  'projectile
+                        ;;  'iedit
                             'auto-complete
                             'yasnippet
                             'helm
-                            'perspective
-                            'persp-projectile
-                            'helm-projectile
+                        ;;  'perspective
+                        ;;  'persp-projectile
+                        ;;  'helm-projectile
                             'linum-relative
                             'magit)
 
+; turn on evil mode 
 (evil-mode t)
 
+; show matching parenthesis
 (show-paren-mode 1)
 
 (global-linum-mode t)
@@ -59,10 +61,12 @@ Return a list of installed packages or nil for every skipped package."
 (setq c-default-style "linux"
       c-basic-offset 4)
 
-;(persp-mode)
-;(require 'persp-projectile)
-;(require 'helm-projectile)
-;(projectile-global-mode)
-;(setq projectile-enable-caching t)
-;(define-key projectile-mode-map (kbd "s-s") 'projectile-persp-switch-project)
-;(helm-projectile-on)
+; start emacs gui with full screen
+(custom-set-variables
+   '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+; don't make backup files
+(setq make-backup-files nil)
+
+; gdb use many windows
+;(setq gdb-many-windows t)
