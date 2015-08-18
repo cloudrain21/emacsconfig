@@ -35,6 +35,8 @@ Return a list of installed packages or nil for every skipped package."
                         ;;  'iedit
                             'auto-complete
                             'ac-c-headers
+                            'auto-complete-c-headers
+                            'auto-complete-exuberant-ctags
                             'yasnippet
                             'helm
                         ;;  'perspective
@@ -93,7 +95,13 @@ Return a list of installed packages or nil for every skipped package."
 (require 'auto-complete-config)
 (ac-config-default)
 
+(require 'auto-complete-c-headers)
+(add-to-list 'ac-sources 'ac-source-c-headers)
+(require 'auto-complete-exuberant-ctags)
+(ac-exuberant-ctags-setup)
+
 ; add semantic to autocomplete
+; https://www.youtube.com/watch?v=Ib914gNr0ys
 (semantic-mode 1)
 (defun my:add-semantic-to-autocomplete()
   (add-to-list 'ac-sources 'ac-source-semantic))
@@ -102,5 +110,3 @@ Return a list of installed packages or nil for every skipped package."
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
-
-; need to consider using company mode for substituting for auto-complete
