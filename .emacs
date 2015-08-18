@@ -77,7 +77,6 @@ Return a list of installed packages or nil for every skipped package."
 ; helm
 (setq helm-buffers-fuzzy-matching t)
 (helm-mode 1)
-(defalias 'hff 'helm-find-files)
 
 ; indentation style for c, c++, java
 (setq c-default-style "linux"
@@ -107,6 +106,11 @@ Return a list of installed packages or nil for every skipped package."
   (add-to-list 'ac-sources 'ac-source-semantic))
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 (global-ede-mode 1)
+
+; alias or key binding
+(defalias 'hff 'helm-find-files)
+(add-hook 'c-mode-common-hook 
+    (lambda () (define-key c-mode-base-map (kbd "C-c C-l") 'compile)))
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
