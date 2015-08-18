@@ -29,11 +29,12 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install packages
 (ensure-package-installed   'evil
-			    'evil-surround
+                            'evil-surround
                         ;;  'flycheck
                         ;;  'projectile
                         ;;  'iedit
                             'auto-complete
+                            'ac-c-headers
                             'yasnippet
                             'helm
                         ;;  'perspective
@@ -91,6 +92,13 @@ Return a list of installed packages or nil for every skipped package."
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
+
+; add semantic to autocomplete
+(semantic-mode 1)
+(defun my:add-semantic-to-autocomplete()
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+(global-ede-mode 1)
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
