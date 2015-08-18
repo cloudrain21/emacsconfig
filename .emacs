@@ -29,6 +29,7 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install packages
 (ensure-package-installed   'evil
+			    'evil-surround
                         ;;  'flycheck
                         ;;  'projectile
                         ;;  'iedit
@@ -44,17 +45,35 @@ Return a list of installed packages or nil for every skipped package."
 ; turn on evil mode 
 (evil-mode t)
 
+; evil-surround
+; surrounding?
+; see http://www.vim.org/scripts/script.php?script_id=1697
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+
 ; show matching parenthesis
 (show-paren-mode 1)
 
 (global-linum-mode t)
 (require 'linum-relative)
 
-; yasnippet - tab key conflicts with evil mode
+; yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
 
-; function aliases
+(require 'yasnippet)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"
+                         "~/.emacs.d/remote-snippets"))
+(yas-reload-all)
+; (define-key yas-minor-mode-map (kbd "<tab>") nil)
+; (define-key yas-minor-mode-map (kbd "TAB") nil)
+; (setq tab-always-indent 'yas-expand)
+; (define-key yas-minor-mode-map (kbd "C-l") 'yas-expand)
+(define-key yas-minor-mode-map (kbd "<escape>") 'yas-exit-snippet)
+
+; helm
+(setq helm-buffers-fuzzy-matching t)
+(helm-mode 1)
 (defalias 'hff 'helm-find-files)
 
 ; indentation style for c, c++, java
@@ -67,6 +86,11 @@ Return a list of installed packages or nil for every skipped package."
 
 ; don't make backup files
 (setq make-backup-files nil)
+
+; auto complete
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
