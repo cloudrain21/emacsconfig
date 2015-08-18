@@ -102,3 +102,5 @@ Return a list of installed packages or nil for every skipped package."
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
+
+; need to consider using company mode for substituting for auto-complete
