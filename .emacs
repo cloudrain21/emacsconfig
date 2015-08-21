@@ -160,3 +160,4 @@ Return a list of installed packages or nil for every skipped package."
 		          :inherit '(hl-line default)))
 
 ; this is magit test
+; this is magit test2
