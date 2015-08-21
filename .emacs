@@ -84,7 +84,12 @@ Return a list of installed packages or nil for every skipped package."
 
 ; start emacs gui with full screen
 (custom-set-variables
-   '(initial-frame-alist (quote ((fullscreen . maximized)))))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(send-mail-function nil))
 
 ; don't make backup files
 (setq make-backup-files nil)
@@ -107,10 +112,49 @@ Return a list of installed packages or nil for every skipped package."
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 (global-ede-mode 1)
 
-; alias or key binding
+; alias or path or key binding
 (defalias 'hff 'helm-find-files)
 (add-hook 'c-mode-common-hook 
     (lambda () (define-key c-mode-base-map (kbd "C-c C-l") 'compile)))
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
+;(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+; )
+
+; use relative line number, but shows current line number instead of 0
+(with-eval-after-load 'linum
+  (set-face-background 'linum nil)
+
+  (require 'linum-relative)
+
+  ;; truncate current line to four digits
+  (defun linum-relative (line-number)
+    (let* ((diff1 (abs (- line-number linum-relative-last-pos)))
+	   (diff (if (minusp diff1)
+		     diff1
+		   (+ diff1 linum-relative-plusp-offset)))
+	   (current-p (= diff linum-relative-plusp-offset))
+	   (current-symbol (if (and linum-relative-current-symbol current-p)
+			       (if (string= "" linum-relative-current-symbol)
+				   (number-to-string (% line-number 1000))
+				 linum-relative-current-symbol)
+			     (number-to-string diff)))
+	   (face (if current-p 'linum-relative-current-face 'linum)))
+      (propertize (format linum-relative-format current-symbol) 'face face)))
+
+
+  (setq
+   linum-relative-current-symbol ""
+   linum-relative-format "%3s "
+   linum-delay t)
+
+  (set-face-attribute 'linum-relative-current-face nil
+		      :weight 'extra-bold
+		      :foreground nil
+		      :background nil
+		          :inherit '(hl-line default)))
