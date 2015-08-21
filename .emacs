@@ -114,9 +114,11 @@ Return a list of installed packages or nil for every skipped package."
 
 ; alias or path or key binding
 (defalias 'hff 'helm-find-files)
-(global-set-key [f9] 'compile)
+(global-set-key [f5] 'semantic-symref)
+(global-set-key [f6] 'semantic-symref-symbol)
 (global-set-key [f7] 'previous-error)
 (global-set-key [f8] 'next-error)
+(global-set-key [f9] 'compile)
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
