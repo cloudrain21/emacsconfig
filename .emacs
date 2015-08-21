@@ -1,6 +1,11 @@
-; theme
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; theme
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load-theme 'tango-dark)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; package install
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -20,14 +25,14 @@ Return a list of installed packages or nil for every skipped package."
          package)))
    packages))
 
-;; Make sure to have downloaded archive description.
+; Make sure to have downloaded archive description.
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-;; Activate installed packages
+; Activate installed packages
 (package-initialize)
 
-;; Assuming you wish to install packages
+; Assuming you wish to install packages
 (ensure-package-installed   'evil
                             'evil-surround
                         ;;  'flycheck
@@ -45,90 +50,26 @@ Return a list of installed packages or nil for every skipped package."
                             'linum-relative
                             'magit)
 
-; turn on evil mode 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; turn on evil mode 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (evil-mode t)
-
 ; evil-surround
 ; surrounding?
 ; see http://www.vim.org/scripts/script.php?script_id=1697
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
-; show matching parenthesis
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; show matching parenthesis
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (show-paren-mode 1)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; line number - relative
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-linum-mode t)
 (require 'linum-relative)
-
-; yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
-
-(require 'yasnippet)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"
-                         "~/.emacs.d/remote-snippets"))
-(yas-reload-all)
-; (define-key yas-minor-mode-map (kbd "<tab>") nil)
-; (define-key yas-minor-mode-map (kbd "TAB") nil)
-; (setq tab-always-indent 'yas-expand)
-; (define-key yas-minor-mode-map (kbd "C-l") 'yas-expand)
-(define-key yas-minor-mode-map (kbd "<escape>") 'yas-exit-snippet)
-
-; helm
-(setq helm-buffers-fuzzy-matching t)
-(helm-mode 1)
-
-; indentation style for c, c++, java
-(setq c-default-style "linux"
-      c-basic-offset 4)
-
-; start emacs gui with full screen
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(send-mail-function nil))
-
-; don't make backup files
-(setq make-backup-files nil)
-
-; auto complete
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
-
-(require 'auto-complete-c-headers)
-(add-to-list 'ac-sources 'ac-source-c-headers)
-(require 'auto-complete-exuberant-ctags)
-(ac-exuberant-ctags-setup)
-
-; add semantic to autocomplete
-; https://www.youtube.com/watch?v=Ib914gNr0ys
-(semantic-mode 1)
-(defun my:add-semantic-to-autocomplete()
-  (add-to-list 'ac-sources 'ac-source-semantic))
-(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
-(global-ede-mode 1)
-
-; alias or path or key binding
-(defalias 'hff 'helm-find-files)
-(global-set-key [f5] 'semantic-symref)
-(global-set-key [f6] 'semantic-symref-symbol)
-(global-set-key [f7] 'previous-error)
-(global-set-key [f8] 'next-error)
-(global-set-key [f9] 'compile)
-
-; gdb use many windows
-;(setq gdb-many-windows t)
-;(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
-; )
-
 ; use relative line number, but shows current line number instead of 0
 (with-eval-after-load 'linum
   (set-face-background 'linum nil)
@@ -161,3 +102,92 @@ Return a list of installed packages or nil for every skipped package."
 		      :foreground nil
 		      :background nil
 		          :inherit '(hl-line default)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; yasnippet
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(require 'yasnippet)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"
+                         "~/.emacs.d/remote-snippets"))
+(yas-reload-all)
+; (define-key yas-minor-mode-map (kbd "<tab>") nil)
+; (define-key yas-minor-mode-map (kbd "TAB") nil)
+; (setq tab-always-indent 'yas-expand)
+; (define-key yas-minor-mode-map (kbd "C-l") 'yas-expand)
+(define-key yas-minor-mode-map (kbd "<escape>") 'yas-exit-snippet)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; helm
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq helm-buffers-fuzzy-matching t)
+(helm-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; indentation style for c, c++, java
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; start emacs gui with full screen
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(send-mail-function nil))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; don't make backup files
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq make-backup-files nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; auto complete 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+; header name auto completion
+(require 'auto-complete-c-headers)
+(add-to-list 'ac-sources 'ac-source-c-headers)
+; ctag auto completion
+(require 'auto-complete-exuberant-ctags)
+(ac-exuberant-ctags-setup)
+; add semantic to autocomplete
+; https://www.youtube.com/watch?v=Ib914gNr0ys
+(semantic-mode 1)
+(defun my:add-semantic-to-autocomplete()
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+(global-ede-mode 1)
+; add system include for semantic
+(semantic-add-system-include "/usr/include/boost" 'c++-mode) 
+(semantic-add-system-include "/usr/include/c++/4.2.1" 'c++-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; alias or path or key binding
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defalias 'hff 'helm-find-files)               ; helm find files
+(global-set-key [f4] 'apropos-command)         ; find full command name by regex
+(global-set-key [f5] 'semantic-symref)         ; for function call hierarchy
+(global-set-key [f6] 'semantic-symref-symbol)  ; for function call hierarchy
+(global-set-key [f7] 'previous-error)          ; for compile error debugging
+(global-set-key [f8] 'next-error)              ; for compile error debugging
+(global-set-key [f9] 'compile)                 ; for compile
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; gdb use many windows
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;(setq gdb-many-windows t)
+;(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+; )
