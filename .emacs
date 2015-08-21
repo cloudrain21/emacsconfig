@@ -114,8 +114,9 @@ Return a list of installed packages or nil for every skipped package."
 
 ; alias or path or key binding
 (defalias 'hff 'helm-find-files)
-(add-hook 'c-mode-common-hook 
-    (lambda () (define-key c-mode-base-map (kbd "C-c C-l") 'compile)))
+(global-set-key [f9] 'compile)
+(global-set-key [f7] 'previous-error)
+(global-set-key [f8] 'next-error)
 
 ; gdb use many windows
 ;(setq gdb-many-windows t)
