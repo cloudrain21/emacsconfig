@@ -171,7 +171,7 @@ Return a list of installed packages or nil for every skipped package."
 (semantic-add-system-include "/usr/include/c++/4.2.1" 'c++-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; alias or path or key binding
+;; alias or path or key binding, etc
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defalias 'hff 'helm-find-files)               ; helm find files
 (global-set-key [f4] 'apropos-command)         ; find full command name by regex
@@ -180,6 +180,7 @@ Return a list of installed packages or nil for every skipped package."
 (global-set-key [f7] 'previous-error)          ; for compile error debugging
 (global-set-key [f8] 'next-error)              ; for compile error debugging
 (global-set-key [f9] 'compile)                 ; for compile
+(setq default-frame-alist '((background-color . "black")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; gdb use many windows
