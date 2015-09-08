@@ -197,3 +197,12 @@ Return a list of installed packages or nil for every skipped package."
 ;; scrolling to automatically display new output
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq compilation-scroll-output t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; automatically give a current buffer's filename
+;; when executing compile-command
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'c++-mode-hook
+  (lambda ()
+    (set (make-local-variable 'compile-command)
+         (format "g++ -g -Wall -O0 -std=c++11 %s" (buffer-name)))))
