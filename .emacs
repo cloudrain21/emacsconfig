@@ -48,6 +48,7 @@ Return a list of installed packages or nil for every skipped package."
                         ;;  'persp-projectile
                         ;;  'helm-projectile
                             'linum-relative
+                            'smart-tabs-mode
                             'magit)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -205,4 +206,13 @@ Return a list of installed packages or nil for every skipped package."
 (add-hook 'c++-mode-hook
   (lambda ()
     (set (make-local-variable 'compile-command)
-         (format "g++ -g -Wall -O0 -std=c++11 %s" (buffer-name)))))
+         (format "g++ -g -Wall -O0 -std=c++11 -fno-elide-constructors %s" (buffer-name)))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; smart-tabs-mode : http://www.emacswiki.org/emacs/SmartTabs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(smart-tabs-insinuate 'c 'javascript)
+(smart-tabs-add-language-support c++ c++-mode-hook
+  ((c-indent-line . c-basic-offset)
+   (c-indent-region . c-basic-offset)))
+(setq-default tab-width 4)
