@@ -216,3 +216,8 @@ Return a list of installed packages or nil for every skipped package."
   ((c-indent-line . c-basic-offset)
    (c-indent-region . c-basic-offset)))
 (setq-default tab-width 4)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; use spaces instead of tabs : http://www.emacswiki.org/emacs/NoTabs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq-default indent-tabs-mode nil)
