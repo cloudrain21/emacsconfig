@@ -175,6 +175,7 @@ Return a list of installed packages or nil for every skipped package."
 ;; alias or path or key binding, etc
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defalias 'hff 'helm-find-files)               ; helm find files
+(global-set-key [f2] 'speedbar)                ; speedbar - show dir/file tree
 (global-set-key [f4] 'apropos-command)         ; find full command name by regex
 (global-set-key [f5] 'semantic-symref)         ; for function call hierarchy
 (global-set-key [f6] 'semantic-symref-symbol)  ; for function call hierarchy
