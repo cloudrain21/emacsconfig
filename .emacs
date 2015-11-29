@@ -44,7 +44,7 @@ Return a list of installed packages or nil for every skipped package."
                             'auto-complete-exuberant-ctags
                             'yasnippet
                             'helm
-                            'ggtags
+                            'ggtags    ; install gnu ggtags
                         ;;  'perspective
                         ;;  'persp-projectile
                         ;;  'helm-projectile
