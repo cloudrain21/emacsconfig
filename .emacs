@@ -133,15 +133,23 @@ Return a list of installed packages or nil for every skipped package."
       c-basic-offset 4)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; start emacs gui with full screen
+; custom setting
+;  - startup with full screen
+;  - speedbar option setting
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(initial-frame-alist (quote ((fullscreen . maximized))))
- '(send-mail-function nil))
+ '(send-mail-function nil)
+ '(speedbar-frame-parameters
+   (quote
+    ((minibuffer)
+     (width . 50)
+     (border-width . 0)
+     (menu-bar-lines . 0)
+     (tool-bar-lines . 0)
+     (unsplittable . t)
+     (left-fringe . 0))))
+ '(speedbar-show-unknown-files t))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; don't make backup files
@@ -224,6 +232,29 @@ Return a list of installed packages or nil for every skipped package."
 (setq-default indent-tabs-mode nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; some file type -> recognize as c++ code
+;; map file type to mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'auto-mode-alist '("\\.inl\\'" . c++-mode))
+(setq auto-mode-alist
+      (append
+       '(("\\.C$" . c++-mode)
+         ("\\.H$" . c++-mode)
+         ("\\.cc$" . c++-mode)
+         ("\\.cpp$" . c++-mode)
+         ("\\.hh$" . c++-mode)
+         ("\\.c$" . c-mode)
+         ("\\.h$" . c++-mode)
+         ("\\.i$" . c++-mode)
+         ("\\.l$" . c++-mode)
+         ("\\.gc$" . c-mode)
+         ("\\.pc$" . c-mode)
+         ("\\.inl$" . c++-mode)
+         ("Makefile.$" . makefile-mode)
+         ("makefile.$" . makefile-mode)
+         (".emacs" . lisp-mode)
+         )
+       auto-mode-alist))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; inhibit open startup screen - open just edit screen
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq inhibit-startup-screen t)
