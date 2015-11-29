@@ -44,6 +44,7 @@ Return a list of installed packages or nil for every skipped package."
                             'auto-complete-exuberant-ctags
                             'yasnippet
                             'helm
+                            'ggtags
                         ;;  'perspective
                         ;;  'persp-projectile
                         ;;  'helm-projectile
@@ -133,11 +134,13 @@ Return a list of installed packages or nil for every skipped package."
       c-basic-offset 4)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; custom setting
-;  - startup with full screen
-;  - speedbar option setting
+; start emacs gui with full screen
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(send-mail-function nil)
  '(speedbar-frame-parameters
@@ -250,11 +253,20 @@ Return a list of installed packages or nil for every skipped package."
          ("\\.inl$" . c++-mode)
          ("Makefile.$" . makefile-mode)
          ("makefile.$" . makefile-mode)
-         (".emacs" . lisp-mode)
-         )
+         (".emacs" . lisp-mode))
        auto-mode-alist))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; inhibit open startup screen - open just edit screen
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq inhibit-startup-screen t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ggtags mode
+;;  - install global (gtags binary is also installed)
+;;  - execute gtags at the top dir of src
+;;  - M-x ggtags-mode
+;;  - shift + mouse button click
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'c-mode-common-hook
+  (lambda () (ggtags-mode 1)))
