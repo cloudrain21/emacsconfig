@@ -270,3 +270,5 @@ Return a list of installed packages or nil for every skipped package."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'c-mode-common-hook
   (lambda () (ggtags-mode 1)))
+(add-hook 'c++-mode-hook
+  (lambda () (ggtags-mode 1)))
