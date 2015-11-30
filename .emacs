@@ -245,6 +245,8 @@ Return a list of installed packages or nil for every skipped package."
          ("\\.gc$" . c-mode)
          ("\\.pc$" . c-mode)
          ("\\.inl$" . c++-mode)
+         ("\\.py$" . python-mode)
+         ("SConstruct$" . python-mode)
          ("Makefile.$" . makefile-mode)
          ("makefile.$" . makefile-mode)
          (".emacs" . lisp-mode))
