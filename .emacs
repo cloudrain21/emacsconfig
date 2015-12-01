@@ -268,3 +268,9 @@ Return a list of installed packages or nil for every skipped package."
   (lambda () (ggtags-mode 1)))
 (add-hook 'c++-mode-hook
   (lambda () (ggtags-mode 1)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; let emacs know executables path
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;(setq exec-path (split-string (getenv "PATH") ":"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
