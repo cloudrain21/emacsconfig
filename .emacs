@@ -188,8 +188,10 @@ Return a list of installed packages or nil for every skipped package."
 (defalias 'hff 'helm-find-files)               ; helm find files
 (global-set-key [f3] 'speedbar)                ; speedbar - show dir/file tree
 (global-set-key [f4] 'apropos-command)         ; find full command name by regex
-(global-set-key [f5] 'semantic-symref)         ; for function call hierarchy
-(global-set-key [f6] 'semantic-symref-symbol)  ; for function call hierarchy
+;(global-set-key [f5] 'semantic-symref)        ; for function call hierarchy
+;(global-set-key [f6] 'semantic-symref-symbol) ; for function call hierarchy
+(global-set-key [f5] 'ggtags-find-file)        ; find file using regular expression
+(global-set-key [f6] 'ggtags-find-reference)   ; find function call references
 (global-set-key [f7] 'previous-error)          ; for compile error debugging
 (global-set-key [f8] 'next-error)              ; for compile error debugging
 (global-set-key [f9] 'compile)                 ; for compile
