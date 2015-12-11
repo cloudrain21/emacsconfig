@@ -192,9 +192,11 @@ Return a list of installed packages or nil for every skipped package."
 ;(global-set-key [f6] 'semantic-symref-symbol) ; for function call hierarchy
 (global-set-key [f5] 'ggtags-find-file)        ; find file using regular expression
 (global-set-key [f6] 'ggtags-find-reference)   ; find function call references
-(global-set-key [f7] 'previous-error)          ; for compile error debugging
+;(global-set-key [f7] 'previous-error)          ; for compile error debugging
+(global-set-key [f7] 'ggtags-grep)             ; for grep tag
 (global-set-key [f8] 'next-error)              ; for compile error debugging
 (global-set-key [f9] 'compile)                 ; for compile
+(global-set-key [f12] 'ggtags-find-tag-dwim)   ; find tags of current point
 (setq default-frame-alist '((background-color . "black")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
