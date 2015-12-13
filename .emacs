@@ -179,7 +179,7 @@ Return a list of installed packages or nil for every skipped package."
 (add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
 (global-ede-mode 1)
 ; add system include for semantic
-(semantic-add-system-include "/usr/include/boost" 'c++-mode) 
+(semantic-add-system-include "/usr/local/include/boost" 'c++-mode) 
 (semantic-add-system-include "/usr/include/c++/4.2.1" 'c++-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
