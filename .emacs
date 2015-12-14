@@ -278,3 +278,9 @@ Return a list of installed packages or nil for every skipped package."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;(setq exec-path (split-string (getenv "PATH") ":"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Change frame backgroup color
+;; You can rgb value of colors in M-x list-colors-display
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'default-frame-alist '(background-color . "#0F0F0F"))
