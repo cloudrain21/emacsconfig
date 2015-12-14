@@ -283,4 +283,4 @@ Return a list of installed packages or nil for every skipped package."
 ;; Change frame backgroup color
 ;; You can rgb value of colors in M-x list-colors-display
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'default-frame-alist '(background-color . "#0F0F0F"))
+(add-to-list 'default-frame-alist '(background-color . "#1F1F1F"))
