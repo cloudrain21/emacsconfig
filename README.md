@@ -5,3 +5,7 @@
 
 You can use evil mode, yasnippet, auto complete, relative line number, etc.
 Refer to the package list to be installed in .emacs file.
+
+ggtags-find-file is too slow because of the execution of 'global -u'.
+You should comment (ggtags-update-tags) function call, in ggtags-read-tag function.
+Instead, you should run ggtags in your gtags top directory whenever you modify some files.
